@@ -1,0 +1,39 @@
+Format: 1.8
+Date: Thu, 07 Apr 2022 06:56:06 +0000
+Source: gala
+Binary: gala gala-dbgsym libgala-dev libgala0 libgala0-dbgsym
+Architecture: amd64
+Version: 6.3.1
+Distribution: focal
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ gala       - Pantheon Window Manager
+ libgala-dev - Library to build plugins for Pantheon Window Manager (development
+ libgala0   - Library to build plugins for Pantheon Window Manager
+Changes:
+ gala (6.3.1) focal; urgency=medium
+ .
+   * Release 6.3.1 (#1398)
+Checksums-Sha1:
+ 28a3656a981f1195caf74957aef5b3876aee11ed 1433612 gala-dbgsym_6.3.1_amd64.deb
+ 95dfbc01a5c3f85923564b8b3e52c49dda50c734 16915 gala_6.3.1_amd64.buildinfo
+ 022b3e54abd82fa9536937258ae9b564dfaca137 304600 gala_6.3.1_amd64.deb
+ 21c70a1a5e704cbc366ab5a19079ca82423f1ea5 14864 libgala-dev_6.3.1_amd64.deb
+ 09530382cbe35dce0ee4558e5c33529d54109d66 187560 libgala0-dbgsym_6.3.1_amd64.deb
+ e142236a4381f63adc836a2f9a14df6885588f02 59384 libgala0_6.3.1_amd64.deb
+Checksums-Sha256:
+ 903e2f955cffd6439fc71054cea316fa7a87ff334467d274320eca18e9ebc093 1433612 gala-dbgsym_6.3.1_amd64.deb
+ 1a60a9d3c481b9254dd36bfc3d96bb74c38f2fac7d83a3de9c48b7f77b593716 16915 gala_6.3.1_amd64.buildinfo
+ e924817d7c5f09c0dca2a468b97862710ed0fccceb31cebf50b92d63be87cbab 304600 gala_6.3.1_amd64.deb
+ ca8243b478937571e0e625023287ea385103b512e58a7a42126911051fc207b4 14864 libgala-dev_6.3.1_amd64.deb
+ eb7b815ef6711698f8c129f6b23df385d5c687f2d8267e5d063836e6db84cc69 187560 libgala0-dbgsym_6.3.1_amd64.deb
+ 69ffd4964d620c4b628cefa89d8c08e33121600c06f91f16c72bd14069053685 59384 libgala0_6.3.1_amd64.deb
+Files:
+ 2198d6239966138717c63651fa5506f7 1433612 debug optional gala-dbgsym_6.3.1_amd64.deb
+ 44ab1be736987407ce45447bfe2254f9 16915 x11 optional gala_6.3.1_amd64.buildinfo
+ 46a60717483857ad6ac72c08d69c91d5 304600 x11 optional gala_6.3.1_amd64.deb
+ b30cb399694a4c36d620778dee2fb19f 14864 libdevel optional libgala-dev_6.3.1_amd64.deb
+ 8e8a425b406f35b1f16c3018ad2579c7 187560 debug optional libgala0-dbgsym_6.3.1_amd64.deb
+ 85a5a968722d8359874bbb823a420dbf 59384 x11 optional libgala0_6.3.1_amd64.deb

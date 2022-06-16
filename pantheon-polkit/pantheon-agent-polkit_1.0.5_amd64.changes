@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Thu, 28 Apr 2022 06:32:34 +0000
+Source: pantheon-agent-polkit
+Binary: pantheon-agent-polkit pantheon-agent-polkit-dbgsym
+Architecture: source amd64
+Version: 1.0.5
+Distribution: bionic
+Urgency: medium
+Maintainer: Cody Garver <cody@elementary.io>
+Changed-By: Cody Garver <cody@elementary.io>
+Description:
+ pantheon-agent-polkit - Polkit authorization designed for Pantheon
+Changes:
+ pantheon-agent-polkit (1.0.5) bionic; urgency=medium
+ .
+   * Release 1.0.5
+   * Update translation files
+   * Update translation template
+Checksums-Sha1:
+ 161f06bea2a2d82fa6d3c12e1ba9caf6db01e9ac 777 pantheon-agent-polkit_1.0.5.dsc
+ f6e24365453c04f65cc7cd29e95477a9c26bce1a 71304 pantheon-agent-polkit_1.0.5.tar.xz
+ c8c1868e028988bfd051ce37f140b0e04d39e105 73280 pantheon-agent-polkit-dbgsym_1.0.5_amd64.deb
+ e4061762aa90823929e5b5cddb69612d87a83fdb 14309 pantheon-agent-polkit_1.0.5_amd64.buildinfo
+ 6a6514e29b7f03acc6f57bd659c044a450473ee0 36776 pantheon-agent-polkit_1.0.5_amd64.deb
+Checksums-Sha256:
+ d8d596e6dd739895c0624afefccdabf7c69ed15f2cefcdcb23b8e9472b067ecd 777 pantheon-agent-polkit_1.0.5.dsc
+ 7009c87549ffbb06e629ae0540b33cf43e707f73e46e69a2d2d5b354629dc467 71304 pantheon-agent-polkit_1.0.5.tar.xz
+ 5034f261f4ad00c3cbe3afef3f2b02b4e24f12de4e760ca7a69de1c7224491c4 73280 pantheon-agent-polkit-dbgsym_1.0.5_amd64.deb
+ 7bab0ee3a4b1a6a598db90c028a47ae78d5affcadcb05b0a838a23dbdc98e7e5 14309 pantheon-agent-polkit_1.0.5_amd64.buildinfo
+ bfaffe267d7f35d7f8048b6f90e421af3cb44d3b28d7de42cf60bf86bd8c943b 36776 pantheon-agent-polkit_1.0.5_amd64.deb
+Files:
+ 6869121cb103e7febd258696a8816789 777 admin optional pantheon-agent-polkit_1.0.5.dsc
+ 4b339ee9c7edbfe468b2877a1edc4e87 71304 admin optional pantheon-agent-polkit_1.0.5.tar.xz
+ c12d8b680f88931108e3b7211597de2f 73280 debug optional pantheon-agent-polkit-dbgsym_1.0.5_amd64.deb
+ 82baab1860cfb41b7f7cf5101840a530 14309 admin optional pantheon-agent-polkit_1.0.5_amd64.buildinfo
+ 6f00b671691de36cf2981f13077c38df 36776 admin optional pantheon-agent-polkit_1.0.5_amd64.deb

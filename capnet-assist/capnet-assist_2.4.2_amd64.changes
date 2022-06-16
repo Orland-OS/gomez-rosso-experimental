@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Wed, 18 May 2022 04:45:49 +0000
+Source: capnet-assist
+Binary: capnet-assist
+Architecture: amd64
+Version: 2.4.2
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ capnet-assist - Captive login detector
+Changes:
+ capnet-assist (2.4.2) bionic; urgency=medium
+ .
+   * Release 2.4.2 (#81)
+   * Update io.elementary.capnet-assist.appdata.xml.in (#83)
+   * Update translation files
+   * Update .pot
+   * Flatpak: bump to Platform 7 (#80)
+Checksums-Sha1:
+ 436cfc6990f5285cc462e6aacb32beec50d8ed87 96956 capnet-assist-dbgsym_2.4.2_amd64.ddeb
+ 55583b427b57fbed4b16f2e9b020c0385f0baaf9 5844 capnet-assist_2.4.2_amd64.buildinfo
+ 73b555a7d2f2344163ba9d13309a6363387378b5 55256 capnet-assist_2.4.2_amd64.deb
+Checksums-Sha256:
+ dd68955696b5491def5b20f8cd0b56b62a2e7a95667818861a933519f159c505 96956 capnet-assist-dbgsym_2.4.2_amd64.ddeb
+ ab11ed3684628a16e49fd8e5242ee876a6d48efbe0a437b263b1a18bd88302d8 5844 capnet-assist_2.4.2_amd64.buildinfo
+ cc4bd0f6c7c4f91ad607cb4a3d07e452ad78569d808b30056a1732f09fef0fef 55256 capnet-assist_2.4.2_amd64.deb
+Files:
+ 7733a3dceea9724d9f6d1b3002bcafab 96956 debug optional capnet-assist-dbgsym_2.4.2_amd64.ddeb
+ 396441fb1f687fb75ec69b38e5c251c7 5844 net optional capnet-assist_2.4.2_amd64.buildinfo
+ e16ab5cd338fcf5ed1a5dd5379096788 55256 net optional capnet-assist_2.4.2_amd64.deb

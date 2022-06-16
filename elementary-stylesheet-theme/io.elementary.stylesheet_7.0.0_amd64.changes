@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Mon, 25 Apr 2022 10:11:05 -0700
+Source: io.elementary.stylesheet
+Binary: io.elementary.stylesheet
+Architecture: all
+Version: 7.0.0
+Distribution: focal
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: Danielle Foré <danielle@elementary.io>
+Description:
+ io.elementary.stylesheet - the elementary GTK stylesheet
+Changes:
+ io.elementary.stylesheet (7.0.0) focal; urgency=medium
+ .
+   * new upstream release
+Checksums-Sha1:
+ f6523c0a45d81c078ea953a46bcb3b40c0baa224 75056 io.elementary.stylesheet_7.0.0_all.deb
+ 6a8a502a4f2594b2521808f6b71b1a6d85123b35 5669 io.elementary.stylesheet_7.0.0_amd64.buildinfo
+Checksums-Sha256:
+ 9a3426073848fb3f0cd2fcd2d5db4d6211cb5688231c69073b3ce174d6d0bd3e 75056 io.elementary.stylesheet_7.0.0_all.deb
+ 3f43ef4cc0f15604b9891c7452979cf4cab4c70236f7896fc1d496e09007da7d 5669 io.elementary.stylesheet_7.0.0_amd64.buildinfo
+Files:
+ d6686a0a1045450479c8fb13c8f8a76d 75056 x11 extra io.elementary.stylesheet_7.0.0_all.deb
+ 256d27829b0550f46576f775760ddb47 5669 x11 extra io.elementary.stylesheet_7.0.0_amd64.buildinfo

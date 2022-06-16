@@ -1,0 +1,44 @@
+Format: 1.8
+Date: Mon, 25 Apr 2022 19:36:43 +0000
+Source: elementary-icon-theme
+Binary: elementary-icon-theme
+Architecture: all
+Version: 7.0.0
+Distribution: bionic
+Urgency: medium
+Maintainer: Cody Garver <cody@elementary.io>
+Changed-By: Cody Garver <cody@elementary.io>
+Description:
+ elementary-icon-theme - simple and appealing Tango-styled icon theme
+Changes:
+ elementary-icon-theme (7.0.0) bionic; urgency=medium
+ .
+   * Release 7.0.0 (#1100)
+   * Status: remove unused network icons (#1098)
+   * Apps: rounder Terminal (#1099)
+   * Invert updates arrow (#1097)
+   * Categories: symlink gnome-power-manager (#1095)
+   * Devices: rounder network squares (#1096)
+   * Use rounded arrow on download folder (#1090)
+   * FileTypes: Use package metaphor for deb (#1080)
+   * Filetypes: 16px Vala (#1083)
+   * FIletypes: Add extension at 128px (#1081)
+   * Status: remove notification-audio-* (#1077)
+   * Remove apps/multimedia-photo-manager (#1061)
+   * FileTypes: Add flatpak bundle (#1047)
+   * Redesign package-x-generic (#1078)
+   * Status: update shuffle and consecutive (#1074)
+   * Redesign media-playlist-repeat-symbolic (#1072)
+   * system-software-update: fix symbolic and 128px consistency (#1069)
+   * Password entry (#1070)
+   * Filetypes: Update office templates and symlinks (#1064)
+   * Update translation files
+Checksums-Sha1:
+ c64c2f125ed19292109a8c2b52d152f5b295c2b6 2612840 elementary-icon-theme_7.0.0_all.deb
+ 4104ed83a2856ec3ce2130ed0fa290ac987863e9 7265 elementary-icon-theme_7.0.0_amd64.buildinfo
+Checksums-Sha256:
+ 3411c2e53a8bd885df3d2ad0a0dbf95b653d18f234d494dd01bc10e3f5fbacca 2612840 elementary-icon-theme_7.0.0_all.deb
+ 10c5766165a79b40935fe004a39ca7e8b8f12ebf830b3c20c59baecbfb480bdd 7265 elementary-icon-theme_7.0.0_amd64.buildinfo
+Files:
+ 6c3cf8a48fef4562f47eb0a931a01c2a 2612840 gnome optional elementary-icon-theme_7.0.0_all.deb
+ 140bca1b8a89baf83c2b886ff837133f 7265 gnome optional elementary-icon-theme_7.0.0_amd64.buildinfo

@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 13 Jul 2021 14:33:42 -0700
+Source: contractor
+Binary: contractor contractor-dbgsym
+Architecture: amd64
+Version: 0.3.5
+Distribution: focal
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: Daniel Foré <daniel@elementary.io>
+Description:
+ contractor - service for sharing data between apps
+Changes:
+ contractor (0.3.5) focal; urgency=medium
+ .
+   * Fix install path for DBus service
+Checksums-Sha1:
+ 798721a0c6080f3afd66516490b39cadf9ec8e11 125272 contractor-dbgsym_0.3.5_amd64.deb
+ cb394f53a1a6862d0fad6db1ab5843f93a876568 6881 contractor_0.3.5_amd64.buildinfo
+ dd2059e6868805d90e0d3434219e1dd244b60181 26428 contractor_0.3.5_amd64.deb
+Checksums-Sha256:
+ 5f83b6e73e1d31a2326d8c968738fbe67eb7e5cc170873d8aead4c4a4f8d83db 125272 contractor-dbgsym_0.3.5_amd64.deb
+ b0cf9ad553dc5dc5f2628de77959d1bb42fb41598df48c09ff77bebcbe771058 6881 contractor_0.3.5_amd64.buildinfo
+ acfd1c27ef4370ea0fe98eaae4b2b85fb2410982c5f6da6c553e8cceb1176ed3 26428 contractor_0.3.5_amd64.deb
+Files:
+ be5dfd28ed32ae8f0a6683e5d1111000 125272 debug optional contractor-dbgsym_0.3.5_amd64.deb
+ 14c4250f42dd5ea7cc0e05d74f82b1a3 6881 utils optional contractor_0.3.5_amd64.buildinfo
+ ad055daa58a15c480536b05b88f6a357 26428 utils optional contractor_0.3.5_amd64.deb

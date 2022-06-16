@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Wed, 26 Jan 2022 18:03:36 +0000
+Source: io.elementary.portals
+Binary: io.elementary.portals io.elementary.portals-dbgsym
+Architecture: amd64
+Version: 1.1.0
+Distribution: focal
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ io.elementary.portals - Flatpak portals for Pantheon
+Changes:
+ io.elementary.portals (1.1.0) focal; urgency=medium
+ .
+   * Release 1.1.0 (#46)
+   * Update translation files
+   * Update translation template
+   * AppData: Fix typos (#47)
+   * Access: add modifications for use in gala's CloseDialog (#44)
+   * Access: Restructure Code (#41)
+   * AppChooser: fix warning
+   * AppChooser: fix open button callback
+   * AppChooser: set dialog type hint and modal
+Checksums-Sha1:
+ a6b12a1a768b3a7ad942101fd1e225223818823c 167824 io.elementary.portals-dbgsym_1.1.0_amd64.deb
+ 4fdcfab04d2c089b379f6f8c2c3007998500c93f 19380 io.elementary.portals_1.1.0_amd64.buildinfo
+ 19a2214f0e3d6e8871a8daaeddf02d797304d225 47364 io.elementary.portals_1.1.0_amd64.deb
+Checksums-Sha256:
+ bca0806d2ba327422730230deb3933cd6ff00a9b925215adb312d41fc771dace 167824 io.elementary.portals-dbgsym_1.1.0_amd64.deb
+ 61af07e7b878eb28c13922100ad78efe74da8ecf796cb1629ed35dca03d4ad9d 19380 io.elementary.portals_1.1.0_amd64.buildinfo
+ e29a9e3d58dd558b62832ec2d96121a2d1ab1a4ee7b7a616aa47846faf456f8c 47364 io.elementary.portals_1.1.0_amd64.deb
+Files:
+ 9bb1cbbbda9723371554b0dee16df058 167824 debug optional io.elementary.portals-dbgsym_1.1.0_amd64.deb
+ 9bc53e539a75f7b0550ca0ca6dafb4a1 19380 x11 optional io.elementary.portals_1.1.0_amd64.buildinfo
+ 05701c24a8f7f2851c5c23fb1233da1a 47364 x11 optional io.elementary.portals_1.1.0_amd64.deb

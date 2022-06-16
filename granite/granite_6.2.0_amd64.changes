@@ -1,0 +1,59 @@
+Format: 1.8
+Date: Tue, 23 Nov 2021 21:37:50 +0000
+Source: granite
+Binary: gir1.2-granite-1.0 granite-demo granite-demo-dbgsym libgranite-common libgranite-dev libgranite6 libgranite6-dbgsym
+Architecture: source amd64 all
+Version: 6.2.0
+Distribution: bionic
+Urgency: medium
+Maintainer: Cody Garver <cody@elementary.io>
+Changed-By: Cody Garver <cody@elementary.io>
+Description:
+ gir1.2-granite-1.0 - extension of GTK+ libraries (introspection files)
+ granite-demo - extension of GTK+ libraries (demo binary)
+ libgranite-common - extension of GTK+ libraries (common files)
+ libgranite-dev - extension of GTK+ libraries (development files)
+ libgranite6 - extension of GTK+ libraries
+Changes:
+ granite (6.2.0) bionic; urgency=medium
+ .
+   * Release 6.2.0 (#540)
+   * Update translation files
+   * Update translation template
+   * HyperTextView (#507)
+   * Set a default color scheme if both portal and accounts service fail
+     (#535)
+   * 489: Add minimum character count check to ValidatedEntry (#531)
+Checksums-Sha1:
+ 6d983e95fe360352ae9327a68fafc9991e16ebf8 1057 granite_6.2.0.dsc
+ d6f8cf4442aa3e60de3c9c4591d41aae210cb87c 371232 granite_6.2.0.tar.xz
+ f14a308d1a82dfa29b443c79dd67a81eed68c979 25808 gir1.2-granite-1.0_6.2.0_amd64.deb
+ fa3ab7dbabd0c0d9cbbc21961aeee76534da9c5f 254456 granite-demo-dbgsym_6.2.0_amd64.deb
+ 0848b68ea0eda430ff0d6fa9305f0b1b6097e1b4 33760 granite-demo_6.2.0_amd64.deb
+ 314eec75e0128c74c3af56f4b588a6ee619bdd23 15412 granite_6.2.0_amd64.buildinfo
+ c509e3262eea791ad272562a8db23c6b1c09a3d8 73020 libgranite-common_6.2.0_all.deb
+ a19b1c85f51334a92fa000e37fd1b93f0a61f015 43564 libgranite-dev_6.2.0_amd64.deb
+ 4af8cf5a1d5839b0633f3b9307df6dbd099421a7 1082144 libgranite6-dbgsym_6.2.0_amd64.deb
+ 44db2e5b20a93dbbe16e2e3bfa3d05b7d28f1ed9 181888 libgranite6_6.2.0_amd64.deb
+Checksums-Sha256:
+ 80c2476a5397f46992ebc0162d89407ccacbfee55405b61599d570ac3f006224 1057 granite_6.2.0.dsc
+ 6234dba3b67f7124b186dad3befd0ca49dea0711f26d2b093629ed835df751ca 371232 granite_6.2.0.tar.xz
+ fa7b777131547d4acf74b0c8a9aeb8a2f6872a8111bd39252edd801faa1a5715 25808 gir1.2-granite-1.0_6.2.0_amd64.deb
+ 6648d2664d4e965141006fc583a52789b1bf17b220186a43858de1b66aa11374 254456 granite-demo-dbgsym_6.2.0_amd64.deb
+ 626e61188676c53d8a86fcb3d2873568186c62dbefcf658c43243f0df6d987ac 33760 granite-demo_6.2.0_amd64.deb
+ 58506dfb8a1674c2d17496bf74cee74f533dc431df64c7296179b8bb2156ca85 15412 granite_6.2.0_amd64.buildinfo
+ f873209c0bf8ca6ea49dc006c34f2b468d489a1bf5e17fe9212ed6454181858a 73020 libgranite-common_6.2.0_all.deb
+ 9cd32249d079e4178f87f759330a79ec1db2c37f2c87a3090b331bc11860ee69 43564 libgranite-dev_6.2.0_amd64.deb
+ 4c6f6be8b6fd06f0276ce81b304a4dff61c4d951b83ab8898d24364a2f2978fc 1082144 libgranite6-dbgsym_6.2.0_amd64.deb
+ 09dd0949a4752080d5ac9d2c76aee6386ed17466a050b3cb8e9d5d0c2414a59f 181888 libgranite6_6.2.0_amd64.deb
+Files:
+ 15e60166fe5fe775037cf7ef2bc7037f 1057 libs optional granite_6.2.0.dsc
+ dda100851af1d3ee88e85c524c4a23a2 371232 libs optional granite_6.2.0.tar.xz
+ 1df73f0d006197e601efdf1254b0659b 25808 introspection optional gir1.2-granite-1.0_6.2.0_amd64.deb
+ 5410d1fd0b51518a4107b6d060c4c0a0 254456 debug optional granite-demo-dbgsym_6.2.0_amd64.deb
+ a367c50184d8f2dddfa9a8e116598299 33760 misc optional granite-demo_6.2.0_amd64.deb
+ e5471ea169df11e7ae89ab6a9d335c78 15412 libs optional granite_6.2.0_amd64.buildinfo
+ c41e5a963f246eefbdd7a6d2a63bbb47 73020 misc optional libgranite-common_6.2.0_all.deb
+ cbd87ffc8a6702c8a841ff786945d721 43564 libdevel optional libgranite-dev_6.2.0_amd64.deb
+ bccf931e0e1660cc53d1747107308a14 1082144 debug optional libgranite6-dbgsym_6.2.0_amd64.deb
+ b9adaa6e1333e611cef310f4e1cbf07d 181888 libs optional libgranite6_6.2.0_amd64.deb

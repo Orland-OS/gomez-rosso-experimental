@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 18 May 2022 04:39:53 +0000
+Source: io.elementary.settings-daemon
+Binary: io.elementary.settings-daemon io.elementary.settings-daemon-dbgsym
+Architecture: amd64
+Version: 1.2.0
+Distribution: focal
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ io.elementary.settings-daemon - Keep session settings in sync
+Changes:
+ io.elementary.settings-daemon (1.2.0) focal; urgency=medium
+ .
+   * Release 1.2.0 (#53)
+Checksums-Sha1:
+ 09e93242962c260cf98514627d7e34f5e264b9d1 179928 io.elementary.settings-daemon-dbgsym_1.2.0_amd64.deb
+ 175f914de57561e570f1cf4bdb86ecf8438bce6d 14328 io.elementary.settings-daemon_1.2.0_amd64.buildinfo
+ b24d2f5539185fc208f2e6b2ff6bad8124c19727 43848 io.elementary.settings-daemon_1.2.0_amd64.deb
+Checksums-Sha256:
+ 45ecd821ecd21a63892f4e6bc0b6d5c327ce4d87ece03baa9c31cf9bbb6b40ed 179928 io.elementary.settings-daemon-dbgsym_1.2.0_amd64.deb
+ a5b3e9f36914627a869c96901654f85234863ee71edfa9b3549530b8f6a12ac3 14328 io.elementary.settings-daemon_1.2.0_amd64.buildinfo
+ 8cb3f69a753c470ba0c3af87abf3cd361874d9c5d05f2a2f2c74a9035ff404d1 43848 io.elementary.settings-daemon_1.2.0_amd64.deb
+Files:
+ 46730fbf18da294c3c47d7672418d6ff 179928 debug optional io.elementary.settings-daemon-dbgsym_1.2.0_amd64.deb
+ a9458be13f7dba5a9ebd33a209be330c 14328 x11 optional io.elementary.settings-daemon_1.2.0_amd64.buildinfo
+ 8886293dd1aa86708a5b398a6ac3f734 43848 x11 optional io.elementary.settings-daemon_1.2.0_amd64.deb

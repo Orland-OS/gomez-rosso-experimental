@@ -1,0 +1,43 @@
+Format: 1.8
+Date: Tue, 14 Jun 2022 17:48:32 +0000
+Source: switchboard
+Binary: libswitchboard-2.0-0 libswitchboard-2.0-0-dbgsym libswitchboard-2.0-dev switchboard switchboard-dbgsym
+Architecture: amd64
+Version: 6.0.2
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ libswitchboard-2.0-0 - Modular Settings Hub - shared libraries
+ libswitchboard-2.0-dev - Modular Settings Hub - development files
+ switchboard - Modular Settings Hub
+Changes:
+ switchboard (6.0.2) bionic; urgency=medium
+ .
+   * Release 6.0.2
+   * Update translation files
+   * Update translation template
+   * AppData: Reorganize (#235)
+   * Bundle app icon (#230)
+Checksums-Sha1:
+ e713d91145bc3b351d827fd4cf4ed54c69e23b01 25488 libswitchboard-2.0-0-dbgsym_6.0.2_amd64.deb
+ fff25344e9b0a985626eb0005d7ae5cc94e7d14f 11396 libswitchboard-2.0-0_6.0.2_amd64.deb
+ cde4695467d99b5e70d1e72fedb7be500ef97d97 6220 libswitchboard-2.0-dev_6.0.2_amd64.deb
+ 665b10818a586f1d455f18b362816709c00b649a 148888 switchboard-dbgsym_6.0.2_amd64.deb
+ a75ae6a80faaf7a9c9c269c59610bb3a5b5ab86c 20199 switchboard_6.0.2_amd64.buildinfo
+ 26d2722d24c629a7ff66c19dd77775d6781eaaba 72228 switchboard_6.0.2_amd64.deb
+Checksums-Sha256:
+ a5f3a5e92dd223cc9e2ac532c2fc2fb387f8647a5ea940fd6b687ca2d290cdae 25488 libswitchboard-2.0-0-dbgsym_6.0.2_amd64.deb
+ 0985923777f66927f22c69297346657afa0cd9879cb98aac238f8be20bc4aaec 11396 libswitchboard-2.0-0_6.0.2_amd64.deb
+ 4026528579f7466fd6f415ac21bbb64d5fb9ab8cc11b606714756dbe841f1a90 6220 libswitchboard-2.0-dev_6.0.2_amd64.deb
+ 8b7e1f7de35a4ccb7f41aa3f1f5fd6f46b004f1639f4dcdaa47fbfaa8073a3fb 148888 switchboard-dbgsym_6.0.2_amd64.deb
+ 4dd10c9a06f63d7a47f43ff8b362abdf1c0acd65798a9baf68d982db99441169 20199 switchboard_6.0.2_amd64.buildinfo
+ 5e99121f60c3a8e55c63546fd24e6be132dd87fc8e9171ad4fd4bdbb7b143683 72228 switchboard_6.0.2_amd64.deb
+Files:
+ f8ef691c89f72a2458518ee00a8acfd3 25488 debug optional libswitchboard-2.0-0-dbgsym_6.0.2_amd64.deb
+ 177f1eea8005e18a710f6dd68a3deb1b 11396 libs optional libswitchboard-2.0-0_6.0.2_amd64.deb
+ 1f68e136e121bee2310a31e3ede9d33a 6220 libdevel optional libswitchboard-2.0-dev_6.0.2_amd64.deb
+ 66bb5da6bf5fb368d85afe44ac2e9033 148888 debug optional switchboard-dbgsym_6.0.2_amd64.deb
+ a2d08a7d482a02c83d5a35be3a3ad602 20199 admin optional switchboard_6.0.2_amd64.buildinfo
+ f6c4cffe4559e549d357da436ece457e 72228 admin optional switchboard_6.0.2_amd64.deb

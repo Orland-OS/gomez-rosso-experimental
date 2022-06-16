@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Sat, 11 Dec 2021 05:36:12 +0000
+Source: slingshot-launcher
+Binary: slingshot-launcher slingshot-launcher-dbgsym
+Architecture: amd64
+Version: 2.10.2
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ slingshot-launcher - Lightweight and stylish app launcher
+Changes:
+ slingshot-launcher (2.10.2) bionic; urgency=medium
+ .
+   * Release 2.10.2 (#526)
+   * Update translation files
+   * Update translation template
+   * switchboard-plugin: match full path in search (#523)
+   * Release 2.10.1 (#522)
+   * switchboard-plugin: Re-add a GLib.MainLoop (#521)
+   * Release 2.10.0 (#515)
+   * Bookmarks Plugin: Get default file browser name (#517)
+   * Add Files bookmarks to search (#514)
+   * Avoid using a MainLoop in Switchboard Plugin (#513)
+Checksums-Sha1:
+ 05e403b66c1a03539c2edc6ed531234ac5464d04 934804 slingshot-launcher-dbgsym_2.10.2_amd64.deb
+ c1a2c408a0a6518417f87cafc13871ecf10b051f 20484 slingshot-launcher_2.10.2_amd64.buildinfo
+ 9b2faa9f5c03dd389bc2ee663bc002fc388c02d9 243652 slingshot-launcher_2.10.2_amd64.deb
+Checksums-Sha256:
+ c6745e17b777eb16ca6c7120e055c63d42d16b32c0cca0a5548d8faa473c0ef7 934804 slingshot-launcher-dbgsym_2.10.2_amd64.deb
+ dc41af691e83bf3683047e8bfb4c3dda10d435ee4846c87e8b2d51c187d4a906 20484 slingshot-launcher_2.10.2_amd64.buildinfo
+ 35f58ac4a5102e72335b4cd292cbbbd6f133c87401cadb5a5e6243d888fd863a 243652 slingshot-launcher_2.10.2_amd64.deb
+Files:
+ f02a2ceed1a5110fb2d69937dad1ff6f 934804 debug optional slingshot-launcher-dbgsym_2.10.2_amd64.deb
+ 774262171b8df7ba47773a3424fc04d6 20484 x11 optional slingshot-launcher_2.10.2_amd64.buildinfo
+ f219e4993d25d825bbeb7862018d80d4 243652 x11 optional slingshot-launcher_2.10.2_amd64.deb

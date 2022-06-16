@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Mon, 23 May 2022 21:27:45 +0900
+Source: pantheon-tweaks
+Binary: pantheon-tweaks pantheon-tweaks-dbgsym
+Architecture: amd64
+Version: 1.0.4
+Distribution: focal
+Urgency: low
+Maintainer: Felipe Escoto. <felescoto95@hotmail.com>
+Changed-By: Ryo Nakano <ryonakaknock3@gmail.com>
+Description:
+ pantheon-tweaks - Change hidden desktop settings
+Changes:
+ pantheon-tweaks (1.0.4) focal; urgency=low
+ .
+   * Remove AnimationsPane which no longer take effect due to the removal of tweaking animations functions on Gala side
+   * DestinationButton: Show an error dialog when creating/opening the destination folder being failed
+   * Update translations
+Checksums-Sha1:
+ 9cecf061e3d982caa94e57a63ab6325c463affd9 179368 pantheon-tweaks-dbgsym_1.0.4_amd64.deb
+ f62a06c78819a74e3a1d5886c0fa55765936eedd 13886 pantheon-tweaks_1.0.4_amd64.buildinfo
+ 5b05af22b38306ce8c0e6d3ab6e041cd7291dffc 62720 pantheon-tweaks_1.0.4_amd64.deb
+Checksums-Sha256:
+ 28420d656943820de5601e6dabe381a7fe16e20211d26f30ee2cf255c27caddf 179368 pantheon-tweaks-dbgsym_1.0.4_amd64.deb
+ ddd5bebc6ee9aeecf53c32cc683d60bb43c908859e597bc8dcb7f0467e497c2a 13886 pantheon-tweaks_1.0.4_amd64.buildinfo
+ 36693a73358fcc4df50982940f5536bd242dc9461ca1e8a62b106ff2db6efa74 62720 pantheon-tweaks_1.0.4_amd64.deb
+Files:
+ a38be68eadcd16ae555ecca73b433ff5 179368 debug optional pantheon-tweaks-dbgsym_1.0.4_amd64.deb
+ 755472e3c5b73b44a348232267a9f820 13886 x11 optional pantheon-tweaks_1.0.4_amd64.buildinfo
+ 04cd6173a0b59986bb3fcacfb66a9a4f 62720 x11 optional pantheon-tweaks_1.0.4_amd64.deb

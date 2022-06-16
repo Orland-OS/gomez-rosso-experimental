@@ -1,0 +1,50 @@
+Format: 1.8
+Date: Sat, 18 Dec 2021 19:33:45 +0000
+Source: io.elementary.wingpanel
+Binary: io.elementary.wingpanel io.elementary.wingpanel-dbgsym libwingpanel-3.0-dev libwingpanel-dev libwingpanel3 libwingpanel3-dbgsym wingpanel
+Architecture: amd64 all
+Version: 3.0.2
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ io.elementary.wingpanel - A super sexy space-saving top panel
+ libwingpanel-3.0-dev - transitional package
+ libwingpanel-dev - Library to build plugins for WingPanel (development files)
+ libwingpanel3 - A super sexy space-saving top panel
+ wingpanel  - transitional package
+Changes:
+ io.elementary.wingpanel (3.0.2) bionic; urgency=medium
+ .
+   * Release 3.0.2 (#430)
+   * Application: Only load dark style preference in session (#428)
+   * Update README.md (#425)
+   * AppData: Remove desktop app type (#421)
+Checksums-Sha1:
+ 0e5ef0f196643ca237737296db9740f5f145f01e 251928 io.elementary.wingpanel-dbgsym_3.0.2_amd64.deb
+ cdbe1e153630736c814553339a5f2e12c5b409d5 17160 io.elementary.wingpanel_3.0.2_amd64.buildinfo
+ 48a22fecd36a474d5fd619b4a3c382c0c1f9c685 68568 io.elementary.wingpanel_3.0.2_amd64.deb
+ 1564ccc2d9b2f1fcbc8cb23f184a4f4b1e9b36a2 3980 libwingpanel-3.0-dev_3.0.2_all.deb
+ dd4012aa985fd37b27d0fe610b8d41feb427838f 7232 libwingpanel-dev_3.0.2_amd64.deb
+ a8e9edb32d05b95849aed79adea0b82c23774e7d 89512 libwingpanel3-dbgsym_3.0.2_amd64.deb
+ fb0491b32dcf7b1051943c08155fdb5822214609 18884 libwingpanel3_3.0.2_amd64.deb
+ c2c1e819349f25b3951eb63faddf209c1d6bf473 3960 wingpanel_3.0.2_all.deb
+Checksums-Sha256:
+ 84399e5ee2d0d4009192c5f2c4f587cb8a9168ca3a576289f612cc734cf15a9e 251928 io.elementary.wingpanel-dbgsym_3.0.2_amd64.deb
+ 4a9861d441d639cfcc532f0a713ad7ec92a2a0e332885cddb3d89b135514e31f 17160 io.elementary.wingpanel_3.0.2_amd64.buildinfo
+ cab505c35fdc5500ecf1e08957f679027b965aef929ae6bfe602e67045d43407 68568 io.elementary.wingpanel_3.0.2_amd64.deb
+ 380e1ff1b825155d9c6d06fe63f31290e896f98ce691f76d0dafac8d253be738 3980 libwingpanel-3.0-dev_3.0.2_all.deb
+ 2a4c1b7fa955f283856363e02abac093dcda3aa7540aeed871410b7322217e10 7232 libwingpanel-dev_3.0.2_amd64.deb
+ 96a388436db93c4dafd64c548aae6dbb7678b54802e1e46e66578174a975224f 89512 libwingpanel3-dbgsym_3.0.2_amd64.deb
+ 492dc7198ad76ff691502365f225e7d3c7eaba8b98fabc81f1d47f4c8e290c89 18884 libwingpanel3_3.0.2_amd64.deb
+ 325f8ec77b8ef735893495794a08f768a7bfd4e42b771f25f9957c9b41d78578 3960 wingpanel_3.0.2_all.deb
+Files:
+ ebb5145b1cfe6fc97584a4a95b8b5b4d 251928 debug optional io.elementary.wingpanel-dbgsym_3.0.2_amd64.deb
+ 398606a332efaf6d1b11f26fbe262334 17160 x11 optional io.elementary.wingpanel_3.0.2_amd64.buildinfo
+ 0c202e0d04bcb2963db187f9f2104d62 68568 x11 optional io.elementary.wingpanel_3.0.2_amd64.deb
+ 9d8a28e28488c978dd42311571ca3271 3980 oldlibs optional libwingpanel-3.0-dev_3.0.2_all.deb
+ c0c8933bc2263d99c47174ac4c1e6b1e 7232 libdevel optional libwingpanel-dev_3.0.2_amd64.deb
+ 97eaf89b6e782273ef39cf9cb523abf2 89512 debug optional libwingpanel3-dbgsym_3.0.2_amd64.deb
+ b2a363402ee9b9cd135bb494f81e675e 18884 x11 optional libwingpanel3_3.0.2_amd64.deb
+ e2d1b70484df2a042cebb304427c40c7 3960 oldlibs optional wingpanel_3.0.2_all.deb
