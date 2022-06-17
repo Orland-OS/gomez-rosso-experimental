@@ -1909,7 +1909,7 @@ Maintainer: elementary, Inc. <builds@elementary.io>
 Installed-Size: 681
 Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.4), libwingpanel3
 Enhances: wingpanel
-Filename: ./wingpanel-indicator/wingpanel-indicator-a11y/wingpanel-indicator-a11y_1.0.0_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-a11y/wingpanel-indicator-a11y_1.0.0_amd64.deb
 Size: 27124
 MD5sum: 5233528403d7045d4bf4b745434e1da4
 SHA1: a4fc62c4ef1458cec08fde73280602e36eea1e66
@@ -1928,7 +1928,7 @@ Architecture: amd64
 Maintainer: elementary, Inc. <builds@elementary.io>
 Installed-Size: 70
 Depends: wingpanel-indicator-a11y (= 1.0.0)
-Filename: ./wingpanel-indicator/wingpanel-indicator-a11y/wingpanel-indicator-a11y-dbgsym_1.0.0_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-a11y/wingpanel-indicator-a11y-dbgsym_1.0.0_amd64.deb
 Size: 53036
 MD5sum: 76eea281d6b8ed3bd0b8c3af3f15659b
 SHA1: 805bdaee9fe681938ba21582cf0f60a28fd1e026
@@ -1945,7 +1945,7 @@ Maintainer: elementary LLC <builds@elementary.io>
 Installed-Size: 781
 Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.6), libwingpanel3
 Enhances: wingpanel
-Filename: ./wingpanel-indicator/wingpanel-indicator-bluetooth/wingpanel-indicator-bluetooth_2.1.8_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-bluetooth/wingpanel-indicator-bluetooth_2.1.8_amd64.deb
 Size: 54696
 MD5sum: 45a182e873b68d91e49c115599bf6a0a
 SHA1: 4142da3df49a59da4c35a01f61de6c89a0ccc67f
@@ -1966,7 +1966,7 @@ Installed-Size: 204
 Depends: wingpanel-indicator-bluetooth (= 2.1.8)
 Breaks: wingpanel-indicator-bluetooth-dbg (<< 2.0.3)
 Replaces: wingpanel-indicator-bluetooth-dbg (<< 2.0.3)
-Filename: ./wingpanel-indicator/wingpanel-indicator-bluetooth/wingpanel-indicator-bluetooth-dbgsym_2.1.8_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-bluetooth/wingpanel-indicator-bluetooth-dbgsym_2.1.8_amd64.deb
 Size: 157676
 MD5sum: 13d10e83010a5a34e6515594c7fff708
 SHA1: 54ebb46673330cffd2dcb3c29a778c01906c130b
@@ -1984,7 +1984,7 @@ Installed-Size: 817
 Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libecal-2.0-1 (>= 3.33.4), libedataserver-1.2-25 (>= 3.17), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.19.12), libhandy-1-0 (>= 0.80.0), libical3 (>= 3.0.0), libwingpanel3
 Recommends: elementary-default-settings (>= 5.2)
 Enhances: wingpanel
-Filename: ./wingpanel-indicator/wingpanel-indicator-datetime/wingpanel-indicator-datetime_2.4.0_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-datetime/wingpanel-indicator-datetime_2.4.0_amd64.deb
 Size: 68056
 MD5sum: a372faebc66bdaf6b9417c9dab7f27d0
 SHA1: e77208840be493f6ed41ae53ac74adb645040ecc
@@ -2005,7 +2005,7 @@ Installed-Size: 345
 Depends: wingpanel-indicator-datetime (= 2.4.0)
 Breaks: wingpanel-indicator-datetime-dbg (<< 2.0.2)
 Replaces: wingpanel-indicator-datetime-dbg (<< 2.0.2)
-Filename: ./wingpanel-indicator/wingpanel-indicator-datetime/wingpanel-indicator-datetime-dbgsym_2.4.0_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-datetime/wingpanel-indicator-datetime-dbgsym_2.4.0_amd64.deb
 Size: 298828
 MD5sum: d38ee8acd15a30ea3b7a419c8798166b
 SHA1: a0cd4c9108912910d1d2ad3b570dcead8225b02c
@@ -2022,7 +2022,7 @@ Maintainer: elementary LLC <builds@elementary.io>
 Installed-Size: 699
 Depends: gkbd-capplet, xkb-data, dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.16.2), libibus-1.0-5 (>= 1.5.1), libwingpanel3, libxml2 (>= 2.7.4)
 Enhances: wingpanel
-Filename: ./wingpanel-indicator/wingpanel-indicator-keyboard/wingpanel-indicator-keyboard_2.4.0_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-keyboard/wingpanel-indicator-keyboard_2.4.0_amd64.deb
 Size: 33716
 MD5sum: 4a0a9b88bf53a8f1a27ab870e3812436
 SHA1: 173360f7ced8cba6543115749f2fd84919f7aebf
@@ -2043,7 +2043,7 @@ Installed-Size: 122
 Depends: wingpanel-indicator-keyboard (= 2.4.0)
 Breaks: wingpanel-indicator-keyboard-dbg (<< 2.0.2)
 Replaces: wingpanel-indicator-keyboard-dbg (<< 2.0.2)
-Filename: ./wingpanel-indicator/wingpanel-indicator-keyboard/wingpanel-indicator-keyboard-dbgsym_2.4.0_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-keyboard/wingpanel-indicator-keyboard-dbgsym_2.4.0_amd64.deb
 Size: 97072
 MD5sum: 62afd802b18f0aed3243326c93b264db
 SHA1: dc3d14a8a124b3cb8863f989c2bfdbac2918d00b
@@ -2060,7 +2060,7 @@ Maintainer: Cody Garver <cody@elementary.io>
 Installed-Size: 836
 Depends: libc6 (>= 2.28), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.6), libnm0 (>= 1.0.0), libnma0 (>= 1.1.90), libwingpanel3
 Enhances: wingpanel
-Filename: ./wingpanel-indicator/wingpanel-indicator-network/wingpanel-indicator-network_2.3.2_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-network/wingpanel-indicator-network_2.3.2_amd64.deb
 Size: 70612
 MD5sum: 012e695b6246be31073a2f10dfb1df91
 SHA1: 23e62a8f1386ffe504bb733e9dfa5a9bda0a0e25
@@ -2081,7 +2081,7 @@ Installed-Size: 290
 Depends: wingpanel-indicator-network (= 2.3.2)
 Breaks: wingpanel-indicator-network-dbg (<< 2.1.1)
 Replaces: wingpanel-indicator-network-dbg (<< 2.1.1)
-Filename: ./wingpanel-indicator/wingpanel-indicator-network/wingpanel-indicator-network-dbgsym_2.3.2_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-network/wingpanel-indicator-network-dbgsym_2.3.2_amd64.deb
 Size: 248576
 MD5sum: 32027988bbfdef3b6aad4c73c5ef57ab
 SHA1: 8d00f0af5f454baad2f497aa46f5bc7c0ad73c16
@@ -2098,7 +2098,7 @@ Maintainer: elementary, Inc. <builds@elementary.io>
 Installed-Size: 731
 Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.16.2), libwingpanel3
 Enhances: wingpanel
-Filename: ./wingpanel-indicator/wingpanel-indicator-nightlight/wingpanel-indicator-nightlight_2.1.0_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-nightlight/wingpanel-indicator-nightlight_2.1.0_amd64.deb
 Size: 53372
 MD5sum: 110bf312e957198afcb2886b420d10aa
 SHA1: 3e88513934d8021a17e205f9e3715b2418f7857b
@@ -2119,7 +2119,7 @@ Installed-Size: 81
 Depends: wingpanel-indicator-nightlight (= 2.1.0)
 Breaks: wingpanel-indicator-nightlight-dbg (<< 2.0.2)
 Replaces: wingpanel-indicator-nightlight-dbg (<< 2.0.2)
-Filename: ./wingpanel-indicator/wingpanel-indicator-nightlight/wingpanel-indicator-nightlight-dbgsym_2.1.0_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-nightlight/wingpanel-indicator-nightlight-dbgsym_2.1.0_amd64.deb
 Size: 58588
 MD5sum: 4b7d9b0a649baa76bac1589cc4ca80e7
 SHA1: c4481f85edb78f97e8db387d17843fb059a4916c
@@ -2136,7 +2136,7 @@ Maintainer: elementary, Inc. <builds@elementary.io>
 Installed-Size: 787
 Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.6), libhandy-1-0 (>= 0.90.0), libwingpanel3
 Enhances: wingpanel
-Filename: ./wingpanel-indicator/wingpanel-indicator-notifications/wingpanel-indicator-notifications_6.0.4_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-notifications/wingpanel-indicator-notifications_6.0.4_amd64.deb
 Size: 79848
 MD5sum: 92065b479baa499c36c42d831868a2fa
 SHA1: b548fb3ac6efefe3df797a22ed0611956d171237
@@ -2157,7 +2157,7 @@ Installed-Size: 223
 Depends: wingpanel-indicator-notifications (= 6.0.4)
 Breaks: wingpanel-indicator-notifications-dbg (<< 2.0.3)
 Replaces: wingpanel-indicator-notifications-dbg (<< 2.0.3)
-Filename: ./wingpanel-indicator/wingpanel-indicator-notifications/wingpanel-indicator-notifications-dbgsym_6.0.4_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-notifications/wingpanel-indicator-notifications-dbgsym_6.0.4_amd64.deb
 Size: 185732
 MD5sum: 9e3873c65b92f8ce8e97b4aa9beb3754
 SHA1: a184484a7fe8583083dfc5be3eb82eb67cf1dee5
@@ -2175,7 +2175,7 @@ Installed-Size: 978
 Depends: dconf-gsettings-backend | gsettings-backend, libbamf3-2 (>= 0.2.112), libc6 (>= 2.14), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.5), libgtop-2.0-11 (>= 2.22.3), libnotify4 (>= 0.7.0), libudev1 (>= 183), libwingpanel3
 Recommends: gnome-power-manager
 Enhances: wingpanel
-Filename: ./wingpanel-indicator/wingpanel-indicator-power/wingpanel-indicator-power_6.1.0_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-power/wingpanel-indicator-power_6.1.0_amd64.deb
 Size: 94744
 MD5sum: 709421176572cf29ea95cca0587b59fb
 SHA1: e5e27f682329d852b15230f1916c6f0fc6d73f6a
@@ -2196,7 +2196,7 @@ Installed-Size: 383
 Depends: wingpanel-indicator-power (= 6.1.0)
 Breaks: wingpanel-indicator-power-dbg (<< 2.1.1)
 Replaces: wingpanel-indicator-power-dbg (<< 2.1.1)
-Filename: ./wingpanel-indicator/wingpanel-indicator-power/wingpanel-indicator-power-dbgsym_6.1.0_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-power/wingpanel-indicator-power-dbgsym_6.1.0_amd64.deb
 Size: 310112
 MD5sum: c00a0552edbb725373b9ca5a6c1989e5
 SHA1: 03643456baad01cdb24e16cbb5bcd0facd6daf80
@@ -2213,7 +2213,7 @@ Maintainer: elementary, Inc. <builds@elementary.io>
 Installed-Size: 695
 Depends: libbamf3-2 (>= 0.2.112), libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.5), libgtk-3-0 (>= 3.16.2), libgtop-2.0-11 (>= 2.22.3), libwingpanel3
 Enhances: wingpanel
-Filename: ./wingpanel-indicator/wingpanel-indicator-privacy/wingpanel-indicator-privacy_0.9.0_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-privacy/wingpanel-indicator-privacy_0.9.0_amd64.deb
 Size: 36056
 MD5sum: 525ebfbf54191e968368b980ad500f1f
 SHA1: e4faf22c8d596ee0fead98affdd75cfd96fb4216
@@ -2232,7 +2232,7 @@ Architecture: amd64
 Maintainer: elementary, Inc. <builds@elementary.io>
 Installed-Size: 158
 Depends: wingpanel-indicator-privacy (= 0.9.0)
-Filename: ./wingpanel-indicator/wingpanel-indicator-privacy/wingpanel-indicator-privacy-dbgsym_0.9.0_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-privacy/wingpanel-indicator-privacy-dbgsym_0.9.0_amd64.deb
 Size: 126876
 MD5sum: 63c068c3d3ddfd30ab5089c86c860ddc
 SHA1: a63892c5e7471b064455bd1ae27f6731fdb7eb5e
@@ -2249,7 +2249,7 @@ Maintainer: elementary LLC <builds@elementary.io>
 Installed-Size: 800
 Depends: libaccountsservice0 (>= 0.6.8), libc6 (>= 2.4), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.21.6), libhandy-1-0 (>= 0.80.0), libwingpanel3
 Enhances: wingpanel
-Filename: ./wingpanel-indicator/wingpanel-indicator-session/wingpanel-indicator-session_2.3.0_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-session/wingpanel-indicator-session_2.3.0_amd64.deb
 Size: 61552
 MD5sum: 05f82d1aa5c27e215d8fba07c869133a
 SHA1: ffe61d0f3d30ebd994379e7a4efdf548555a519d
@@ -2270,7 +2270,7 @@ Installed-Size: 202
 Depends: wingpanel-indicator-session (= 2.3.0)
 Breaks: wingpanel-indicator-session-dbg (<< 2.0.3)
 Replaces: wingpanel-indicator-session-dbg (<< 2.0.3)
-Filename: ./wingpanel-indicator/wingpanel-indicator-session/wingpanel-indicator-session-dbgsym_2.3.0_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-session/wingpanel-indicator-session-dbgsym_2.3.0_amd64.deb
 Size: 159992
 MD5sum: 8877a919ae6ba1007040aff7dd06f39e
 SHA1: a89d53a360980e2b251859c73aa4892cab9a53a6
@@ -2287,7 +2287,7 @@ Maintainer: elementary LLC <builds@elementary.io>
 Installed-Size: 964
 Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libcairo2 (>= 1.2.4), libcanberra-gtk3-0 (>= 0.25), libcanberra0 (>= 0.2), libgdk-pixbuf-2.0-0 (>= 2.23.0), libgee-0.8-2 (>= 0.10.1), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.2.0), libgtk-3-0 (>= 3.21.6), libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.14.0), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libwingpanel3
 Enhances: wingpanel
-Filename: ./wingpanel-indicator/wingpanel-indicator-sound/wingpanel-indicator-sound_6.0.1_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-sound/wingpanel-indicator-sound_6.0.1_amd64.deb
 Size: 113632
 MD5sum: 6c2aed5d6cb33ab90cebe5257c129c61
 SHA1: 7f209f2eab756f9e9294df65cdbf653d87cfc026
@@ -2308,7 +2308,7 @@ Installed-Size: 510
 Depends: wingpanel-indicator-sound (= 6.0.1)
 Breaks: wingpanel-indicator-sound-dbg (<< 2.0.5)
 Replaces: wingpanel-indicator-sound-dbg (<< 2.0.5)
-Filename: ./wingpanel-indicator/wingpanel-indicator-sound/wingpanel-indicator-sound-dbgsym_6.0.1_amd64.deb
+Filename: ./wingpanel-indicators/wingpanel-indicator-sound/wingpanel-indicator-sound-dbgsym_6.0.1_amd64.deb
 Size: 425652
 MD5sum: aa53a1367fc3bf501662eac5903394ec
 SHA1: 7ba10da7ed626279e5289a538d90724b43a6e339
