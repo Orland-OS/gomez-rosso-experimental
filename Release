@@ -267,6 +267,77 @@ Description: the elementary GTK stylesheet
  The official elementary GTK stylesheet.
  Supports GTK versions 2 and 3.
 
+Package: io.elementary.switchboard.wacom
+Version: 1.0.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 755
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.53.2), libgranite6 (>= 0.3.1), libgtk-3-0 (>= 3.21.5), libgudev-1.0-0 (>= 146), libswitchboard-2.0-0 (>= 2.0~bzr468), libwacom2 (>= 1.1), libx11-6, libxi6 (>= 2:1.2.99.4)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-wacom/io.elementary.switchboard.wacom_1.0.0_amd64.deb
+Size: 49124
+MD5sum: e78d3e6d3558ff3dd0f3936876da93a3
+SHA1: 488a554ad3aaece6653b0624ff942ba274f217d2
+SHA256: f173c66995a1b6591d401f599d7894deedb6fe0923fd07bcf78370110b16917e
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-wacom
+Description: Wacom plug for Switchboard
+ This plug configures wacom devices.
+
+Package: io.elementary.switchboard.wacom-dbgsym
+Source: io.elementary.switchboard.wacom
+Version: 1.0.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 184
+Depends: io.elementary.switchboard.wacom (= 1.0.0)
+Filename: ./switchboard-plugs/switchboard-plug-wacom/io.elementary.switchboard.wacom-dbgsym_1.0.0_amd64.deb
+Size: 152344
+MD5sum: a02eb80e8f0ac833b599cf3cd9b6d541
+SHA1: c9b640d575be83e2bc19c5cc9f317210e1c5eb69
+SHA256: eca7cfe9411496a312d6016f2f60e7d04e8f28621812e1df6fc1a66d66448462
+Section: debug
+Priority: optional
+Description: debug symbols for io.elementary.switchboard.wacom
+Build-Ids: aea60ccb183e148f49cc12656839faf3573d09dc
+
+Package: io.elementary.switchboard.wallet
+Version: 0.9.0
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 969
+Depends: libc6 (>= 2.14), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.5), libgtk-3-0 (>= 3.16.2), libsecret-1-0 (>= 0.7), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-wallet/io.elementary.switchboard.wallet_0.9.0_amd64.deb
+Size: 47796
+MD5sum: a32f9dc0b94a828ddf093af98ffbdade
+SHA1: d2095c46e66f8902b40171e4ef2cf3ce6bbcf483
+SHA256: 5a81c9f299a48410e0d511b7c8b9b3ee3d6763703b07a88c84478baa5cbb69f8
+Section: x11
+Priority: optional
+Description: Wallet for Switchboard
+ Manage payment methods in elementary OS System Settings
+
+Package: io.elementary.switchboard.wallet-dbgsym
+Source: io.elementary.switchboard.wallet
+Version: 0.9.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 131
+Depends: io.elementary.switchboard.wallet (= 0.9.0)
+Filename: ./switchboard-plugs/switchboard-plug-wallet/io.elementary.switchboard.wallet-dbgsym_0.9.0_amd64.deb
+Size: 106068
+MD5sum: 2394df865e41f43163da603d25c1b3c8
+SHA1: 485d85d94acebc8148da16cd67405ae3add15b5e
+SHA256: 029b7bbfa893d0321b0ce1972da6be6d2ca3a3082f258dbcdb555006299c84c2
+Section: debug
+Priority: optional
+Description: debug symbols for io.elementary.switchboard.wallet
+Build-Ids: 8036d9e2602312cc180348c9af33c767ffcf3017
+
 Package: io.elementary.wingpanel
 Version: 3.0.2
 Architecture: amd64
@@ -792,6 +863,798 @@ Section: debug
 Priority: optional
 Description: debug symbols for switchboard
 Build-Ids: b39d9d5f25845220f608a9b9e23454891c3d70db
+
+Package: switchboard-plug-a11y
+Version: 2.3.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 768
+Depends: onboard, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 5.2.3), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-a11y/switchboard-plug-a11y_2.3.0_amd64.deb
+Size: 46492
+MD5sum: d1d0fb542947031d51ecfa7295c57c7b
+SHA1: 6f601096e0b3dab96685863a260c8864ff8da77d
+SHA256: 377bc5fb975140400e2a3af68639b0d45bf2460b78b57eadc01b0161c91c3deb
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-a11y
+Description: Accessibility plug for Switchboard
+ Enable more accessibility feature of the desktop
+
+Package: switchboard-plug-a11y-dbgsym
+Source: switchboard-plug-a11y
+Version: 2.3.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 127
+Depends: switchboard-plug-a11y (= 2.3.0)
+Breaks: switchboard-plug-a11y-dbg (<< 0.1.2)
+Replaces: switchboard-plug-a11y-dbg (<< 0.1.2)
+Filename: ./switchboard-plugs/switchboard-plug-a11y/switchboard-plug-a11y-dbgsym_2.3.0_amd64.deb
+Size: 101052
+MD5sum: f78f9c06cc430a23e3e0c1a5186c7c2c
+SHA1: da6639c7c06ffeb7364e50ced1056f8d9a117a76
+SHA256: 5e5c460826a61f4b9f4746a5be984303555f9f53d01f2e9e505ef47064be3681
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-a11y
+Build-Ids: b0c0ce62a7612df0f58d9fe8dc9447d1bd82a3d5
+
+Package: switchboard-plug-about
+Version: 6.1.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 925
+Depends: libappstream4 (>= 0.10.0), libc6 (>= 2.4), libfwupd2 (>= 1.3.3), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.63.1), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.16.2), libgtop-2.0-11 (>= 2.22.3), libhandy-1-0 (>= 0.85.0), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Recommends: io.elementary.feedback, fwupd, switcheroo-control
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-about/switchboard-plug-about_6.1.0_amd64.deb
+Size: 88696
+MD5sum: c32cebfe13772bb07b32b86b58debfcd
+SHA1: 0583835eb0db158558281e34134bc564de9c2e04
+SHA256: ad423ba6195fd4b226e27ac30aa8b341e8cf2957e8af30baa37b8fac6de79d13
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-about
+Description: About plug for Switchboard
+ This plug displays information about the system.
+
+Package: switchboard-plug-about-dbgsym
+Source: switchboard-plug-about
+Version: 6.1.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 271
+Depends: switchboard-plug-about (= 6.1.0)
+Breaks: switchboard-plug-about-dbg (<< 0.3.2)
+Replaces: switchboard-plug-about-dbg (<< 0.3.2)
+Filename: ./switchboard-plugs/switchboard-plug-about/switchboard-plug-about-dbgsym_6.1.0_amd64.deb
+Size: 228188
+MD5sum: 01b005fa6cc9a9f977d74be9647ac3fb
+SHA1: 8ae8ee4cfb72bf5660a42496f2b779ce00141534
+SHA256: 08055d6a5fe4e7fcf5e8808c78c143db1d6acc3ab2bca43b512f8d56ed595e8f
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-about
+Build-Ids: bd4f2658f4560a264242f6e88ef0f4450271aabf
+
+Package: switchboard-plug-applications
+Version: 6.0.1
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 912
+Depends: libc6 (>= 2.4), libflatpak0 (>= 1.1.3), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.49.3), libgranite6 (>= 0.3.1), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-applications/switchboard-plug-applications_6.0.1_amd64.deb
+Size: 90300
+MD5sum: 514f9fa6a7bf5b5cc2e370d52add703a
+SHA1: b3899548c542ab6a6b46ab13e89cd456d664a2e4
+SHA256: 28a3f6cc5c43617fe9e3a57f422127656a9f19d58be077cab9dc73e91cd2e023
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-applications
+Description: Default and Startup Applications plug for Switchboard
+ Manage default and startup apps
+
+Package: switchboard-plug-applications-dbgsym
+Source: switchboard-plug-applications
+Version: 6.0.1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 338
+Depends: switchboard-plug-applications (= 6.0.1)
+Breaks: switchboard-plug-applications-dbg (<< 0.2.4)
+Replaces: switchboard-plug-applications-dbg (<< 0.2.4)
+Filename: ./switchboard-plugs/switchboard-plug-applications/switchboard-plug-applications-dbgsym_6.0.1_amd64.deb
+Size: 295624
+MD5sum: bc705a550b99785e5d64689e66502be1
+SHA1: 100a5596a20c334440fbfdb5c85115cf53e6f7c6
+SHA256: 2bf511cbf4a7fbe6c6d8e80cdcd92f5af9dbd8c266255f5cff8271aad01ac30b
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-applications
+Build-Ids: cfd7372924556e9111beff613b0db68f5514bb07
+
+Package: switchboard-plug-bluetooth
+Version: 2.3.6
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 906
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-bluetooth/switchboard-plug-bluetooth_2.3.6_amd64.deb
+Size: 80552
+MD5sum: 97a1855091b3d826f7d22d75ea682562
+SHA1: 823ccffa7e3da9db1930491e1ccd867c8f874d2a
+SHA256: 24d8dae247b10279ab15aa36b30a09f0cd69154796886af2ece087a4997ebc2c
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-bluetooth
+Description: Bluetooth plug for Switchboard
+ This plug configures bluetooth devices.
+
+Package: switchboard-plug-bluetooth-dbgsym
+Source: switchboard-plug-bluetooth
+Version: 2.3.6
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 282
+Depends: switchboard-plug-bluetooth (= 2.3.6)
+Breaks: switchboard-plug-bluetooth-dbg (<< 0.3.2)
+Replaces: switchboard-plug-bluetooth-dbg (<< 0.3.2)
+Filename: ./switchboard-plugs/switchboard-plug-bluetooth/switchboard-plug-bluetooth-dbgsym_2.3.6_amd64.deb
+Size: 228788
+MD5sum: 82b9f9df339f585bb505e9d67b02114c
+SHA1: 9a4d28b002562d45ae9158af6ec1b2419d0b30ad
+SHA256: a4e052880ac1db8dd2b0859ab691503e4df26f2ac7742b6b073dbc30924eb72a
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-bluetooth
+Build-Ids: 10c64a056212d71f1470a73f131d223ad7ed886d
+
+Package: switchboard-plug-datetime
+Version: 2.2.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 2697
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.2.0), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Recommends: elementary-default-settings (>= 5.2)
+Enhances: switchboard
+Conflicts: switchboard-plug-gcc-date
+Replaces: switchboard-plug-gcc-date
+Filename: ./switchboard-plugs/switchboard-plug-datetime/switchboard-plug-datetime_2.2.0_amd64.deb
+Size: 277572
+MD5sum: 88a77be9d05745f354071c296f7f9bb4
+SHA1: 4025995dfdf1448002a9b7d6eef59a0d0a7c5ba5
+SHA256: db53697f02d096ac3fe85cf74ca968c6a7e54588ca49605e24ea6be269d49e0b
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-datetime
+Description: Date & Time plug for Switchboard
+ This plug configures system time and date.
+
+Package: switchboard-plug-datetime-dbgsym
+Source: switchboard-plug-datetime
+Version: 2.2.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 147
+Depends: switchboard-plug-datetime (= 2.2.0)
+Breaks: switchboard-plug-datetime-dbg (<< 0.1.2)
+Replaces: switchboard-plug-datetime-dbg (<< 0.1.2)
+Filename: ./switchboard-plugs/switchboard-plug-datetime/switchboard-plug-datetime-dbgsym_2.2.0_amd64.deb
+Size: 116656
+MD5sum: 5a93c018e3c01e225a3fa9a65c5e93f8
+SHA1: 32486da8472e07d56ac76ad19bb6f5367683e795
+SHA256: ef149af8b96b7e7e0de1cbaca75459832d8a429ae595b8e8d1ef99f0580d00e3
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-datetime
+Build-Ids: c2a100b6644c049cbffee4c8cfbf34e17ee1c2b1
+
+Package: switchboard-plug-display
+Version: 2.3.2
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 944
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.2.0), libgtk-3-0 (>= 3.17.9), libhandy-1-0 (>= 0.80.0), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-display/switchboard-plug-display_2.3.2_amd64.deb
+Size: 102556
+MD5sum: 0599c42a327dfe72465ae57369f86059
+SHA1: 679ee713c30b5c2cfe4fbf06cbb88fc56c1b5b5f
+SHA256: 8a41acedec6b694ae28d28f49a7da3ea6c49b2a5d40bdd639dfadfc1786e2c92
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-display
+Description: Switchboard plug for display settings
+ This plug can be used to change display settings like orientation and
+ resolution.
+
+Package: switchboard-plug-display-dbgsym
+Source: switchboard-plug-display
+Version: 2.3.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 413
+Depends: switchboard-plug-display (= 2.3.2)
+Breaks: switchboard-plug-display-dbg (<< 0.1.3)
+Replaces: switchboard-plug-display-dbg (<< 0.1.3)
+Filename: ./switchboard-plugs/switchboard-plug-display/switchboard-plug-display-dbgsym_2.3.2_amd64.deb
+Size: 356392
+MD5sum: 944000b9485a021d73015339b7885f44
+SHA1: 2d22b9d5eaa2000429cd028fdcd763929190b3c4
+SHA256: 5374719ded6d59fb62ff5c7429f5ebcb1fe7c8c168929ce21558c04ae983a2a0
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-display
+Build-Ids: 9e24df755237c9971f950bd573248d473820b4f7
+
+Package: switchboard-plug-keyboard
+Version: 3.0.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 1352
+Depends: gala, ibus, xkb-data, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.45.7), libgnomekbd8 (>= 3.6.0), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.5), libhandy-1-0 (>= 0.90.0), libibus-1.0-5 (>= 1.5.2), libpangocairo-1.0-0 (>= 1.14.0), libswitchboard-2.0-0 (>= 2.0~bzr468), libxml2 (>= 2.7.4)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-keyboard/switchboard-plug-keyboard_3.0.0_amd64.deb
+Size: 181632
+MD5sum: 0b4a1e5f69504f91fe430e8886e692f7
+SHA1: 7ae1eecf3051e20fae18eac570472d411a53089d
+SHA256: 70158a228e3d5931db8bac6ba6f2f6203a185db26ef52e86c05161e5c0611232
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-keyboard
+Description: Switchboard plug for keyboard settings
+ This plug can be used to change several keyboard settings, for example the
+ delay and speed of the key repetition, or the cursor blinking speed. You can
+ change your keyboard layout, and use multiple layouts at the same time.
+ Keyboard shortcuts are also part of this plug.
+
+Package: switchboard-plug-keyboard-dbgsym
+Source: switchboard-plug-keyboard
+Version: 3.0.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 657
+Depends: switchboard-plug-keyboard (= 3.0.0)
+Breaks: switchboard-plug-keyboard-dbg (<< 0.3.2)
+Replaces: switchboard-plug-keyboard-dbg (<< 0.3.2)
+Filename: ./switchboard-plugs/switchboard-plug-keyboard/switchboard-plug-keyboard-dbgsym_3.0.0_amd64.deb
+Size: 566832
+MD5sum: ebd14c5b179d347b42252d5d5158ac9f
+SHA1: 459afcf388b9163292d84ec68e2288f2a959f2d2
+SHA256: 65ae0f9201c5f34db4724266600331206f593736a3df16c98c01f24147058208
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-keyboard
+Build-Ids: 211e8f76aabb10cefc87d8a6e07e12f5a2e551ec
+
+Package: switchboard-plug-locale
+Version: 2.5.8
+Architecture: amd64
+Maintainer: elementary LLC <builds@elementary.io>
+Installed-Size: 890
+Depends: aptdaemon, dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libgee-0.8-2 (>= 0.10.1), libglib2.0-0 (>= 2.43.92), libgnome-desktop-3-19 (>= 3.17.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.22.29), libpolkit-gobject-1-0 (>= 0.99), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-locale/switchboard-plug-locale_2.5.8_amd64.deb
+Size: 83524
+MD5sum: 0244442115778f0234660f6c1fc1f9a4
+SHA1: b57fc331876324cbb8895aa7a70445063f62b12b
+SHA256: 2dba3bf5fcbd1dae3559fd373cf1e661f2f8e0d40dce89087b42bfb771722dba
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-locale
+Description: Region & Language plug for Switchboard
+ Change your region and language settings
+
+Package: switchboard-plug-locale-dbgsym
+Source: switchboard-plug-locale
+Version: 2.5.8
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary LLC <builds@elementary.io>
+Installed-Size: 333
+Depends: switchboard-plug-locale (= 2.5.8)
+Breaks: switchboard-plug-locale-dbg (<< 0.2.3)
+Replaces: switchboard-plug-locale-dbg (<< 0.2.3)
+Filename: ./switchboard-plugs/switchboard-plug-locale/switchboard-plug-locale-dbgsym_2.5.8_amd64.deb
+Size: 279744
+MD5sum: a2ece09fd789d3b34541db794fa8767d
+SHA1: 61bb465350e6dca6303341942a1c1ab9eb03df33
+SHA256: 6db6d1221e6ed8838cda359fcd570ecc2b21c3793f79bfb0afa5c41c502ec059
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-locale
+Build-Ids: 54133d0669e613ec54e7f454aa256b0bbe2f8c41
+
+Package: switchboard-plug-mouse-touchpad
+Version: 6.1.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 878
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.5), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468), libxml2 (>= 2.7.4)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-touchpad/switchboard-plug-mouse-touchpad_6.1.0_amd64.deb
+Size: 101620
+MD5sum: 4d1dbb8a3cdfe1adda0359bfd1ee8a70
+SHA1: 4a72fea2e659328d42a2ccfb5820eccefb8a6b52
+SHA256: 90d29dd6f4767cebc3466642f300fab6975822c6e7a47103f6c6a56f98c1013a
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-mouse-touchpad
+Description: Mouse/Touchpad plug for Switchboard
+ This plug configures mouse and touchpad.
+
+Package: switchboard-plug-mouse-touchpad-dbgsym
+Source: switchboard-plug-mouse-touchpad
+Version: 6.1.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 152
+Depends: switchboard-plug-mouse-touchpad (= 6.1.0)
+Filename: ./switchboard-plugs/switchboard-plug-touchpad/switchboard-plug-mouse-touchpad-dbgsym_6.1.0_amd64.deb
+Size: 127204
+MD5sum: 0efaa0da8e2916a2c2d70b2a2f45b70c
+SHA1: f6816b2d7737194d3ef32345e89b399507d4bada
+SHA256: 51e35b090aebd6484800d639b9a7c0c2b45bb8c8dc10456885d55d273a9f8028
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-mouse-touchpad
+Build-Ids: be7f8be68b23a495923181c9a2012512c36d1248
+
+Package: switchboard-plug-networking
+Version: 2.4.2
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 1208
+Depends: network-manager-gnome, libc6 (>= 2.28), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.16.2), libnm0 (>= 1.0.0), libnma0 (>= 1.1.90), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Recommends: network-manager-openvpn-gnome
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-networking/switchboard-plug-networking_2.4.2_amd64.deb
+Size: 144516
+MD5sum: effb659cdd5a1328892f0b2adcd84354
+SHA1: 70f774ef9ca02e9a09cd621d4eca060efebfe9c7
+SHA256: 65dd327b425bef82c8b21ecf152921fe7848c10de4ec9e0147a8e3aa2a30a790
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-networking
+Description: Manage network connections
+ Switchboard plug for managing networking.
+
+Package: switchboard-plug-networking-dbgsym
+Source: switchboard-plug-networking
+Version: 2.4.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 514
+Depends: switchboard-plug-networking (= 2.4.2)
+Breaks: switchboard-plug-networking-dbg (<< 0.1.1)
+Replaces: switchboard-plug-networking-dbg (<< 0.1.1)
+Filename: ./switchboard-plugs/switchboard-plug-networking/switchboard-plug-networking-dbgsym_2.4.2_amd64.deb
+Size: 449936
+MD5sum: 22d80a7d6e1397f6465b8d284d2034fa
+SHA1: a578f72b829366333fafff90f0f580fd9736c34f
+SHA256: 9bf781b3497143ddd8c2c3201b5f73c4d6c0cd491e3544dccf2a2125d40da068
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-networking
+Build-Ids: 69abe0b009f1297107eb32e806e33009a2195a5f
+
+Package: switchboard-plug-notifications
+Version: 2.2.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 789
+Depends: io.elementary.notifications, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.5), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-notifications/switchboard-plug-notifications_2.2.0_amd64.deb
+Size: 69904
+MD5sum: 2e7d1e49ca8f4545246c9032b174283f
+SHA1: 2619bb2985d8e3358bfc68032b9d1b15bfc11dcc
+SHA256: 54c23372934bcc81e57db4da4b39abdc5cf9fa56ca2ad389fe1c176866f9e944
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-notifications
+Description: Change notification settings
+ Switchboard plug for controlling Gala's notifications.
+
+Package: switchboard-plug-notifications-dbgsym
+Source: switchboard-plug-notifications
+Version: 2.2.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 133
+Depends: switchboard-plug-notifications (= 2.2.0)
+Breaks: switchboard-plug-notifications-dbg (<< 0.1.3)
+Replaces: switchboard-plug-notifications-dbg (<< 0.1.3)
+Filename: ./switchboard-plugs/switchboard-plug-notifications/switchboard-plug-notifications-dbgsym_2.2.0_amd64.deb
+Size: 106556
+MD5sum: 05cf9939d76a02032302518928d87573
+SHA1: bdc3f4504e669231759e53cfa86e3dcac11c516c
+SHA256: eb4611eb766599614e1df7e4da0ee124d7cecd81a5f59ec43115a3efb6b7856d
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-notifications
+Build-Ids: f35de8e1ef04399c4e358fb08d3728f38d7db79d
+
+Package: switchboard-plug-online-accounts
+Source: switchboard-plug-onlineaccounts
+Version: 6.5.0
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 940
+Depends: libc6 (>= 2.4), libcamel-1.2-62 (>= 3.25.90), libedataserver-1.2-25 (>= 3.29.90), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.63.3), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.5), libhandy-1-0 (>= 0.80.0), libsoup2.4-1 (>= 2.4.0), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-onlineaccounts/switchboard-plug-online-accounts_6.5.0_amd64.deb
+Size: 116572
+MD5sum: 9bdf108f6fc4c2fe655e3d72feaec29c
+SHA1: 848660d714c2eb33861ae1a3102b9f85a0c511a2
+SHA256: 88487a41864779580e6eddd0ff724f2fe01c06a80b6fdb177a30c8baf7ac7557
+Section: admin
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-onlineaccounts
+Description: Online Accounts plug for Switchboard
+ This plug allow you to enable online accounts sync.
+
+Package: switchboard-plug-online-accounts-dbgsym
+Source: switchboard-plug-onlineaccounts
+Version: 6.5.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 279
+Depends: switchboard-plug-online-accounts (= 6.5.0)
+Filename: ./switchboard-plugs/switchboard-plug-onlineaccounts/switchboard-plug-online-accounts-dbgsym_6.5.0_amd64.deb
+Size: 239752
+MD5sum: 35c463b5ae641f8fb2398253d8c648f8
+SHA1: 09e718d3d31dfa7602c4de83edd7e4336f3c1bb5
+SHA256: fb60c7d9b426bdef2bbf4e6a48c4f103ea084f82cb2d88a54c78d23a66d3ee40
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-online-accounts
+Build-Ids: 38456719e97ea5372ce9cb2c87de65ca86a2025e
+
+Package: switchboard-plug-pantheon-shell
+Version: 6.1.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 1025
+Depends: gala, libc6 (>= 2.29), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libgexiv2-2 (>= 0.6.1), libglib2.0-0 (>= 2.43.92), libgnome-desktop-3-19 (>= 3.17.92), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.22), libplank1 (>= 0.11.89), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Recommends: plank
+Enhances: switchboard
+Conflicts: switchboard-plug-wallpaper
+Replaces: switchboard-plug-wallpaper
+Filename: ./switchboard-plugs/switchboard-plug-pantheon-shell/switchboard-plug-pantheon-shell_6.1.0_amd64.deb
+Size: 122016
+MD5sum: 9ceddf73a9eaf943a82481412e188461
+SHA1: 30a8a910d314c18467b9f1372d519856bedde179
+SHA256: 948cd0f8eaebd823e262d03ae27a9bd8b9e085721d79cc6ffe3d15bc9547605e
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-pantheon-shell
+Description: Change desktop settings
+ Switchboard plug for controlling Pantheon Shell.
+
+Package: switchboard-plug-pantheon-shell-dbgsym
+Source: switchboard-plug-pantheon-shell
+Version: 6.1.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 353
+Depends: switchboard-plug-pantheon-shell (= 6.1.0)
+Breaks: switchboard-plug-pantheon-shell-dbg (<< 0.2.6)
+Replaces: switchboard-plug-pantheon-shell-dbg (<< 0.2.6)
+Filename: ./switchboard-plugs/switchboard-plug-pantheon-shell/switchboard-plug-pantheon-shell-dbgsym_6.1.0_amd64.deb
+Size: 292380
+MD5sum: b8a1e1de812a3c5b22fa7398eaff7ac3
+SHA1: 8c17fe1146677c2c50bf8ecd7fa90770de045abc
+SHA256: 4a1d3baac0c39a3c8dcb6170ff3e827b06f708eb6ac37964109d0114877bf4b3
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-pantheon-shell
+Build-Ids: ac18c0108b3e0b099a9761bd1ca6b2f522c35d69 b9ea579eee82fee35e1c5b78507e9f381b24b68c
+
+Package: switchboard-plug-parental-controls
+Version: 6.0.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 1219
+Depends: malcontent, libaccountsservice0 (>= 0.6.8), libc6 (>= 2.14), libflatpak0 (>= 0.5.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.5), libgtk-3-0 (>= 3.16.2), libhandy-1-0 (>= 0.90.0), libmalcontent-0-0 (>= 0.9.0), libpolkit-gobject-1-0 (>= 0.101), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-parental-controls/switchboard-plug-parental-controls_6.0.0_amd64.deb
+Size: 143904
+MD5sum: cd1af4ca3c0d90fc141160fae35e98aa
+SHA1: 3563fac48347b6055ac20e453e492a6e7e0c7c9d
+SHA256: 337cc9dfbb6215c14d164ac6add5a181855c972c3b8fa1e0344b698923b57515
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-parental-controls
+Description: Manage Screen Time & Limits
+ Switchboard plug for managing Screen Time & Limits.
+
+Package: switchboard-plug-parental-controls-dbgsym
+Source: switchboard-plug-parental-controls
+Version: 6.0.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 866
+Depends: switchboard-plug-parental-controls (= 6.0.0)
+Breaks: switchboard-plug-parental-controls-dbg (<< 0.1.3)
+Replaces: switchboard-plug-parental-controls-dbg (<< 0.1.3)
+Filename: ./switchboard-plugs/switchboard-plug-parental-controls/switchboard-plug-parental-controls-dbgsym_6.0.0_amd64.deb
+Size: 718548
+MD5sum: 28f9b1f0d104fa232c5594c958665ca7
+SHA1: b80d6de496b6d21db896143f50836311f3a37c26
+SHA256: b678b798f4bc1c2d346e9312c42226586a4ee428cdddb6b68f2228c8d52a7686
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-parental-controls
+Build-Ids: 6b1bba84a1d8db0921db0269e2abf30421090c13 8cc7460c5084eaa4436e40e766e01e7ba3b8f860 c651b216b1d2a5ec9365a8331c79ac95b41ab03c
+
+Package: switchboard-plug-power
+Version: 2.7.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 975
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgtk-3-0 (>= 3.22.29), libpolkit-gobject-1-0 (>= 0.101), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Recommends: power-profiles-daemon
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-power/switchboard-plug-power_2.7.0_amd64.deb
+Size: 96376
+MD5sum: 22d619ecd2278a92b45d96d7a0deae07
+SHA1: e708bbb2178190be9af7a1e41934341f15b09da2
+SHA256: a3563c92e018fe82c5266813d3235495935629f36553cd7fa97fc7ed90f9af53
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-power
+Description: Power plug for Switchboard
+ This plug configures system power consumption.
+
+Package: switchboard-plug-power-dbgsym
+Source: switchboard-plug-power
+Version: 2.7.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 327
+Depends: switchboard-plug-power (= 2.7.0)
+Breaks: switchboard-plug-power-dbg (<< 0.3.2)
+Replaces: switchboard-plug-power-dbg (<< 0.3.2)
+Filename: ./switchboard-plugs/switchboard-plug-power/switchboard-plug-power-dbgsym_2.7.0_amd64.deb
+Size: 253956
+MD5sum: e196b7b8481f00759752f7698ae860a8
+SHA1: af499f752849c0e398cbd95d73138afe86381a41
+SHA256: 611dfeac361c4f23ba3fae12a799e5e094dcc57477da48c8f03f76733406fb7e
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-power
+Build-Ids: e67e422ad6487d3fec10bed1888aa5064bbf0af8 f7d50bd1dc9f7086e86a2dd6acca3e7248860d14
+
+Package: switchboard-plug-printers
+Version: 2.1.10
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 1183
+Depends: libc6 (>= 2.4), libcups2 (>= 1.6.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468), cups-pk-helper
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-printers/switchboard-plug-printers_2.1.10_amd64.deb
+Size: 136096
+MD5sum: d6fcbf4319bb0cb21c329e0e4d2cc754
+SHA1: c95183e6226afbd1de4c0f76293026928880e71c
+SHA256: 93ceb5a513baabab4a9c98256c4322138ebcbd7969e0b0e11c15155387fbf4fe
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-printers
+Description: Printers plug for Switchboard
+ This plug configures all available printers.
+
+Package: switchboard-plug-printers-dbgsym
+Source: switchboard-plug-printers
+Version: 2.1.10
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 514
+Depends: switchboard-plug-printers (= 2.1.10)
+Breaks: switchboard-plug-printers-dbg (<< 0.1.2)
+Replaces: switchboard-plug-printers-dbg (<< 0.1.2)
+Filename: ./switchboard-plugs/switchboard-plug-printers/switchboard-plug-printers-dbgsym_2.1.10_amd64.deb
+Size: 446396
+MD5sum: 01691d224d87c76b686eb2ff5826f294
+SHA1: ed9eb8119c695b500648af946de35af30e5fcbb1
+SHA256: 954065638364d2f3337f662f3322bcd99946d7812458e106427cb7b543c390ff
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-printers
+Build-Ids: 7a78dd4ab045c07f5f2e5b52ddf2a730c9217e6f
+
+Package: switchboard-plug-security-privacy
+Version: 2.4.0
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 1107
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.63.1), libgranite6 (>= 0.5), libgtk-3-0 (>= 3.22.29), libpolkit-gobject-1-0 (>= 0.99), libswitchboard-2.0-0 (>= 2.3.0), libzeitgeist-2.0-0 (>= 0.9.9), gala, gnome-settings-daemon-common, io.elementary.settings-daemon, pantheon-agent-geoclue2, ufw, zeitgeist
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-security-privacy/switchboard-plug-security-privacy_2.4.0_amd64.deb
+Size: 129180
+MD5sum: cab5da257d6811564807345dd526a84d
+SHA1: e62b0edb1d90cce1a2dea46bbb992a16ba1cebad
+SHA256: 78aa583bdc2b4acaf5271a96fbd0f8666bf26385450cf820ff676af431d17286
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-security-privacy
+Description: Manage security and privacy
+ Switchboard plug for managing the security and privacy of your system.
+
+Package: switchboard-plug-security-privacy-dbgsym
+Source: switchboard-plug-security-privacy
+Version: 2.4.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 413
+Depends: switchboard-plug-security-privacy (= 2.4.0)
+Breaks: switchboard-plug-security-privacy-dbg (<< 0.1.2)
+Replaces: switchboard-plug-security-privacy-dbg (<< 0.1.2)
+Filename: ./switchboard-plugs/switchboard-plug-security-privacy/switchboard-plug-security-privacy-dbgsym_2.4.0_amd64.deb
+Size: 353848
+MD5sum: 08892e8ee99c3bfbeeab1c4fc0cc3b6a
+SHA1: a80891da87d83169d2654100f1493cc483d3e9e2
+SHA256: 89df6c7e40c0d7fbd2ad962427a06703216debc19f0e0286fa6dac30de36d392
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-security-privacy
+Build-Ids: 7dda75da9ce40e4835349d12d1832ec0d9d59edb
+
+Package: switchboard-plug-sharing
+Version: 2.1.5
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 805
+Depends: gnome-user-share (>= 3.14), rygel, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.45.6), libgranite6 (>= 0.3.1), libgtk-3-0 (>= 3.13.7), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Filename: ./switchboard-plugs/switchboard-plug-sharing/switchboard-plug-sharing_2.1.5_amd64.deb
+Size: 56868
+MD5sum: 208c9e70f17c8555d2e3cd7b96db242a
+SHA1: 83a597bb7896cf76a3bc908a013060bbc20b1e4f
+SHA256: 78a681b43a6c2cdeae00e9be94877ad8d52878c8124ba736a81bc364dea37ab2
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-sharing
+Description: Change media sharing settings
+ Switchboard plug for controlling media sharing.
+
+Package: switchboard-plug-sharing-dbgsym
+Source: switchboard-plug-sharing
+Version: 2.1.5
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 161
+Depends: switchboard-plug-sharing (= 2.1.5)
+Breaks: switchboard-plug-sharing-dbg (<< 0.1)
+Replaces: switchboard-plug-sharing-dbg (<< 0.1)
+Filename: ./switchboard-plugs/switchboard-plug-sharing/switchboard-plug-sharing-dbgsym_2.1.5_amd64.deb
+Size: 129148
+MD5sum: 2331b9bf1e1e3d67ed50edd4b5b3bb10
+SHA1: 65aae67acdef2f0bc4559c02198ecf718f090d16
+SHA256: 0efd0169368ad27391e2a28de59befc87a2fab3fff461f85ec337cd767f97de6
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-sharing
+Build-Ids: 161ea58354768ec958987d678c39bb08f41769ee
+
+Package: switchboard-plug-sound
+Version: 2.3.1
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 946
+Depends: libc6 (>= 2.4), libcanberra-gtk3-0 (>= 0.25), libcanberra0 (>= 0.2), libgee-0.8-2 (>= 0.10.1), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.4.0), libgtk-3-0 (>= 3.16.2), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Conflicts: switchboard-plug-gcc-sound
+Replaces: switchboard-plug-gcc-sound
+Filename: ./switchboard-plugs/switchboard-plug-sound/switchboard-plug-sound_2.3.1_amd64.deb
+Size: 161068
+MD5sum: f6919fafe3886076b79648f24e6d23e1
+SHA1: 52c65ac04c6fae01a00b899e813818780fee8c8d
+SHA256: 331492e40fdeee6adf0d30a05fb06fc9b7773204876eb3c0776e314d722c8a0b
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-sound
+Description: Sound plug for Switchboard
+ This plug allows the user to set the audio and microphone volume and several
+ sound-related settings.
+
+Package: switchboard-plug-sound-dbgsym
+Source: switchboard-plug-sound
+Version: 2.3.1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 242
+Depends: switchboard-plug-sound (= 2.3.1)
+Breaks: switchboard-plug-sound-dbg (<< 0.1)
+Replaces: switchboard-plug-sound-dbg (<< 0.1)
+Filename: ./switchboard-plugs/switchboard-plug-sound/switchboard-plug-sound-dbgsym_2.3.1_amd64.deb
+Size: 205648
+MD5sum: 82a440c701bb1896b0c7d400df89b523
+SHA1: f590456deba02cf3fc29965ebc9d20d4e8f1b752
+SHA256: 8bb68413fa55638e1223a6b2cb166c49d8f0e7db32adc8d665963c7bfc22221d
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-sound
+Build-Ids: b484802b11ef601edb68515c1ae4ba868f8ca5c0
+
+Package: switchboard-plug-useraccounts
+Version: 2.4.2
+Architecture: amd64
+Maintainer: elementary LLC. <builds@elementary.io>
+Installed-Size: 1047
+Depends: libaccountsservice0 (>= 0.6.13), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgnome-desktop-3-19 (>= 3.17.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.22.29), libhandy-1-0 (>= 0.90.0), libpolkit-gobject-1-0 (>= 0.99), libpwquality1 (>= 1.1.0), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Conflicts: switchboard-plug-gcc-users
+Replaces: switchboard-plug-gcc-users
+Filename: ./switchboard-plugs/switchboard-plug-useraccounts/switchboard-plug-useraccounts_2.4.2_amd64.deb
+Size: 113244
+MD5sum: 1af33e39b135f498a46b059c82644328
+SHA1: be1c4ef5816ea4a01441bb78aab6076aad2e43e4
+SHA256: 1c1773f78026c8b2c485642766599819467ac4d917557e39a342b82bd744c960
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-useraccounts
+Description: Manage local user accounts
+ Switchboard plug for managing local user accounts
+
+Package: switchboard-plug-useraccounts-dbgsym
+Source: switchboard-plug-useraccounts
+Version: 2.4.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary LLC. <builds@elementary.io>
+Installed-Size: 439
+Depends: switchboard-plug-useraccounts (= 2.4.2)
+Breaks: switchboard-plug-useraccounts-dbg (<< 0.1.6)
+Replaces: switchboard-plug-useraccounts-dbg (<< 0.1.6)
+Filename: ./switchboard-plugs/switchboard-plug-useraccounts/switchboard-plug-useraccounts-dbgsym_2.4.2_amd64.deb
+Size: 367480
+MD5sum: fca98ce3bfb3f8848b07347ea9d0d860
+SHA1: 1c3cd7bb7bac6c68a3969afc2fd990720fe8aef5
+SHA256: 98a3caf90144dbd77610cc63a006e24be9fb0ffa8f6950e05be0b7d6ff0775c4
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-useraccounts
+Build-Ids: 4a99a50fccfba13fc31f47310814867b1e027273 5d774e1eda48e03cfc76afc4f29fd6361bab7aa2
+
+Package: switchboard-plug-users
+Source: switchboard-plug-useraccounts
+Version: 2.4.2
+Architecture: amd64
+Maintainer: elementary LLC. <builds@elementary.io>
+Installed-Size: 10
+Depends: switchboard-plug-useraccounts
+Filename: ./switchboard-plugs/switchboard-plug-useraccounts/switchboard-plug-users_2.4.2_amd64.deb
+Size: 3672
+MD5sum: c0189cfe803c0bbf249fcbdc7c80c055
+SHA1: b8a509c891ba43f2fc7e8cca9d461dcfe329d6fd
+SHA256: b282a7d38d2ca5bdd2db4b390c11d361454635ed35c2321f4da0a5f7c0241b5e
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-useraccounts
+Description: Manage local user accounts (dummy package)
+ Switchboard plug for managing local user accounts. Dummy package, safe to remove.
 
 Package: wingpanel
 Source: io.elementary.wingpanel
