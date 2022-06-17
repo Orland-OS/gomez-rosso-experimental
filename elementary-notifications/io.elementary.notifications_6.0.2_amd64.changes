@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Thu, 09 Jun 2022 20:43:50 +0000
+Source: io.elementary.notifications
+Binary: io.elementary.notifications io.elementary.notifications-dbgsym
+Architecture: amd64
+Version: 6.0.2
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ io.elementary.notifications - a Gtk notification server for Pantheon
+Changes:
+ io.elementary.notifications (6.0.2) bionic; urgency=medium
+ .
+   * Release 6.0.2
+   * Update translation files
+   * Update translation template
+   * Notification: set icon from icon name (#176)
+   * AppData: Add stock icon (#175)
+   * Remove Unused HeaderBar (#174)
+   * Revert "Remove old issue templates (#136)" (#172)
+Checksums-Sha1:
+ f7d177fe555e1a8f06fcb72e09eac834eb271368 193056 io.elementary.notifications-dbgsym_6.0.2_amd64.deb
+ 97f227cf84b2eeca60a01b2ae25cf07fe78614e5 16445 io.elementary.notifications_6.0.2_amd64.buildinfo
+ a886dd9b287d6af591c113942c16832257d3d4b9 37232 io.elementary.notifications_6.0.2_amd64.deb
+Checksums-Sha256:
+ c5ba24665ac320014a09436c7d43833874adc251ba50a1472166aa59b0bf4de3 193056 io.elementary.notifications-dbgsym_6.0.2_amd64.deb
+ 10a40426f040596983a1f977cb27bd1d538caf065eab829f2161b09ce2fc664b 16445 io.elementary.notifications_6.0.2_amd64.buildinfo
+ 27549463e91570a3af9483e9509eb93f916c439e38e07d6e04ad95a7eb5415d8 37232 io.elementary.notifications_6.0.2_amd64.deb
+Files:
+ 6dc45bfa7b1e124c5c57bfcd603fe28d 193056 debug optional io.elementary.notifications-dbgsym_6.0.2_amd64.deb
+ dab5b5d99b477634b58ee08209a20bdc 16445 x11 extra io.elementary.notifications_6.0.2_amd64.buildinfo
+ 05810e12d59a51d88cdc0f420837884a 37232 x11 extra io.elementary.notifications_6.0.2_amd64.deb

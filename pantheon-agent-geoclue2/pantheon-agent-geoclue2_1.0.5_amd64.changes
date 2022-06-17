@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 15 Jul 2021 23:28:33 +0000
+Source: pantheon-agent-geoclue2
+Binary: pantheon-agent-geoclue2 pantheon-agent-geoclue2-dbgsym
+Architecture: amd64
+Version: 1.0.5
+Distribution: bionic
+Urgency: medium
+Maintainer: David Hewitt <davidmhewitt@gmail.com>
+Changed-By: David Hewitt <davidmhewitt@gmail.com>
+Description:
+ pantheon-agent-geoclue2 - GeoClue2 authorization designed for Pantheon
+Changes:
+ pantheon-agent-geoclue2 (1.0.5) bionic; urgency=medium
+ .
+   * Release 1.0.5 (#53)
+   * Update translation files
+   * Use Github CI (#43)
+   * LINGUAS: Sort and remove en
+Checksums-Sha1:
+ 64f2b83e847ff7d423837b3e8e10f2c6762ee12a 69840 pantheon-agent-geoclue2-dbgsym_1.0.5_amd64.deb
+ 9953c43e0e4b7aaf1c532fb7c35eb9dbcbdb5420 13595 pantheon-agent-geoclue2_1.0.5_amd64.buildinfo
+ 3f2bd872fdd606890798f783f2d33a6bcc245eb9 41808 pantheon-agent-geoclue2_1.0.5_amd64.deb
+Checksums-Sha256:
+ 7ec87be45641d273f019e49d2e3f8318b04f300ac74d6f3632cf97c6c0d99491 69840 pantheon-agent-geoclue2-dbgsym_1.0.5_amd64.deb
+ f5835dcfe12f5a422b414845253eda08198dd6ffe373e5b734c28214175464df 13595 pantheon-agent-geoclue2_1.0.5_amd64.buildinfo
+ 500f09950bc768e204808a99da81a484b8d385d0b9f1cc41e01d9406262f9c5a 41808 pantheon-agent-geoclue2_1.0.5_amd64.deb
+Files:
+ fd1355384336ed0901b60c7d088abfc2 69840 debug optional pantheon-agent-geoclue2-dbgsym_1.0.5_amd64.deb
+ 333e71313de7eba62c24b823865976b4 13595 admin optional pantheon-agent-geoclue2_1.0.5_amd64.buildinfo
+ 78e97d610c8c2a0ce711d7a3421012f8 41808 admin optional pantheon-agent-geoclue2_1.0.5_amd64.deb

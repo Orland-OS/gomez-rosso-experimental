@@ -1,3 +1,62 @@
+Package: aptdaemon
+Version: 1.1.1-4
+Architecture: all
+Maintainer: Julian Andres Klode <jak@debian.org>
+Installed-Size: 2198
+Depends: python3:any (>= 3.2~), python3, gir1.2-glib-2.0, python3-aptdaemon (= 1.1.1-4), python3-gi, policykit-1
+Recommends: lintian
+Breaks: software-center (<< 1.1.21)
+Filename: ./aptdaemon/aptdaemon_1.1.1-4_all.deb
+Size: 362532
+MD5sum: 0c453507c9f0c78f4a6b5a9cc178f01c
+SHA1: 0d4fbbd7c1253d0989a74451fa910bfa9b93d350
+SHA256: 076c1505b78bfcb1cdfe420292853f5975264e03cc5f0c2a9a6551037c4e7633
+Section: admin
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: transaction based package management service
+ Aptdaemon allows normal users to perform package management tasks, e.g.
+ refreshing the cache, upgrading the system, installing or removing software
+ packages.
+ .
+ Currently it comes with the following main features:
+ .
+  - Programming language independent D-Bus interface, which allows one to
+    write clients in several languages
+  - Runs only if required (D-Bus activation)
+  - Fine grained privilege management using PolicyKit, e.g. allowing all
+    desktop user to query for updates without entering a password
+  - Support for media changes during installation from DVD/CDROM
+  - Support for debconf (Debian's package configuration system)
+  - Support for attaching a terminal to the underlying dpkg call
+ .
+ This package contains the aptd script and all the data files required to run
+ the daemon. Moreover it contains the aptdcon script, which is a command
+ line client for aptdaemon. The API is not stable yet.
+
+Package: aptdaemon-data
+Source: aptdaemon
+Version: 1.1.1-4
+Architecture: all
+Maintainer: Julian Andres Klode <jak@debian.org>
+Installed-Size: 250
+Replaces: python-aptdaemon-gtk (<= 0.41+bzr580-0ubuntu1)
+Filename: ./aptdaemon/aptdaemon-data_1.1.1-4_all.deb
+Size: 250928
+MD5sum: 9b2333a124046341b9d676e924a99d3d
+SHA1: 1982810ac90a955b6d848d7dd29ff5c7906aa6b0
+SHA256: 577b4db72dd2e3cd514710a1cd2479c23668f028bf3b6f9433abdeff4bc8646a
+Section: admin
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: data files for clients
+ Aptdaemon is a transaction based package management daemon. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides common data files (e.g. icons) for aptdaemon
+ clients.
+
 Package: capnet-assist
 Version: 2.4.2
 Architecture: amd64
@@ -180,6 +239,39 @@ Section: debug
 Priority: optional
 Description: debug symbols for granite-demo
 Build-Ids: ab659e8fc5c10daa5937842787c5f38fe80ff7bc
+
+Package: io.elementary.notifications
+Version: 6.0.2
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 146
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libcairo2 (>= 1.2.4), libcanberra-gtk3-0 (>= 0.25), libcanberra0 (>= 0.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.41.2), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.16.2), libhandy-1-0 (>= 0.80.0)
+Filename: ./elementary-notifications/io.elementary.notifications_6.0.2_amd64.deb
+Size: 37232
+MD5sum: 05810e12d59a51d88cdc0f420837884a
+SHA1: a886dd9b287d6af591c113942c16832257d3d4b9
+SHA256: 27549463e91570a3af9483e9509eb93f916c439e38e07d6e04ad95a7eb5415d8
+Section: x11
+Priority: extra
+Description: a Gtk notification server for Pantheon
+
+Package: io.elementary.notifications-dbgsym
+Source: io.elementary.notifications
+Version: 6.0.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 238
+Depends: io.elementary.notifications (= 6.0.2)
+Filename: ./elementary-notifications/io.elementary.notifications-dbgsym_6.0.2_amd64.deb
+Size: 193056
+MD5sum: 6dc45bfa7b1e124c5c57bfcd603fe28d
+SHA1: f7d177fe555e1a8f06fcb72e09eac834eb271368
+SHA256: c5ba24665ac320014a09436c7d43833874adc251ba50a1472166aa59b0bf4de3
+Section: debug
+Priority: optional
+Description: debug symbols for io.elementary.notifications
+Build-Ids: 0121ace899cf6e82a4b982ea0d2c3ca73a15d45a b3596b8fc831b42c4f7a4b2c1b906cd07fe58d41
 
 Package: io.elementary.portals
 Version: 1.1.0
@@ -703,6 +795,41 @@ Multi-Arch: same
 Description: debug symbols for libwingpanel3
 Build-Ids: d5aa32e0d4e05ea094573698cc1633d1c1218576
 
+Package: pantheon-agent-geoclue2
+Version: 1.0.5
+Architecture: amd64
+Maintainer: David Hewitt <davidmhewitt@gmail.com>
+Installed-Size: 748
+Depends: geoclue-2.0, dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libglib2.0-0 (>= 2.43.92), libgtk-3-0 (>= 3.16.2)
+Filename: ./pantheon-agent-geoclue2/pantheon-agent-geoclue2_1.0.5_amd64.deb
+Size: 41808
+MD5sum: 78e97d610c8c2a0ce711d7a3421012f8
+SHA1: 3f2bd872fdd606890798f783f2d33a6bcc245eb9
+SHA256: 500f09950bc768e204808a99da81a484b8d385d0b9f1cc41e01d9406262f9c5a
+Section: admin
+Priority: optional
+Homepage: https://github.com/elementary/pantheon-agent-geoclue2
+Description: GeoClue2 authorization designed for Pantheon
+ An agent for GeoClue2 authorization designed for Pantheon desktop environment.
+
+Package: pantheon-agent-geoclue2-dbgsym
+Source: pantheon-agent-geoclue2
+Version: 1.0.5
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: David Hewitt <davidmhewitt@gmail.com>
+Installed-Size: 96
+Depends: pantheon-agent-geoclue2 (= 1.0.5)
+Filename: ./pantheon-agent-geoclue2/pantheon-agent-geoclue2-dbgsym_1.0.5_amd64.deb
+Size: 69840
+MD5sum: fd1355384336ed0901b60c7d088abfc2
+SHA1: 64f2b83e847ff7d423837b3e8e10f2c6762ee12a
+SHA256: 7ec87be45641d273f019e49d2e3f8318b04f300ac74d6f3632cf97c6c0d99491
+Section: debug
+Priority: optional
+Description: debug symbols for pantheon-agent-geoclue2
+Build-Ids: 02a4afd603bd556907c21a921618b6400d3d0250
+
 Package: pantheon-agent-polkit
 Version: 1.0.5
 Architecture: amd64
@@ -777,6 +904,107 @@ Section: debug
 Priority: optional
 Description: debug symbols for pantheon-tweaks
 Build-Ids: 24ead293c3956064611fb1e42d5fe6cb64f6c6f3
+
+Package: python3-aptdaemon
+Source: aptdaemon
+Version: 1.1.1-4
+Architecture: all
+Maintainer: Julian Andres Klode <jak@debian.org>
+Installed-Size: 463
+Depends: python3:any (>= 3.3.2-2~), gir1.2-glib-2.0, python3-apt (>= 0.8.5~ubuntu1), python3-defer (>= 1.0.6), python3-dbus, python3-gi, python3-pkg-resources, iso-codes
+Recommends: aptdaemon
+Filename: ./aptdaemon/python3-aptdaemon_1.1.1-4_all.deb
+Size: 137038
+MD5sum: 0aa1e368ef1e28aa83b024fade22dc50
+SHA1: 2a6e9c4164b6d755b1cc18baaf477e644eabd6ad
+SHA256: 71f8289c6e188b6fbd44b6acce741f1b1937e047aa938964591d0e7d5c3c83e1
+Section: python
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: Python 3 modules for the server and client of aptdaemon
+ Aptdaemon is a transaction based package management service. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides the Python 3 modules required to run aptdaemon
+ and to implement a client. The API is not stable yet.
+
+Package: python3-aptdaemon.gtk3widgets
+Source: aptdaemon
+Version: 1.1.1-4
+Architecture: all
+Maintainer: Julian Andres Klode <jak@debian.org>
+Installed-Size: 121
+Depends: python3:any (>= 3.3.2-2~), python3-aptdaemon (= 1.1.1-4), python3-gi, gir1.2-gtk-3.0, gir1.2-vte-2.90, aptdaemon-data
+Breaks: python-aptdaemon-gtk (<< 0.41+bzr582-0ubuntu1)
+Replaces: python-aptdaemon-gtk (<< 0.41+bzr582-0ubuntu1)
+Filename: ./aptdaemon/python3-aptdaemon.gtk3widgets_1.1.1-4_all.deb
+Size: 85912
+MD5sum: cf894d0e484a2d84d8cc6097c5559609
+SHA1: 1308e93afaee619faf4b6223486f82d483737a9f
+SHA256: 368b677f2cc768cff14e9dadc079084b7bd5823b52720bb446f0c4bba0f392bb
+Section: python
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: Python 3 GTK+ 3 widgets to run an aptdaemon client
+ Aptdaemon is a transaction based package management daemon. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides the Python 3 GTK+ 3 widgets to implement a fully
+ working graphical client. The widgets can be used to initiate, to
+ monitor and to control a transaction. The API is not stable yet.
+
+Package: python3-aptdaemon.pkcompat
+Source: aptdaemon
+Version: 1.1.1-4
+Architecture: all
+Maintainer: Julian Andres Klode <jak@debian.org>
+Installed-Size: 263
+Depends: python3:any (>= 3.3.2-2~), python3-aptdaemon (= 1.1.1-4), gir1.2-packagekitglib-1.0 (>= 0.8.9)
+Conflicts: libpackagekit-glib2-14, libpackagekit-qt2-2, packagekit, python-aptdaemon.pkcompat
+Replaces: python-aptdaemon.pkcompat
+Provides: packagekit-system-interface
+Filename: ./aptdaemon/python3-aptdaemon.pkcompat_1.1.1-4_all.deb
+Size: 104536
+MD5sum: 5da80ced06eca6ca84a4b60692e14521
+SHA1: 13b69eba1fe814a0b58e194210030ddca3a45d4e
+SHA256: 8735ec11c5a0ecd51c32064bdf4d0fda75c1435c3ce8be6c28bc7dfccfdf13ec
+Section: python
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: PackageKit compatibilty for AptDaemon
+ Aptdaemon is a transaction based package management daemon. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package adds a PackageKit DBus interface to AptDaemon.
+
+Package: python3-aptdaemon.test
+Source: aptdaemon
+Version: 1.1.1-4
+Architecture: all
+Maintainer: Julian Andres Klode <jak@debian.org>
+Installed-Size: 176
+Depends: python3:any (>= 3.3.2-2~), python3-aptdaemon (= 1.1.1-4)
+Breaks: python-aptdaemon.test
+Replaces: python-aptdaemon.test
+Filename: ./aptdaemon/python3-aptdaemon.test_1.1.1-4_all.deb
+Size: 157386
+MD5sum: b252af362e85f44fe9239440de4ca0c5
+SHA1: a45da668525876353dce5a51a9383712809e9ebc
+SHA256: b12208c57c1b66c70610092362f4f0810846e7af29090119a31b26305cf0c3df
+Section: python
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: Test environment for aptdaemon clients
+ Aptdaemon is a transaction based package management daemon. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides the aptdaemon.test module and several helper
+ scripts and a test repository to write unittests for aptdaemon
+ clients.
 
 Package: slingshot-launcher
 Version: 2.10.2
