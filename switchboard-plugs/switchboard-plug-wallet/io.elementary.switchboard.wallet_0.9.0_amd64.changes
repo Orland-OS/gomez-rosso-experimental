@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 30 Jan 2020 14:19:15 -0800
+Source: io.elementary.switchboard.wallet
+Binary: io.elementary.switchboard.wallet io.elementary.switchboard.wallet-dbgsym
+Architecture: amd64
+Version: 0.9.0
+Distribution: focal
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: Daniel Fore <daniel@elementary.io>
+Description:
+ io.elementary.switchboard.wallet - Wallet for Switchboard
+Changes:
+ io.elementary.switchboard.wallet (0.9.0) focal; urgency=medium
+ .
+   * Initial release.
+Checksums-Sha1:
+ 485d85d94acebc8148da16cd67405ae3add15b5e 106068 io.elementary.switchboard.wallet-dbgsym_0.9.0_amd64.deb
+ 50ed11db036c9525afa991ff5f66743f32e2ffae 13945 io.elementary.switchboard.wallet_0.9.0_amd64.buildinfo
+ d2095c46e66f8902b40171e4ef2cf3ce6bbcf483 47796 io.elementary.switchboard.wallet_0.9.0_amd64.deb
+Checksums-Sha256:
+ 029b7bbfa893d0321b0ce1972da6be6d2ca3a3082f258dbcdb555006299c84c2 106068 io.elementary.switchboard.wallet-dbgsym_0.9.0_amd64.deb
+ 5ced20fe0160d38641bbd3dd4dadfbb3e7221fc193a589848d27c62b575db5fe 13945 io.elementary.switchboard.wallet_0.9.0_amd64.buildinfo
+ 5a81c9f299a48410e0d511b7c8b9b3ee3d6763703b07a88c84478baa5cbb69f8 47796 io.elementary.switchboard.wallet_0.9.0_amd64.deb
+Files:
+ 2394df865e41f43163da603d25c1b3c8 106068 debug optional io.elementary.switchboard.wallet-dbgsym_0.9.0_amd64.deb
+ 0650ee940be43430c6e5267410224538 13945 x11 optional io.elementary.switchboard.wallet_0.9.0_amd64.buildinfo
+ a32f9dc0b94a828ddf093af98ffbdade 47796 x11 optional io.elementary.switchboard.wallet_0.9.0_amd64.deb
