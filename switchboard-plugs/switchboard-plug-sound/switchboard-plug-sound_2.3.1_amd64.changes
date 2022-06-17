@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Wed, 06 Apr 2022 22:53:17 +0000
+Source: switchboard-plug-sound
+Binary: switchboard-plug-sound switchboard-plug-sound-dbgsym
+Architecture: amd64
+Version: 2.3.1
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ switchboard-plug-sound - Sound plug for Switchboard
+Changes:
+ switchboard-plug-sound (2.3.1) bionic; urgency=medium
+ .
+   * Release 2.3.1 (#224)
+   * Update translation files
+   * Update translation template
+   * OutputPanel: Make screen reader description translatable (#220)
+   * InputPanel: update placeholder text
+   * PulseAudioManager: Provide a fallback icon in case none is available
+Checksums-Sha1:
+ f590456deba02cf3fc29965ebc9d20d4e8f1b752 205648 switchboard-plug-sound-dbgsym_2.3.1_amd64.deb
+ 994415397615e2fd8163c85108ece90d0d4187c7 14401 switchboard-plug-sound_2.3.1_amd64.buildinfo
+ 52c65ac04c6fae01a00b899e813818780fee8c8d 161068 switchboard-plug-sound_2.3.1_amd64.deb
+Checksums-Sha256:
+ 8bb68413fa55638e1223a6b2cb166c49d8f0e7db32adc8d665963c7bfc22221d 205648 switchboard-plug-sound-dbgsym_2.3.1_amd64.deb
+ 6854ef408af364207f062b95dfed8cd538d7ada1956f8bd5ffbd59ecbf05e82a 14401 switchboard-plug-sound_2.3.1_amd64.buildinfo
+ 331492e40fdeee6adf0d30a05fb06fc9b7773204876eb3c0776e314d722c8a0b 161068 switchboard-plug-sound_2.3.1_amd64.deb
+Files:
+ 82a440c701bb1896b0c7d400df89b523 205648 debug optional switchboard-plug-sound-dbgsym_2.3.1_amd64.deb
+ 7f0d067e45c2c65c216a4e5c742b60c6 14401 x11 optional switchboard-plug-sound_2.3.1_amd64.buildinfo
+ f6919fafe3886076b79648f24e6d23e1 161068 x11 optional switchboard-plug-sound_2.3.1_amd64.deb
