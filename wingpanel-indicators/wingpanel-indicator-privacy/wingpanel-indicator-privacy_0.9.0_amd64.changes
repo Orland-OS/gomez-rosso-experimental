@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 27 Jul 2021 21:33:29 +0900
+Source: wingpanel-indicator-privacy
+Binary: wingpanel-indicator-privacy wingpanel-indicator-privacy-dbgsym
+Architecture: amd64
+Version: 0.9.0
+Distribution: focal
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: Ryo Nakano <ryonakaknock3@gmail.com>
+Description:
+ wingpanel-indicator-privacy - WingPanel Privacy Indicator
+Changes:
+ wingpanel-indicator-privacy (0.9.0) focal; urgency=medium
+ .
+   * Initial release.
+Checksums-Sha1:
+ a63892c5e7471b064455bd1ae27f6731fdb7eb5e 126876 wingpanel-indicator-privacy-dbgsym_0.9.0_amd64.deb
+ aa50b5e4fee0e4d55847a0a87913229317813111 13964 wingpanel-indicator-privacy_0.9.0_amd64.buildinfo
+ e4faf22c8d596ee0fead98affdd75cfd96fb4216 36056 wingpanel-indicator-privacy_0.9.0_amd64.deb
+Checksums-Sha256:
+ 0979305ffc90c2fcb8ecc3148bfeaf684b829b9fe91a29be6180c51a73708bc0 126876 wingpanel-indicator-privacy-dbgsym_0.9.0_amd64.deb
+ 861dd4dffedd182c364e8ccac4407f767022c3e23d9b088bd40209e14f5f2ac2 13964 wingpanel-indicator-privacy_0.9.0_amd64.buildinfo
+ 41df316a928f6a67ff94a356d3ce49bd7ab0954ec36e40447395ac97cda6ee1f 36056 wingpanel-indicator-privacy_0.9.0_amd64.deb
+Files:
+ 63c068c3d3ddfd30ab5089c86c860ddc 126876 debug optional wingpanel-indicator-privacy-dbgsym_0.9.0_amd64.deb
+ 7347102b65cb46066c306842ae2a5671 13964 x11 optional wingpanel-indicator-privacy_0.9.0_amd64.buildinfo
+ 525ebfbf54191e968368b980ad500f1f 36056 x11 optional wingpanel-indicator-privacy_0.9.0_amd64.deb

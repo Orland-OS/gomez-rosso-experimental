@@ -1,0 +1,49 @@
+Format: 1.8
+Date: Tue, 13 Jul 2021 23:29:51 +0000
+Source: wingpanel-indicator-session
+Binary: wingpanel-indicator-session wingpanel-indicator-session-dbgsym
+Architecture: amd64
+Version: 2.3.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary LLC <builds@elementary.io>
+Changed-By: elementary LLC <builds@elementary.io>
+Description:
+ wingpanel-indicator-session - WingPanel Session Indicator
+Changes:
+ wingpanel-indicator-session (2.3.0) bionic; urgency=medium
+ .
+   * Release 2.3.0 (#160)
+   * Update translation files
+   * Update translation template
+   * Indicator: Use typographical quotes in tooltip (#159)
+   * Define log domain (#157)
+   * Use dngettext instead of ngettext (#154)
+   * Indicator tooltip (#151)
+   * Update names of libwingpanel (#152)
+   * Use async versions of Bus.get_proxy (#150)
+   * LINGUAS: sort, remove en_US
+   * EndSessionDialog: Subclass Hdy.Window (#149)
+   * Use GNOME interface for screen lock option (#144)
+   * UserBox: Use Hdy.Avatar (#138)
+   * Indicator: Remove deprecated display_name and description (#132)
+   * Use gnome-session interfaces to end session where possible (#126)
+   * UserManager: Iterate Hashmap values not MapEntries
+   * Indicator: Check mediakeys settings variant type (#129)
+   * UserManager: Fix build
+   * Fix accel labels for Focal (#121)
+   * Revert "Use Seat interface to lock session (#119)" (#120)
+   * Use Seat interface to lock session (#119)
+   * Reduce number of DisplayManger DBus proxies (#116)
+Checksums-Sha1:
+ a89d53a360980e2b251859c73aa4892cab9a53a6 159992 wingpanel-indicator-session-dbgsym_2.3.0_amd64.deb
+ bc0c32afa873618d56a4d615a829b428e5dad3fd 16602 wingpanel-indicator-session_2.3.0_amd64.buildinfo
+ ffe61d0f3d30ebd994379e7a4efdf548555a519d 61552 wingpanel-indicator-session_2.3.0_amd64.deb
+Checksums-Sha256:
+ 7793dd7d0144948ccefafd7395679dfb36e990b52530b753b85941369595c73d 159992 wingpanel-indicator-session-dbgsym_2.3.0_amd64.deb
+ 512b70e99217b925c8447ec9b962da1ed4c3d3b55c1b4496fe510e028f9e198f 16602 wingpanel-indicator-session_2.3.0_amd64.buildinfo
+ c506a43a957017474963904315de1f71bc793c4788b4dd8192a41d933319ca09 61552 wingpanel-indicator-session_2.3.0_amd64.deb
+Files:
+ 8877a919ae6ba1007040aff7dd06f39e 159992 debug optional wingpanel-indicator-session-dbgsym_2.3.0_amd64.deb
+ d00484ef1796f356c295bcfc906a4004 16602 x11 optional wingpanel-indicator-session_2.3.0_amd64.buildinfo
+ 05f82d1aa5c27e215d8fba07c869133a 61552 x11 optional wingpanel-indicator-session_2.3.0_amd64.deb

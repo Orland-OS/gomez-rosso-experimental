@@ -1,0 +1,39 @@
+Format: 1.8
+Date: Wed, 14 Jul 2021 20:11:29 +0000
+Source: wingpanel-indicator-nightlight
+Binary: wingpanel-indicator-nightlight wingpanel-indicator-nightlight-dbgsym
+Architecture: amd64
+Version: 2.1.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ wingpanel-indicator-nightlight - WingPanel Nightlight Indicator
+Changes:
+ wingpanel-indicator-nightlight (2.1.0) bionic; urgency=medium
+ .
+   * Release 2.1.0 (#88)
+   * Implement a rate limiter to the dbus calls (#30)
+   * Define log domain (#87)
+   * Use Granite.SwitchModelButton and Gtk.Separator (#83)
+   * Update for libwingpanel transition (#81)
+   * Update translation files
+   * Update translation template
+   * Bump dep to wingpanel-3 and use proper codename (#77)
+   * Use async version of Bus.get_proxy (#76)
+   * RevealerSwitch: Use Granite.STYLE_CLASS_SMALL_LABEL (#78)
+   * LINGUAS: Sort
+   * add tooltip to indicator (#75)
+Checksums-Sha1:
+ c4481f85edb78f97e8db387d17843fb059a4916c 58588 wingpanel-indicator-nightlight-dbgsym_2.1.0_amd64.deb
+ 76dd1fd26901b4a5236094b9733bc5cdd7f83d35 13967 wingpanel-indicator-nightlight_2.1.0_amd64.buildinfo
+ 3e88513934d8021a17e205f9e3715b2418f7857b 53372 wingpanel-indicator-nightlight_2.1.0_amd64.deb
+Checksums-Sha256:
+ 3a9b8feecca466ae20beeff3243912042fcdd77b225eadac15cac46982c4474e 58588 wingpanel-indicator-nightlight-dbgsym_2.1.0_amd64.deb
+ 71daa2ea73102403e68fbf3d0689b351e3b4f602ab7942ae4d67060be76261c9 13967 wingpanel-indicator-nightlight_2.1.0_amd64.buildinfo
+ 3824b8f6729074fdd24bbb3151b17ae84c09fd2818d254b157dfad05b843060b 53372 wingpanel-indicator-nightlight_2.1.0_amd64.deb
+Files:
+ 4b7d9b0a649baa76bac1589cc4ca80e7 58588 debug optional wingpanel-indicator-nightlight-dbgsym_2.1.0_amd64.deb
+ 00e7531e4c106508baede9f1e95d6406 13967 x11 optional wingpanel-indicator-nightlight_2.1.0_amd64.buildinfo
+ 110bf312e957198afcb2886b420d10aa 53372 x11 optional wingpanel-indicator-nightlight_2.1.0_amd64.deb

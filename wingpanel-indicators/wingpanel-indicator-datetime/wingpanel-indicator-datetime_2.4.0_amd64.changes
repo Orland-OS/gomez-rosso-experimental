@@ -1,0 +1,39 @@
+Format: 1.8
+Date: Sat, 11 Dec 2021 05:33:56 +0000
+Source: wingpanel-indicator-datetime
+Binary: wingpanel-indicator-datetime wingpanel-indicator-datetime-dbgsym
+Architecture: amd64
+Version: 2.4.0
+Distribution: bionic
+Urgency: medium
+Maintainer: Cody Garver <cody@elementary.io>
+Changed-By: Cody Garver <cody@elementary.io>
+Description:
+ wingpanel-indicator-datetime - WingPanel Date & Time Indicator
+Changes:
+ wingpanel-indicator-datetime (2.4.0) bionic; urgency=medium
+ .
+   * Release 2.4.0 (#288)
+   * meson: require granite >= 6.0.0 (#296)
+   * Update translation files
+   * Update translation template
+   * Indicator: open Calendar on middle-click (#294)
+   * Free libical cache before exiting the application (#287)
+   * Update POTFILES
+   * ComponentRow: Add "due by" for tasks (#291)
+   * Indicator: launch Tasks when clicking rows (#292)
+   * Display tasks in Wingpanel (#252)
+   * Reset position and relative position after rebuilding carousel
+     (#284)
+Checksums-Sha1:
+ a0cd4c9108912910d1d2ad3b570dcead8225b02c 298828 wingpanel-indicator-datetime-dbgsym_2.4.0_amd64.deb
+ ead5851fedc306c29efceeba9d7935e0f2a65193 17280 wingpanel-indicator-datetime_2.4.0_amd64.buildinfo
+ e77208840be493f6ed41ae53ac74adb645040ecc 68056 wingpanel-indicator-datetime_2.4.0_amd64.deb
+Checksums-Sha256:
+ 1a9e5b2b21367880866969c53c41df4b3247f0f7398695a61124e834042b1ecb 298828 wingpanel-indicator-datetime-dbgsym_2.4.0_amd64.deb
+ f247d8b019dce133e202fb770985656cd1e7bd9af2f6998c49a0fd66280e67ed 17280 wingpanel-indicator-datetime_2.4.0_amd64.buildinfo
+ 8aa457a08d663923c1b90e7cd60688ebb5142eb6a7420618eadfdfe750813625 68056 wingpanel-indicator-datetime_2.4.0_amd64.deb
+Files:
+ d38ee8acd15a30ea3b7a419c8798166b 298828 debug optional wingpanel-indicator-datetime-dbgsym_2.4.0_amd64.deb
+ 0a5a710091d7775f27cd4c5bef9a8175 17280 x11 optional wingpanel-indicator-datetime_2.4.0_amd64.buildinfo
+ a372faebc66bdaf6b9417c9dab7f27d0 68056 x11 optional wingpanel-indicator-datetime_2.4.0_amd64.deb

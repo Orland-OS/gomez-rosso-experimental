@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Tue, 23 Nov 2021 17:50:42 +0000
+Source: wingpanel-indicator-network
+Binary: wingpanel-indicator-network wingpanel-indicator-network-dbgsym
+Architecture: amd64
+Version: 2.3.2
+Distribution: bionic
+Urgency: medium
+Maintainer: Cody Garver <cody@elementary.io>
+Changed-By: Cody Garver <cody@elementary.io>
+Description:
+ wingpanel-indicator-network - WingPanel Network Indicator
+Changes:
+ wingpanel-indicator-network (2.3.2) bionic; urgency=medium
+ .
+   * Release 2.3.2 (#240)
+   * Update translation files
+   * Update translation template
+   * Fixed an issue with a blank line in the VPN list in the indicator
+     (#230)
+Checksums-Sha1:
+ 8d00f0af5f454baad2f497aa46f5bc7c0ad73c16 248576 wingpanel-indicator-network-dbgsym_2.3.2_amd64.deb
+ 2c55389720f9466c00128afca26f2f32abc38a65 14143 wingpanel-indicator-network_2.3.2_amd64.buildinfo
+ 23e62a8f1386ffe504bb733e9dfa5a9bda0a0e25 70612 wingpanel-indicator-network_2.3.2_amd64.deb
+Checksums-Sha256:
+ 7d77de32a4f900dadb0f1a32da7d24e7816b1e310994073061fb0399007c89ad 248576 wingpanel-indicator-network-dbgsym_2.3.2_amd64.deb
+ 88c0850d96141e5346db35f88e213b1fc06dec18e4e5322f59c4b5129daa83e7 14143 wingpanel-indicator-network_2.3.2_amd64.buildinfo
+ 494c8084ec22569b93037688df872bf4b53e319b1242c01a7335df4d961c621f 70612 wingpanel-indicator-network_2.3.2_amd64.deb
+Files:
+ 32027988bbfdef3b6aad4c73c5ef57ab 248576 debug optional wingpanel-indicator-network-dbgsym_2.3.2_amd64.deb
+ 33b4bc3b2f8fde21e1782089fa8f675c 14143 x11 optional wingpanel-indicator-network_2.3.2_amd64.buildinfo
+ 012e695b6246be31073a2f10dfb1df91 70612 x11 optional wingpanel-indicator-network_2.3.2_amd64.deb

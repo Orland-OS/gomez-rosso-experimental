@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Thu, 15 Jul 2021 22:42:56 +0000
+Source: wingpanel-indicator-keyboard
+Binary: wingpanel-indicator-keyboard wingpanel-indicator-keyboard-dbgsym
+Architecture: amd64
+Version: 2.4.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary LLC <builds@elementary.io>
+Changed-By: elementary LLC <builds@elementary.io>
+Description:
+ wingpanel-indicator-keyboard - WingPanel Keyboard Indicator
+Changes:
+ wingpanel-indicator-keyboard (2.4.0) bionic; urgency=medium
+ .
+   * Release 2.4.0 (#106)
+   * Define log domain (#102)
+   * Update translation files
+   * Update translation template
+   * Indicator: code style (#100)
+   * Layout tooltip (#88)
+   * Show ibus methods (#96)
+   * Update for libwingpanel transition (#98)
+   * LINGUAS: sort, remove en_US
+Checksums-Sha1:
+ dc3d14a8a124b3cb8863f989c2bfdbac2918d00b 97072 wingpanel-indicator-keyboard-dbgsym_2.4.0_amd64.deb
+ 0876e4b3653d55f257d3bf537c18fb9009f265e1 14041 wingpanel-indicator-keyboard_2.4.0_amd64.buildinfo
+ 173360f7ced8cba6543115749f2fd84919f7aebf 33716 wingpanel-indicator-keyboard_2.4.0_amd64.deb
+Checksums-Sha256:
+ c90eefa0472ef204f4d000431614655ae4a4caa8ee99dd67ef42355bf645127e 97072 wingpanel-indicator-keyboard-dbgsym_2.4.0_amd64.deb
+ 52b0b98511e0c44b707c30a19c765c924bfc1466be273c76db542df2165f50b4 14041 wingpanel-indicator-keyboard_2.4.0_amd64.buildinfo
+ 8391d24a21d4b40f7e5138d83e619b55c96ab5546523431212ff76a8dac3d1ee 33716 wingpanel-indicator-keyboard_2.4.0_amd64.deb
+Files:
+ 62afd802b18f0aed3243326c93b264db 97072 debug optional wingpanel-indicator-keyboard-dbgsym_2.4.0_amd64.deb
+ 25e283dc8bb18093f85b6f27a0cb2aa6 14041 x11 optional wingpanel-indicator-keyboard_2.4.0_amd64.buildinfo
+ 4a0a9b88bf53a8f1a27ab870e3812436 33716 x11 optional wingpanel-indicator-keyboard_2.4.0_amd64.deb

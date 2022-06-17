@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Thu, 18 Nov 2021 18:37:51 +0000
+Source: wingpanel-indicator-sound
+Binary: wingpanel-indicator-sound wingpanel-indicator-sound-dbgsym
+Architecture: amd64
+Version: 6.0.1
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary LLC <builds@elementary.io>
+Changed-By: elementary LLC <builds@elementary.io>
+Description:
+ wingpanel-indicator-sound - WingPanel Sound Indicator
+Changes:
+ wingpanel-indicator-sound (6.0.1) bionic; urgency=medium
+ .
+   * Release 6.0.1 (#227)
+   * Update translation files
+   * Update translation template
+   * DeviceItem: get icons from Pulse (#226)
+   * fix: remove anlog outputs-inputs (#215)
+   * MediaPlayer: Give type field valid name (#221)
+   * l10n: Correctly setup the locales (#216)
+   * Allow Horizontal scroll (#214)
+   * appdata: fix HTML syntax (li tag outside ul tag) (#212)
+Checksums-Sha1:
+ 7ba10da7ed626279e5289a538d90724b43a6e339 425652 wingpanel-indicator-sound-dbgsym_6.0.1_amd64.deb
+ deb36fc047092a6d84750083399733c0a5a04217 14973 wingpanel-indicator-sound_6.0.1_amd64.buildinfo
+ 7f209f2eab756f9e9294df65cdbf653d87cfc026 113632 wingpanel-indicator-sound_6.0.1_amd64.deb
+Checksums-Sha256:
+ 3a007ad3107058b5d2c9e7c7efa7b60b2d8f2f6969ed689b44c1216d30977396 425652 wingpanel-indicator-sound-dbgsym_6.0.1_amd64.deb
+ dd4e7fb35ae53b957786c3cc75a41aa62df1ca311915a7b11565360c0bac0c3e 14973 wingpanel-indicator-sound_6.0.1_amd64.buildinfo
+ c026069b7d9a7bb04664fc0167c12015ead38f110a976cd51adb83685376df37 113632 wingpanel-indicator-sound_6.0.1_amd64.deb
+Files:
+ aa53a1367fc3bf501662eac5903394ec 425652 debug optional wingpanel-indicator-sound-dbgsym_6.0.1_amd64.deb
+ cbe2b1e8f776bacdcfd9954bd402b624 14973 x11 optional wingpanel-indicator-sound_6.0.1_amd64.buildinfo
+ 6c2aed5d6cb33ab90cebe5257c129c61 113632 x11 optional wingpanel-indicator-sound_6.0.1_amd64.deb

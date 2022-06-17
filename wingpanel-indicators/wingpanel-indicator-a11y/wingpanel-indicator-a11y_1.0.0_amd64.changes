@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Fri, 16 Jul 2021 18:07:56 +0000
+Source: wingpanel-indicator-a11y
+Binary: wingpanel-indicator-a11y wingpanel-indicator-a11y-dbgsym
+Architecture: amd64
+Version: 1.0.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ wingpanel-indicator-a11y - WingPanel A11y Indicator
+Changes:
+ wingpanel-indicator-a11y (1.0.0) bionic; urgency=medium
+ .
+   * no changes since last release.
+Checksums-Sha1:
+ 805bdaee9fe681938ba21582cf0f60a28fd1e026 53036 wingpanel-indicator-a11y-dbgsym_1.0.0_amd64.deb
+ 3b69e27bb2af34e6219f0d5148ef1387cc53a03b 13734 wingpanel-indicator-a11y_1.0.0_amd64.buildinfo
+ a4fc62c4ef1458cec08fde73280602e36eea1e66 27124 wingpanel-indicator-a11y_1.0.0_amd64.deb
+Checksums-Sha256:
+ f99e2efb69dbda30f2592e86e031d433e722f87096958226c9d922cd82a4cefc 53036 wingpanel-indicator-a11y-dbgsym_1.0.0_amd64.deb
+ b85eb63aaf161b9b6c3d5ee72c4bd5cd6f65e655dcc7986feafe0b2ad9a59493 13734 wingpanel-indicator-a11y_1.0.0_amd64.buildinfo
+ 9f83d6ff7de073dc9a739b087668c98fb30ab8b5c0fb1d19a69135dbf270c171 27124 wingpanel-indicator-a11y_1.0.0_amd64.deb
+Files:
+ 76eea281d6b8ed3bd0b8c3af3f15659b 53036 debug optional wingpanel-indicator-a11y-dbgsym_1.0.0_amd64.deb
+ 9849e77e9c5f2bfc979087ad893e37f0 13734 x11 optional wingpanel-indicator-a11y_1.0.0_amd64.buildinfo
+ 5233528403d7045d4bf4b745434e1da4 27124 x11 optional wingpanel-indicator-a11y_1.0.0_amd64.deb

@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Thu, 26 Aug 2021 02:02:15 +0000
+Source: wingpanel-indicator-bluetooth
+Binary: wingpanel-indicator-bluetooth wingpanel-indicator-bluetooth-dbgsym
+Architecture: amd64
+Version: 2.1.8
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary LLC <builds@elementary.io>
+Changed-By: elementary LLC <builds@elementary.io>
+Description:
+ wingpanel-indicator-bluetooth - WingPanel Bluetooth Indicator
+Changes:
+ wingpanel-indicator-bluetooth (2.1.8) bionic; urgency=medium
+ .
+   * Release 2.1.8 (#167)
+   * l10n: Correctly setup the locales (#166)
+   * Fix indicator status after restart or resume (#143)
+   * Update translation files
+   * Update translation template
+Checksums-Sha1:
+ 54ebb46673330cffd2dcb3c29a778c01906c130b 157676 wingpanel-indicator-bluetooth-dbgsym_2.1.8_amd64.deb
+ 5db98e0b249f6901f9e88ccaf4d8e3eb8d944867 14005 wingpanel-indicator-bluetooth_2.1.8_amd64.buildinfo
+ 4142da3df49a59da4c35a01f61de6c89a0ccc67f 54696 wingpanel-indicator-bluetooth_2.1.8_amd64.deb
+Checksums-Sha256:
+ e85d253593c22052d37223467797ee55865ec0b82d3b09c64412d498c5a259cb 157676 wingpanel-indicator-bluetooth-dbgsym_2.1.8_amd64.deb
+ e6894e45ab8e17703802705be0c36de10fb6b210bfa1caf1148f3c4064a7b389 14005 wingpanel-indicator-bluetooth_2.1.8_amd64.buildinfo
+ 83dd522ee9501d249d98646848db613fdf5a28bbad46979bdc021f83ee91e417 54696 wingpanel-indicator-bluetooth_2.1.8_amd64.deb
+Files:
+ 13d10e83010a5a34e6515594c7fff708 157676 debug optional wingpanel-indicator-bluetooth-dbgsym_2.1.8_amd64.deb
+ c9e2fec6b56cd79682213c990d64d655 14005 x11 optional wingpanel-indicator-bluetooth_2.1.8_amd64.buildinfo
+ 45a182e873b68d91e49c115599bf6a0a 54696 x11 optional wingpanel-indicator-bluetooth_2.1.8_amd64.deb

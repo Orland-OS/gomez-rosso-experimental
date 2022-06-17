@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Fri, 17 Dec 2021 18:35:59 +0000
+Source: wingpanel-indicator-notifications
+Binary: wingpanel-indicator-notifications wingpanel-indicator-notifications-dbgsym
+Architecture: amd64
+Version: 6.0.4
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ wingpanel-indicator-notifications - WingPanel Notifications Indicator
+Changes:
+ wingpanel-indicator-notifications (6.0.4) bionic; urgency=medium
+ .
+   * Release 6.0.4 (#236)
+   * NotificationsMonitor: Asynchronously register the service (#235)
+Checksums-Sha1:
+ a184484a7fe8583083dfc5be3eb82eb67cf1dee5 185732 wingpanel-indicator-notifications-dbgsym_6.0.4_amd64.deb
+ 5cd0bd2e779f8f81bb8d6acae3f3c320a44faa4e 16324 wingpanel-indicator-notifications_6.0.4_amd64.buildinfo
+ b548fb3ac6efefe3df797a22ed0611956d171237 79848 wingpanel-indicator-notifications_6.0.4_amd64.deb
+Checksums-Sha256:
+ 904cee5e2fb0bdc71ed8345c313a771e50ff53392e7af3f060cee7d508b8ed0e 185732 wingpanel-indicator-notifications-dbgsym_6.0.4_amd64.deb
+ 9652e0e09533a2e7ea03aa4288cca665826997140411dbbff911346a7dc7ac89 16324 wingpanel-indicator-notifications_6.0.4_amd64.buildinfo
+ ef1684aad0d261c1669907a54fb3a5367806477cd5e26b2ac7ddc8d5fc449f09 79848 wingpanel-indicator-notifications_6.0.4_amd64.deb
+Files:
+ 9e3873c65b92f8ce8e97b4aa9beb3754 185732 debug optional wingpanel-indicator-notifications-dbgsym_6.0.4_amd64.deb
+ 47fe8548e9e19cef040697063ad37ba4 16324 x11 optional wingpanel-indicator-notifications_6.0.4_amd64.buildinfo
+ 92065b479baa499c36c42d831868a2fa 79848 x11 optional wingpanel-indicator-notifications_6.0.4_amd64.deb

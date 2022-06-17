@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Mon, 23 Aug 2021 17:39:54 +0000
+Source: wingpanel-indicator-power
+Binary: wingpanel-indicator-power wingpanel-indicator-power-dbgsym
+Architecture: amd64
+Version: 6.1.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ wingpanel-indicator-power - WingPanel Power Indicator
+Changes:
+ wingpanel-indicator-power (6.1.0) bionic; urgency=medium
+ .
+   * Release 6.1.0 (#216)
+   * Update translation files
+   * Update translation template
+   * l10n: Correctly setup the locales (#214)
+   * Check possible nulls; no notification in greeter (#210)
+   * Show scale popover when scroll on icon (#199)
+   * ScreenBrightness: Fix unwanted comma (#203)
+   * Improve support for Smooth and Non-Smooth scroll events. (#200)
+   * feat: fix touchpad scroll direction in indicator (#198)
+   * Show percentage at or below 20% (#194)
+   * Show charged (#196)
+Checksums-Sha1:
+ 03643456baad01cdb24e16cbb5bcd0facd6daf80 310112 wingpanel-indicator-power-dbgsym_6.1.0_amd64.deb
+ 970d1e0845161517464805f8c0ac0ffb46ac2030 14195 wingpanel-indicator-power_6.1.0_amd64.buildinfo
+ e5e27f682329d852b15230f1916c6f0fc6d73f6a 94744 wingpanel-indicator-power_6.1.0_amd64.deb
+Checksums-Sha256:
+ a544b2832349466bca0138be9450cc20b742a1a90d4bd81c66979ef1f5dc984a 310112 wingpanel-indicator-power-dbgsym_6.1.0_amd64.deb
+ dacc7cc78d67230186619a8de9f4fac3f81d91116aca38749c60b8968ba7ae06 14195 wingpanel-indicator-power_6.1.0_amd64.buildinfo
+ 056098a89071f40df1181eace534de887851523a833aca9a914cf47d4cc98643 94744 wingpanel-indicator-power_6.1.0_amd64.deb
+Files:
+ c00a0552edbb725373b9ca5a6c1989e5 310112 debug optional wingpanel-indicator-power-dbgsym_6.1.0_amd64.deb
+ afbd6314eda746b9ceefd4eca517635a 14195 x11 optional wingpanel-indicator-power_6.1.0_amd64.buildinfo
+ 709421176572cf29ea95cca0587b59fb 94744 x11 optional wingpanel-indicator-power_6.1.0_amd64.deb
