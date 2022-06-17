@@ -1,0 +1,2320 @@
+Package: aptdaemon
+Version: 1.1.1-4
+Architecture: all
+Maintainer: Julian Andres Klode <jak@debian.org>
+Installed-Size: 2198
+Depends: python3:any (>= 3.2~), python3, gir1.2-glib-2.0, python3-aptdaemon (= 1.1.1-4), python3-gi, policykit-1
+Recommends: lintian
+Breaks: software-center (<< 1.1.21)
+Filename: ./aptdaemon/aptdaemon_1.1.1-4_all.deb
+Size: 362532
+MD5sum: 0c453507c9f0c78f4a6b5a9cc178f01c
+SHA1: 0d4fbbd7c1253d0989a74451fa910bfa9b93d350
+SHA256: 076c1505b78bfcb1cdfe420292853f5975264e03cc5f0c2a9a6551037c4e7633
+Section: admin
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: transaction based package management service
+ Aptdaemon allows normal users to perform package management tasks, e.g.
+ refreshing the cache, upgrading the system, installing or removing software
+ packages.
+ .
+ Currently it comes with the following main features:
+ .
+  - Programming language independent D-Bus interface, which allows one to
+    write clients in several languages
+  - Runs only if required (D-Bus activation)
+  - Fine grained privilege management using PolicyKit, e.g. allowing all
+    desktop user to query for updates without entering a password
+  - Support for media changes during installation from DVD/CDROM
+  - Support for debconf (Debian's package configuration system)
+  - Support for attaching a terminal to the underlying dpkg call
+ .
+ This package contains the aptd script and all the data files required to run
+ the daemon. Moreover it contains the aptdcon script, which is a command
+ line client for aptdaemon. The API is not stable yet.
+
+Package: aptdaemon-data
+Source: aptdaemon
+Version: 1.1.1-4
+Architecture: all
+Maintainer: Julian Andres Klode <jak@debian.org>
+Installed-Size: 250
+Replaces: python-aptdaemon-gtk (<= 0.41+bzr580-0ubuntu1)
+Filename: ./aptdaemon/aptdaemon-data_1.1.1-4_all.deb
+Size: 250928
+MD5sum: 9b2333a124046341b9d676e924a99d3d
+SHA1: 1982810ac90a955b6d848d7dd29ff5c7906aa6b0
+SHA256: 577b4db72dd2e3cd514710a1cd2479c23668f028bf3b6f9433abdeff4bc8646a
+Section: admin
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: data files for clients
+ Aptdaemon is a transaction based package management daemon. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides common data files (e.g. icons) for aptdaemon
+ clients.
+
+Package: capnet-assist
+Version: 2.4.2
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 1035
+Depends: flatpak, network-manager, network-manager-config-connectivity-ubuntu, dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libglib2.0-0 (>= 2.43.91), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.11.5), libhandy-1-0 (>= 0.82.0), libwebkit2gtk-4.0-37 (>= 2.5.3)
+Filename: ./capnet-assist/capnet-assist_2.4.2_amd64.deb
+Size: 55256
+MD5sum: e16ab5cd338fcf5ed1a5dd5379096788
+SHA1: 73b555a7d2f2344163ba9d13309a6363387378b5
+SHA256: cc4bd0f6c7c4f91ad607cb4a3d07e452ad78569d808b30056a1732f09fef0fef
+Section: net
+Priority: optional
+Homepage: https://github.com/elementary/capnet-assist
+Description: Captive login detector
+ A small WebKit app only to make a user log in when a
+ captive portal is detected.
+
+Package: contractor
+Version: 0.3.5
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 97
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92)
+Filename: ./contractor/contractor_0.3.5_amd64.deb
+Size: 26428
+MD5sum: ad055daa58a15c480536b05b88f6a357
+SHA1: dd2059e6868805d90e0d3434219e1dd244b60181
+SHA256: acfd1c27ef4370ea0fe98eaae4b2b85fb2410982c5f6da6c553e8cceb1176ed3
+Section: utils
+Priority: optional
+Homepage: https://github.com/elementary/contractor
+Description: service for sharing data between apps
+ A sharing service that allows source apps to send their data to
+ registered destination apps. This way, data source apps don't have to
+ have the destination apps hard-coded into them.
+
+Package: contractor-dbgsym
+Source: contractor
+Version: 0.3.5
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 159
+Depends: contractor (= 0.3.5)
+Breaks: contractor-dbg (<< 0.3.4)
+Replaces: contractor-dbg (<< 0.3.4)
+Filename: ./contractor/contractor-dbgsym_0.3.5_amd64.deb
+Size: 125272
+MD5sum: be5dfd28ed32ae8f0a6683e5d1111000
+SHA1: 798721a0c6080f3afd66516490b39cadf9ec8e11
+SHA256: 5f83b6e73e1d31a2326d8c968738fbe67eb7e5cc170873d8aead4c4a4f8d83db
+Section: debug
+Priority: optional
+Description: debug symbols for contractor
+Build-Ids: ce230c5b35f9e54a49e23f0ea2562a0cfe8861b0
+
+Package: elementary-icon-theme
+Version: 7.0.0
+Architecture: all
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 31595
+Depends: gnome-icon-theme-full | gnome-icon-theme (>= 3.12.0-2), hicolor-icon-theme
+Filename: ./elementary-icon-theme/elementary-icon-theme_7.0.0_all.deb
+Size: 2612840
+MD5sum: 6c3cf8a48fef4562f47eb0a931a01c2a
+SHA1: c64c2f125ed19292109a8c2b52d152f5b295c2b6
+SHA256: 3411c2e53a8bd885df3d2ad0a0dbf95b653d18f234d494dd01bc10e3f5fbacca
+Section: gnome
+Priority: optional
+Homepage: https://elementary.io/
+Description: simple and appealing Tango-styled icon theme
+ The official elementary icons are designed to be simple and appealing.
+ .
+ These icons are the inspiration behind Ubuntu's default Humanity icon
+ theme.
+
+Package: gala
+Version: 6.3.1
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 1832
+Depends: gnome-settings-daemon (>= 3.15.2), gsettings-desktop-schemas, io.elementary.portals (>= 1.1.0), libgala0 (= 6.3.1), dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.14), libcairo2 (>= 1.14.0), libcanberra0 (>= 0.2), libgdk-pixbuf2.0-0 (>= 2.25.2), libgee-0.8-2 (>= 0.20.0), libgexiv2-2 (>= 0.6.1), libglib2.0-0 (>= 2.44), libgnome-desktop-3-19 (>= 3.17.92), libgranite6 (>= 5.5.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-3-0 (>= 3.19.12), libmutter-7-0 (>= 3.35.90), libsystemd0, libxfixes3
+Provides: x-window-manager
+Filename: ./gala/gala_6.3.1_amd64.deb
+Size: 304600
+MD5sum: 46a60717483857ad6ac72c08d69c91d5
+SHA1: 022b3e54abd82fa9536937258ae9b564dfaca137
+SHA256: e924817d7c5f09c0dca2a468b97862710ed0fccceb31cebf50b92d63be87cbab
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/gala
+Description: Pantheon Window Manager
+ gala is a window & compositing manager based on libmutter. It manages the
+ various windows a user has open.
+ It takes care of behaviors such as moving windows around, window switching,
+ window overview, animating windows, maximization, multiple workspaces,
+ providing accessibility features like zoom, and more.
+
+Package: gala-dbgsym
+Source: gala
+Version: 6.3.1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 1654
+Depends: gala (= 6.3.1)
+Breaks: gala-dbg (<< 0.3.1)
+Replaces: gala-dbg (<< 0.3.1)
+Filename: ./gala/gala-dbgsym_6.3.1_amd64.deb
+Size: 1433612
+MD5sum: 2198d6239966138717c63651fa5506f7
+SHA1: 28a3656a981f1195caf74957aef5b3876aee11ed
+SHA256: 903e2f955cffd6439fc71054cea316fa7a87ff334467d274320eca18e9ebc093
+Section: debug
+Priority: optional
+Description: debug symbols for gala
+Build-Ids: 5db35d6ffa7d9922047d122f46b84ed45973cf57 90af9751aa60d287f55687f3ae83e54e711e9cd3 d905ca093414246da2a62d2b0bf83fa2008ff353 da4dee66d61cbf38275e5bdcc64a1600f487a718
+
+Package: gir1.2-granite-1.0
+Source: granite
+Version: 6.2.0
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 107
+Depends: gir1.2-freedesktop, gir1.2-gdkpixbuf-2.0, gir1.2-gee-0.8, gir1.2-glib-2.0, gir1.2-gtk-3.0 (>= 3.22), gir1.2-pango-1.0
+Filename: ./granite/gir1.2-granite-1.0_6.2.0_amd64.deb
+Size: 25808
+MD5sum: 1df73f0d006197e601efdf1254b0659b
+SHA1: f14a308d1a82dfa29b443c79dd67a81eed68c979
+SHA256: fa7b777131547d4acf74b0c8a9aeb8a2f6872a8111bd39252edd801faa1a5715
+Section: introspection
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/elementary/granite
+Description: extension of GTK+ libraries (introspection files)
+ Granite is an extension of GTK+. Among other things, it provides
+ complex widgets and convenience functions designed for use in apps
+ built for elementary OS.
+ .
+ This package can be used by other packages using the GIRepository format to
+ generate dynamic bindings.
+
+Package: granite-demo
+Source: granite
+Version: 6.2.0
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 124
+Depends: libgranite6 (= 6.2.0), libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgtk-3-0 (>= 3.22)
+Filename: ./granite/granite-demo_6.2.0_amd64.deb
+Size: 33760
+MD5sum: a367c50184d8f2dddfa9a8e116598299
+SHA1: 0848b68ea0eda430ff0d6fa9305f0b1b6097e1b4
+SHA256: 626e61188676c53d8a86fcb3d2873568186c62dbefcf658c43243f0df6d987ac
+Section: misc
+Priority: optional
+Homepage: https://github.com/elementary/granite
+Description: extension of GTK+ libraries (demo binary)
+ Granite is an extension of GTK+. Among other things, it provides
+ complex widgets and convenience functions designed for use in apps
+ built for elementary OS.
+ .
+ This package contains a small demo application to show Granite Widgets.
+
+Package: granite-demo-dbgsym
+Source: granite
+Version: 6.2.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 302
+Depends: granite-demo (= 6.2.0)
+Filename: ./granite/granite-demo-dbgsym_6.2.0_amd64.deb
+Size: 254456
+MD5sum: 5410d1fd0b51518a4107b6d060c4c0a0
+SHA1: fa3ab7dbabd0c0d9cbbc21961aeee76534da9c5f
+SHA256: 6648d2664d4e965141006fc583a52789b1bf17b220186a43858de1b66aa11374
+Section: debug
+Priority: optional
+Description: debug symbols for granite-demo
+Build-Ids: ab659e8fc5c10daa5937842787c5f38fe80ff7bc
+
+Package: io.elementary.notifications
+Version: 6.0.2
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 146
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libcairo2 (>= 1.2.4), libcanberra-gtk3-0 (>= 0.25), libcanberra0 (>= 0.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.41.2), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.16.2), libhandy-1-0 (>= 0.80.0)
+Filename: ./elementary-notifications/io.elementary.notifications_6.0.2_amd64.deb
+Size: 37232
+MD5sum: 05810e12d59a51d88cdc0f420837884a
+SHA1: a886dd9b287d6af591c113942c16832257d3d4b9
+SHA256: 27549463e91570a3af9483e9509eb93f916c439e38e07d6e04ad95a7eb5415d8
+Section: x11
+Priority: extra
+Description: a Gtk notification server for Pantheon
+
+Package: io.elementary.notifications-dbgsym
+Source: io.elementary.notifications
+Version: 6.0.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 238
+Depends: io.elementary.notifications (= 6.0.2)
+Filename: ./elementary-notifications/io.elementary.notifications-dbgsym_6.0.2_amd64.deb
+Size: 193056
+MD5sum: 6dc45bfa7b1e124c5c57bfcd603fe28d
+SHA1: f7d177fe555e1a8f06fcb72e09eac834eb271368
+SHA256: c5ba24665ac320014a09436c7d43833874adc251ba50a1472166aa59b0bf4de3
+Section: debug
+Priority: optional
+Description: debug symbols for io.elementary.notifications
+Build-Ids: 0121ace899cf6e82a4b982ea0d2c3ca73a15d45a b3596b8fc831b42c4f7a4b2c1b906cd07fe58d41
+
+Package: io.elementary.portals
+Version: 1.1.0
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 756
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.21.5), libhandy-1-0 (>= 1.0.0), libx11-6
+Provides: xdg-desktop-portal-backend
+Filename: ./io.elementary.portals/io.elementary.portals_1.1.0_amd64.deb
+Size: 47364
+MD5sum: 05701c24a8f7f2851c5c23fb1233da1a
+SHA1: 19a2214f0e3d6e8871a8daaeddf02d797304d225
+SHA256: e29a9e3d58dd558b62832ec2d96121a2d1ab1a4ee7b7a616aa47846faf456f8c
+Section: x11
+Priority: optional
+Description: Flatpak portals for Pantheon
+ An implementation of XDG Flatpak portals for elementary OS and Pantheon
+
+Package: io.elementary.portals-dbgsym
+Source: io.elementary.portals
+Version: 1.1.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 203
+Depends: io.elementary.portals (= 1.1.0)
+Filename: ./io.elementary.portals/io.elementary.portals-dbgsym_1.1.0_amd64.deb
+Size: 167824
+MD5sum: 9bb1cbbbda9723371554b0dee16df058
+SHA1: a6b12a1a768b3a7ad942101fd1e225223818823c
+SHA256: bca0806d2ba327422730230deb3933cd6ff00a9b925215adb312d41fc771dace
+Section: debug
+Priority: optional
+Description: debug symbols for io.elementary.portals
+Build-Ids: 29e83d6835c783d1d46af3cd02b3c0413ed815fb
+
+Package: io.elementary.settings-daemon
+Version: 1.2.0
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 196
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libgeoclue-2-0 (>= 2.4.0), libglib2.0-0 (>= 2.45.3)
+Filename: ./elementary-settings-daemon/io.elementary.settings-daemon_1.2.0_amd64.deb
+Size: 43848
+MD5sum: 8886293dd1aa86708a5b398a6ac3f734
+SHA1: b24d2f5539185fc208f2e6b2ff6bad8124c19727
+SHA256: 8cb3f69a753c470ba0c3af87abf3cd361874d9c5d05f2a2f2c74a9035ff404d1
+Section: x11
+Priority: optional
+Description: Keep session settings in sync
+ elementary Settings Daemon keeps settings in sync between session components
+
+Package: io.elementary.settings-daemon-dbgsym
+Source: io.elementary.settings-daemon
+Version: 1.2.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 241
+Depends: io.elementary.settings-daemon (= 1.2.0)
+Filename: ./elementary-settings-daemon/io.elementary.settings-daemon-dbgsym_1.2.0_amd64.deb
+Size: 179928
+MD5sum: 46730fbf18da294c3c47d7672418d6ff
+SHA1: 09e93242962c260cf98514627d7e34f5e264b9d1
+SHA256: 45ecd821ecd21a63892f4e6bc0b6d5c327ce4d87ece03baa9c31cf9bbb6b40ed
+Section: debug
+Priority: optional
+Description: debug symbols for io.elementary.settings-daemon
+Build-Ids: 5fa643ad26319210736300143edb736391152b8b 68ec9d7ec1bd2966c28dc211f54ed5eeb37c7390
+
+Package: io.elementary.stylesheet
+Version: 7.0.0
+Architecture: all
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 7496
+Suggests: elementary-icon-theme
+Filename: ./elementary-stylesheet-theme/io.elementary.stylesheet_7.0.0_all.deb
+Size: 75056
+MD5sum: d6686a0a1045450479c8fb13c8f8a76d
+SHA1: f6523c0a45d81c078ea953a46bcb3b40c0baa224
+SHA256: 9a3426073848fb3f0cd2fcd2d5db4d6211cb5688231c69073b3ce174d6d0bd3e
+Section: x11
+Priority: extra
+Description: the elementary GTK stylesheet
+ The official elementary GTK stylesheet.
+ Supports GTK versions 2 and 3.
+
+Package: io.elementary.switchboard.wacom
+Version: 1.0.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 755
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.53.2), libgranite6 (>= 0.3.1), libgtk-3-0 (>= 3.21.5), libgudev-1.0-0 (>= 146), libswitchboard-2.0-0 (>= 2.0~bzr468), libwacom2 (>= 1.1), libx11-6, libxi6 (>= 2:1.2.99.4)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-wacom/io.elementary.switchboard.wacom_1.0.0_amd64.deb
+Size: 49124
+MD5sum: e78d3e6d3558ff3dd0f3936876da93a3
+SHA1: 488a554ad3aaece6653b0624ff942ba274f217d2
+SHA256: f173c66995a1b6591d401f599d7894deedb6fe0923fd07bcf78370110b16917e
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-wacom
+Description: Wacom plug for Switchboard
+ This plug configures wacom devices.
+
+Package: io.elementary.switchboard.wacom-dbgsym
+Source: io.elementary.switchboard.wacom
+Version: 1.0.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 184
+Depends: io.elementary.switchboard.wacom (= 1.0.0)
+Filename: ./switchboard-plugs/switchboard-plug-wacom/io.elementary.switchboard.wacom-dbgsym_1.0.0_amd64.deb
+Size: 152344
+MD5sum: a02eb80e8f0ac833b599cf3cd9b6d541
+SHA1: c9b640d575be83e2bc19c5cc9f317210e1c5eb69
+SHA256: eca7cfe9411496a312d6016f2f60e7d04e8f28621812e1df6fc1a66d66448462
+Section: debug
+Priority: optional
+Description: debug symbols for io.elementary.switchboard.wacom
+Build-Ids: aea60ccb183e148f49cc12656839faf3573d09dc
+
+Package: io.elementary.switchboard.wallet
+Version: 0.9.0
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 969
+Depends: libc6 (>= 2.14), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.5), libgtk-3-0 (>= 3.16.2), libsecret-1-0 (>= 0.7), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-wallet/io.elementary.switchboard.wallet_0.9.0_amd64.deb
+Size: 47796
+MD5sum: a32f9dc0b94a828ddf093af98ffbdade
+SHA1: d2095c46e66f8902b40171e4ef2cf3ce6bbcf483
+SHA256: 5a81c9f299a48410e0d511b7c8b9b3ee3d6763703b07a88c84478baa5cbb69f8
+Section: x11
+Priority: optional
+Description: Wallet for Switchboard
+ Manage payment methods in elementary OS System Settings
+
+Package: io.elementary.switchboard.wallet-dbgsym
+Source: io.elementary.switchboard.wallet
+Version: 0.9.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 131
+Depends: io.elementary.switchboard.wallet (= 0.9.0)
+Filename: ./switchboard-plugs/switchboard-plug-wallet/io.elementary.switchboard.wallet-dbgsym_0.9.0_amd64.deb
+Size: 106068
+MD5sum: 2394df865e41f43163da603d25c1b3c8
+SHA1: 485d85d94acebc8148da16cd67405ae3add15b5e
+SHA256: 029b7bbfa893d0321b0ce1972da6be6d2ca3a3082f258dbcdb555006299c84c2
+Section: debug
+Priority: optional
+Description: debug symbols for io.elementary.switchboard.wallet
+Build-Ids: 8036d9e2602312cc180348c9af33c767ffcf3017
+
+Package: io.elementary.wingpanel
+Version: 3.0.2
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 818
+Depends: libwingpanel3 (= 3.0.2), dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libgala0, libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.21.5), libmutter-7-0 (>= 3.29.4)
+Recommends: wingpanel-indicator-a11y, wingpanel-indicator-bluetooth, wingpanel-indicator-datetime, wingpanel-indicator-keyboard, wingpanel-indicator-network, wingpanel-indicator-nightlight, wingpanel-indicator-notifications, wingpanel-indicator-power, wingpanel-indicator-session, wingpanel-indicator-sound
+Breaks: wingpanel (<< 2.3.2)
+Replaces: wingpanel (<< 2.3.2)
+Provides: indicator-renderer
+Filename: ./elementary-wingpanel/io.elementary.wingpanel_3.0.2_amd64.deb
+Size: 68568
+MD5sum: 0c202e0d04bcb2963db187f9f2104d62
+SHA1: 48a22fecd36a474d5fd619b4a3c382c0c1f9c685
+SHA256: cab505c35fdc5500ecf1e08957f679027b965aef929ae6bfe602e67045d43407
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel
+Description: A super sexy space-saving top panel
+ A replacement for the traditional GNOME Panel, designed to be a lightweight
+ container for system/application indicators and notification icons.
+ Designed by elementary Project.
+
+Package: io.elementary.wingpanel-dbgsym
+Source: io.elementary.wingpanel
+Version: 3.0.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 315
+Depends: io.elementary.wingpanel (= 3.0.2)
+Breaks: wingpanel-dbg (<< 2.3.2)
+Replaces: wingpanel-dbg (<< 2.3.2)
+Filename: ./elementary-wingpanel/io.elementary.wingpanel-dbgsym_3.0.2_amd64.deb
+Size: 251928
+MD5sum: ebb5145b1cfe6fc97584a4a95b8b5b4d
+SHA1: 0e5ef0f196643ca237737296db9740f5f145f01e
+SHA256: 84399e5ee2d0d4009192c5f2c4f587cb8a9168ca3a576289f612cc734cf15a9e
+Section: debug
+Priority: optional
+Description: debug symbols for io.elementary.wingpanel
+Build-Ids: 0d11f4bbc1f2fbe37f5205bc079ecbc58cf60554 57e28b625671a402aa7f63a57a9f3487390e5e02
+
+Package: libgala-dev
+Source: gala
+Version: 6.3.1
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 66
+Depends: libgala0 (= 6.3.1), libgdk-pixbuf2.0-dev, libglib2.0-dev (>= 2.44), libmutter-10-dev | libmutter-9-dev | libmutter-8-dev | libmutter-7-dev | libmutter-6-dev
+Filename: ./gala/libgala-dev_6.3.1_amd64.deb
+Size: 14864
+MD5sum: b30cb399694a4c36d620778dee2fb19f
+SHA1: 21c70a1a5e704cbc366ab5a19079ca82423f1ea5
+SHA256: ca8243b478937571e0e625023287ea385103b512e58a7a42126911051fc207b4
+Section: libdevel
+Priority: optional
+Homepage: https://github.com/elementary/gala
+Description: Library to build plugins for Pantheon Window Manager (development files)
+ gala is a window & compositing manager based on libmutter. It manages the
+ various windows a user has open.
+ It takes care of behaviors such as moving windows around, window switching,
+ window overview, animating windows, maximization, multiple workspaces,
+ providing accessibility features like zoom, and more.
+ .
+ This package contains the development files used for gala.
+
+Package: libgala0
+Source: gala
+Version: 6.3.1
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 161
+Depends: libc6 (>= 2.29), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.25.2), libgee-0.8-2 (>= 0.8.3), libgles2, libglib2.0-0 (>= 2.44), libgranite6 (>= 0.2.0), libgtk-3-0 (>= 3.16.2), libmutter-7-0 (>= 3.29.4)
+Filename: ./gala/libgala0_6.3.1_amd64.deb
+Size: 59384
+MD5sum: 85a5a968722d8359874bbb823a420dbf
+SHA1: e142236a4381f63adc836a2f9a14df6885588f02
+SHA256: 69ffd4964d620c4b628cefa89d8c08e33121600c06f91f16c72bd14069053685
+Section: x11
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/elementary/gala
+Description: Library to build plugins for Pantheon Window Manager
+ gala is a window & compositing manager based on libmutter. It manages the
+ various windows a user has open.
+ It takes care of behaviors such as moving windows around, window switching,
+ window overview, animating windows, maximization, multiple workspaces,
+ providing accessibility features like zoom, and more.
+ .
+ This package contains the shared library used for gala.
+
+Package: libgala0-dbgsym
+Source: gala
+Version: 6.3.1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 222
+Depends: libgala0 (= 6.3.1)
+Breaks: gala-dbg (<< 0.3.1)
+Replaces: gala-dbg (<< 0.3.1)
+Filename: ./gala/libgala0-dbgsym_6.3.1_amd64.deb
+Size: 187560
+MD5sum: 8e8a425b406f35b1f16c3018ad2579c7
+SHA1: 09530382cbe35dce0ee4558e5c33529d54109d66
+SHA256: eb7b815ef6711698f8c129f6b23df385d5c687f2d8267e5d063836e6db84cc69
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libgala0
+Build-Ids: f3247898290198d579ff5d9bb2729c2e204db605
+
+Package: libgranite-common
+Source: granite
+Version: 6.2.0
+Architecture: all
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 945
+Conflicts: libgranite0 (>> 0.2~)
+Replaces: libgranite0 (>> 0.2~)
+Filename: ./granite/libgranite-common_6.2.0_all.deb
+Size: 73020
+MD5sum: c41e5a963f246eefbdd7a6d2a63bbb47
+SHA1: c509e3262eea791ad272562a8db23c6b1c09a3d8
+SHA256: f873209c0bf8ca6ea49dc006c34f2b468d489a1bf5e17fe9212ed6454181858a
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/elementary/granite
+Description: extension of GTK+ libraries (common files)
+ Granite is an extension of GTK+. Among other things, it provides
+ complex widgets and convenience functions designed for use in apps
+ built for elementary OS.
+ .
+ This package contains common files needed by library.
+
+Package: libgranite-dev
+Source: granite
+Version: 6.2.0
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 544
+Depends: gir1.2-granite-1.0 (= 6.2.0), libgee-0.8-dev, libglib2.0-dev, libgranite6 (= 6.2.0), libgtk-3-dev (>= 3.3.14)
+Filename: ./granite/libgranite-dev_6.2.0_amd64.deb
+Size: 43564
+MD5sum: cbd87ffc8a6702c8a841ff786945d721
+SHA1: a19b1c85f51334a92fa000e37fd1b93f0a61f015
+SHA256: 9cd32249d079e4178f87f759330a79ec1db2c37f2c87a3090b331bc11860ee69
+Section: libdevel
+Priority: optional
+Homepage: https://github.com/elementary/granite
+Description: extension of GTK+ libraries (development files)
+ Granite is an extension of GTK+. Among other things, it provides
+ complex widgets and convenience functions designed for use in apps
+ built for elementary OS.
+ .
+ This package contains the static library and header files.
+
+Package: libgranite6
+Source: granite
+Version: 6.2.0
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 665
+Depends: libgranite-common (>= 6.2.0), libc6 (>= 2.29), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libgdk-pixbuf-2.0-0 (>= 2.23.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgtk-3-0 (>= 3.22), libpango-1.0-0 (>= 1.14.0)
+Recommends: contractor
+Filename: ./granite/libgranite6_6.2.0_amd64.deb
+Size: 181888
+MD5sum: b9adaa6e1333e611cef310f4e1cbf07d
+SHA1: 44db2e5b20a93dbbe16e2e3bfa3d05b7d28f1ed9
+SHA256: 09dd0949a4752080d5ac9d2c76aee6386ed17466a050b3cb8e9d5d0c2414a59f
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/elementary/granite
+Description: extension of GTK+ libraries
+ Granite is an extension of GTK+. Among other things, it provides
+ complex widgets and convenience functions designed for use in apps
+ built for elementary OS.
+ .
+ This package contains the shared library.
+
+Package: libgranite6-dbgsym
+Source: granite
+Version: 6.2.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 1245
+Depends: libgranite6 (= 6.2.0)
+Filename: ./granite/libgranite6-dbgsym_6.2.0_amd64.deb
+Size: 1082144
+MD5sum: bccf931e0e1660cc53d1747107308a14
+SHA1: 4af8cf5a1d5839b0633f3b9307df6dbd099421a7
+SHA256: 4c6f6be8b6fd06f0276ce81b304a4dff61c4d951b83ab8898d24364a2f2978fc
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libgranite6
+Build-Ids: ed44ce204074ea7f8afa122c137fd081d852ba85
+
+Package: libswitchboard-2.0-0
+Source: switchboard
+Version: 6.0.2
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 46
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.37.3)
+Filename: ./switchboard/libswitchboard-2.0-0_6.0.2_amd64.deb
+Size: 11396
+MD5sum: 177f1eea8005e18a710f6dd68a3deb1b
+SHA1: fff25344e9b0a985626eb0005d7ae5cc94e7d14f
+SHA256: 0985923777f66927f22c69297346657afa0cd9879cb98aac238f8be20bc4aaec
+Section: libs
+Priority: optional
+Homepage: https://github.com/elementary/switchboard
+Description: Modular Settings Hub - shared libraries
+ Shared library to create plugs (settings panels) for Switchboard.
+ .
+ Switchboard is a modular system settings hub designed
+ for Pantheon desktop.
+ .
+ It features animated transitions, supports adding or
+ removing plugs (settings panels) without recompilation,
+ and follows the Human Interface Guidelines of
+ elementary OS.
+ .
+ This package contains the shared library required to run the plugs.
+
+Package: libswitchboard-2.0-0-dbgsym
+Source: switchboard
+Version: 6.0.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 43
+Depends: libswitchboard-2.0-0 (= 6.0.2)
+Breaks: switchboard-dbg (<< 2.3.0)
+Replaces: switchboard-dbg (<< 2.3.0)
+Filename: ./switchboard/libswitchboard-2.0-0-dbgsym_6.0.2_amd64.deb
+Size: 25488
+MD5sum: f8ef691c89f72a2458518ee00a8acfd3
+SHA1: e713d91145bc3b351d827fd4cf4ed54c69e23b01
+SHA256: a5f3a5e92dd223cc9e2ac532c2fc2fb387f8647a5ea940fd6b687ca2d290cdae
+Section: debug
+Priority: optional
+Description: debug symbols for libswitchboard-2.0-0
+Build-Ids: a7e5572aa19f82e3489e26e968c062eab3acab08
+
+Package: libswitchboard-2.0-dev
+Source: switchboard
+Version: 6.0.2
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 29
+Depends: libswitchboard-2.0-0 (= 6.0.2)
+Filename: ./switchboard/libswitchboard-2.0-dev_6.0.2_amd64.deb
+Size: 6220
+MD5sum: 1f68e136e121bee2310a31e3ede9d33a
+SHA1: cde4695467d99b5e70d1e72fedb7be500ef97d97
+SHA256: 4026528579f7466fd6f415ac21bbb64d5fb9ab8cc11b606714756dbe841f1a90
+Section: libdevel
+Priority: optional
+Homepage: https://github.com/elementary/switchboard
+Description: Modular Settings Hub - development files
+ Shared library to create plugs (settings panels) for Switchboard.
+ .
+ Switchboard is a modular system settings hub designed
+ for Pantheon desktop.
+ .
+ It features animated transitions, supports adding or
+ removing plugs (settings panels) without recompilation,
+ and follows the Human Interface Guidelines of
+ elementary OS.
+ .
+ This package contains the header and development files which are
+ needed for building Switchboard plugs.
+
+Package: libwingpanel-3.0-dev
+Source: io.elementary.wingpanel
+Version: 3.0.2
+Architecture: all
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 11
+Depends: libwingpanel-dev
+Filename: ./elementary-wingpanel/libwingpanel-3.0-dev_3.0.2_all.deb
+Size: 3980
+MD5sum: 9d8a28e28488c978dd42311571ca3271
+SHA1: 1564ccc2d9b2f1fcbc8cb23f184a4f4b1e9b36a2
+SHA256: 380e1ff1b825155d9c6d06fe63f31290e896f98ce691f76d0dafac8d253be738
+Section: oldlibs
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libwingpanel-dev
+Source: io.elementary.wingpanel
+Version: 3.0.2
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 40
+Depends: libglib2.0-dev (>= 2.32), libwingpanel3 (= 3.0.2)
+Breaks: libwingpanel-3.0-dev (<< 2.3.2)
+Replaces: libwingpanel-3.0-dev (<< 2.3.2)
+Filename: ./elementary-wingpanel/libwingpanel-dev_3.0.2_amd64.deb
+Size: 7232
+MD5sum: c0c8933bc2263d99c47174ac4c1e6b1e
+SHA1: dd4012aa985fd37b27d0fe610b8d41feb427838f
+SHA256: 2a4c1b7fa955f283856363e02abac093dcda3aa7540aeed871410b7322217e10
+Section: libdevel
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel
+Description: Library to build plugins for WingPanel (development files)
+ A replacement for the traditional GNOME Panel, designed to be a lightweight
+ container for system/application indicators and notification icons.
+ Designed by elementary Project.
+ .
+ This package contains the development files used for wingpanel.
+
+Package: libwingpanel3
+Source: io.elementary.wingpanel
+Version: 3.0.2
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 68
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.16.2)
+Filename: ./elementary-wingpanel/libwingpanel3_3.0.2_amd64.deb
+Size: 18884
+MD5sum: b2a363402ee9b9cd135bb494f81e675e
+SHA1: fb0491b32dcf7b1051943c08155fdb5822214609
+SHA256: 492dc7198ad76ff691502365f225e7d3c7eaba8b98fabc81f1d47f4c8e290c89
+Section: x11
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/elementary/wingpanel
+Description: A super sexy space-saving top panel
+ A replacement for the traditional GNOME Panel, designed to be a lightweight
+ container for system/application indicators and notification icons.
+ Designed by elementary Project.
+ .
+ This package contains the shared library used for wingpanel.
+
+Package: libwingpanel3-dbgsym
+Source: io.elementary.wingpanel
+Version: 3.0.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 114
+Depends: libwingpanel3 (= 3.0.2)
+Breaks: wingpanel-dbg (<< 2.3.2)
+Replaces: wingpanel-dbg (<< 2.3.2)
+Filename: ./elementary-wingpanel/libwingpanel3-dbgsym_3.0.2_amd64.deb
+Size: 89512
+MD5sum: 97eaf89b6e782273ef39cf9cb523abf2
+SHA1: a8e9edb32d05b95849aed79adea0b82c23774e7d
+SHA256: 96a388436db93c4dafd64c548aae6dbb7678b54802e1e46e66578174a975224f
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libwingpanel3
+Build-Ids: d5aa32e0d4e05ea094573698cc1633d1c1218576
+
+Package: pantheon-agent-geoclue2
+Version: 1.0.5
+Architecture: amd64
+Maintainer: David Hewitt <davidmhewitt@gmail.com>
+Installed-Size: 748
+Depends: geoclue-2.0, dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libglib2.0-0 (>= 2.43.92), libgtk-3-0 (>= 3.16.2)
+Filename: ./pantheon-agent-geoclue2/pantheon-agent-geoclue2_1.0.5_amd64.deb
+Size: 41808
+MD5sum: 78e97d610c8c2a0ce711d7a3421012f8
+SHA1: 3f2bd872fdd606890798f783f2d33a6bcc245eb9
+SHA256: 500f09950bc768e204808a99da81a484b8d385d0b9f1cc41e01d9406262f9c5a
+Section: admin
+Priority: optional
+Homepage: https://github.com/elementary/pantheon-agent-geoclue2
+Description: GeoClue2 authorization designed for Pantheon
+ An agent for GeoClue2 authorization designed for Pantheon desktop environment.
+
+Package: pantheon-agent-geoclue2-dbgsym
+Source: pantheon-agent-geoclue2
+Version: 1.0.5
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: David Hewitt <davidmhewitt@gmail.com>
+Installed-Size: 96
+Depends: pantheon-agent-geoclue2 (= 1.0.5)
+Filename: ./pantheon-agent-geoclue2/pantheon-agent-geoclue2-dbgsym_1.0.5_amd64.deb
+Size: 69840
+MD5sum: fd1355384336ed0901b60c7d088abfc2
+SHA1: 64f2b83e847ff7d423837b3e8e10f2c6762ee12a
+SHA256: 7ec87be45641d273f019e49d2e3f8318b04f300ac74d6f3632cf97c6c0d99491
+Section: debug
+Priority: optional
+Description: debug symbols for pantheon-agent-geoclue2
+Build-Ids: 02a4afd603bd556907c21a921618b6400d3d0250
+
+Package: pantheon-agent-polkit
+Version: 1.0.5
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 707
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.16.2), libpolkit-agent-1-0 (>= 0.94), libpolkit-gobject-1-0 (>= 0.94)
+Provides: polkit-1-auth-agent
+Filename: ./pantheon-polkit/pantheon-agent-polkit_1.0.5_amd64.deb
+Size: 36776
+MD5sum: 6f00b671691de36cf2981f13077c38df
+SHA1: 6a6514e29b7f03acc6f57bd659c044a450473ee0
+SHA256: bfaffe267d7f35d7f8048b6f90e421af3cb44d3b28d7de42cf60bf86bd8c943b
+Section: admin
+Priority: optional
+Homepage: https://github.com/elementary/pantheon-agent-polkit
+Description: Polkit authorization designed for Pantheon
+ An agent for Polkit authorization designed for Pantheon desktop environment.
+
+Package: pantheon-agent-polkit-dbgsym
+Source: pantheon-agent-polkit
+Version: 1.0.5
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 99
+Depends: pantheon-agent-polkit (= 1.0.5)
+Filename: ./pantheon-polkit/pantheon-agent-polkit-dbgsym_1.0.5_amd64.deb
+Size: 73280
+MD5sum: c12d8b680f88931108e3b7211597de2f
+SHA1: c8c1868e028988bfd051ce37f140b0e04d39e105
+SHA256: 5034f261f4ad00c3cbe3afef3f2b02b4e24f12de4e760ca7a69de1c7224491c4
+Section: debug
+Priority: optional
+Description: debug symbols for pantheon-agent-polkit
+Build-Ids: 8b7d7f159a72a776a4367b74e8775bfaeca2bad3
+
+Package: pantheon-tweaks
+Version: 1.0.4
+Architecture: amd64
+Maintainer: Felipe Escoto. <felescoto95@hotmail.com>
+Installed-Size: 361
+Pre-Depends: dpkg (>= 1.15.6)
+Depends: gala, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./pantheon-tweaks/pantheon-tweaks_1.0.4_amd64.deb
+Size: 62720
+MD5sum: 04cd6173a0b59986bb3fcacfb66a9a4f
+SHA1: 5b05af22b38306ce8c0e6d3ab6e041cd7291dffc
+SHA256: 36693a73358fcc4df50982940f5536bd242dc9461ca1e8a62b106ff2db6efa74
+Section: x11
+Priority: optional
+Homepage: https://github.com/pantheon-tweaks/pantheon-tweaks
+Description: Change hidden desktop settings
+ Switchboard plug for controlling hidden options.
+
+Package: pantheon-tweaks-dbgsym
+Source: pantheon-tweaks
+Version: 1.0.4
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Felipe Escoto. <felescoto95@hotmail.com>
+Installed-Size: 221
+Depends: pantheon-tweaks (= 1.0.4)
+Breaks: pantheon-tweaks-dbg (<< 1.0.0)
+Replaces: pantheon-tweaks-dbg (<< 1.0.0)
+Filename: ./pantheon-tweaks/pantheon-tweaks-dbgsym_1.0.4_amd64.deb
+Size: 179368
+MD5sum: a38be68eadcd16ae555ecca73b433ff5
+SHA1: 9cecf061e3d982caa94e57a63ab6325c463affd9
+SHA256: 28420d656943820de5601e6dabe381a7fe16e20211d26f30ee2cf255c27caddf
+Section: debug
+Priority: optional
+Description: debug symbols for pantheon-tweaks
+Build-Ids: 24ead293c3956064611fb1e42d5fe6cb64f6c6f3
+
+Package: python3-aptdaemon
+Source: aptdaemon
+Version: 1.1.1-4
+Architecture: all
+Maintainer: Julian Andres Klode <jak@debian.org>
+Installed-Size: 463
+Depends: python3:any (>= 3.3.2-2~), gir1.2-glib-2.0, python3-apt (>= 0.8.5~ubuntu1), python3-defer (>= 1.0.6), python3-dbus, python3-gi, python3-pkg-resources, iso-codes
+Recommends: aptdaemon
+Filename: ./aptdaemon/python3-aptdaemon_1.1.1-4_all.deb
+Size: 137038
+MD5sum: 0aa1e368ef1e28aa83b024fade22dc50
+SHA1: 2a6e9c4164b6d755b1cc18baaf477e644eabd6ad
+SHA256: 71f8289c6e188b6fbd44b6acce741f1b1937e047aa938964591d0e7d5c3c83e1
+Section: python
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: Python 3 modules for the server and client of aptdaemon
+ Aptdaemon is a transaction based package management service. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides the Python 3 modules required to run aptdaemon
+ and to implement a client. The API is not stable yet.
+
+Package: python3-aptdaemon.gtk3widgets
+Source: aptdaemon
+Version: 1.1.1-4
+Architecture: all
+Maintainer: Julian Andres Klode <jak@debian.org>
+Installed-Size: 121
+Depends: python3:any (>= 3.3.2-2~), python3-aptdaemon (= 1.1.1-4), python3-gi, gir1.2-gtk-3.0, gir1.2-vte-2.90, aptdaemon-data
+Breaks: python-aptdaemon-gtk (<< 0.41+bzr582-0ubuntu1)
+Replaces: python-aptdaemon-gtk (<< 0.41+bzr582-0ubuntu1)
+Filename: ./aptdaemon/python3-aptdaemon.gtk3widgets_1.1.1-4_all.deb
+Size: 85912
+MD5sum: cf894d0e484a2d84d8cc6097c5559609
+SHA1: 1308e93afaee619faf4b6223486f82d483737a9f
+SHA256: 368b677f2cc768cff14e9dadc079084b7bd5823b52720bb446f0c4bba0f392bb
+Section: python
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: Python 3 GTK+ 3 widgets to run an aptdaemon client
+ Aptdaemon is a transaction based package management daemon. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides the Python 3 GTK+ 3 widgets to implement a fully
+ working graphical client. The widgets can be used to initiate, to
+ monitor and to control a transaction. The API is not stable yet.
+
+Package: python3-aptdaemon.pkcompat
+Source: aptdaemon
+Version: 1.1.1-4
+Architecture: all
+Maintainer: Julian Andres Klode <jak@debian.org>
+Installed-Size: 263
+Depends: python3:any (>= 3.3.2-2~), python3-aptdaemon (= 1.1.1-4), gir1.2-packagekitglib-1.0 (>= 0.8.9)
+Conflicts: libpackagekit-glib2-14, libpackagekit-qt2-2, packagekit, python-aptdaemon.pkcompat
+Replaces: python-aptdaemon.pkcompat
+Provides: packagekit-system-interface
+Filename: ./aptdaemon/python3-aptdaemon.pkcompat_1.1.1-4_all.deb
+Size: 104536
+MD5sum: 5da80ced06eca6ca84a4b60692e14521
+SHA1: 13b69eba1fe814a0b58e194210030ddca3a45d4e
+SHA256: 8735ec11c5a0ecd51c32064bdf4d0fda75c1435c3ce8be6c28bc7dfccfdf13ec
+Section: python
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: PackageKit compatibilty for AptDaemon
+ Aptdaemon is a transaction based package management daemon. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package adds a PackageKit DBus interface to AptDaemon.
+
+Package: python3-aptdaemon.test
+Source: aptdaemon
+Version: 1.1.1-4
+Architecture: all
+Maintainer: Julian Andres Klode <jak@debian.org>
+Installed-Size: 176
+Depends: python3:any (>= 3.3.2-2~), python3-aptdaemon (= 1.1.1-4)
+Breaks: python-aptdaemon.test
+Replaces: python-aptdaemon.test
+Filename: ./aptdaemon/python3-aptdaemon.test_1.1.1-4_all.deb
+Size: 157386
+MD5sum: b252af362e85f44fe9239440de4ca0c5
+SHA1: a45da668525876353dce5a51a9383712809e9ebc
+SHA256: b12208c57c1b66c70610092362f4f0810846e7af29090119a31b26305cf0c3df
+Section: python
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: Test environment for aptdaemon clients
+ Aptdaemon is a transaction based package management daemon. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides the aptdaemon.test module and several helper
+ scripts and a test repository to write unittests for aptdaemon
+ clients.
+
+Package: slingshot-launcher
+Version: 2.10.2
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 1581
+Depends: zeitgeist-core, dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.10.1), libglib2.0-0 (>= 2.59.0), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.21.5), libhandy-1-0 (>= 0.90.0), libjson-glib-1.0-0 (>= 1.5.2), libplank1 (>= 0.11.89), libswitchboard-2.0-0 (>= 2.3.0), libwingpanel3, libzeitgeist-2.0-0 (>= 0.9.9)
+Filename: ./slingshot-launcher/slingshot-launcher_2.10.2_amd64.deb
+Size: 243652
+MD5sum: f219e4993d25d825bbeb7862018d80d4
+SHA1: 9b2faa9f5c03dd389bc2ee663bc002fc388c02d9
+SHA256: 35f58ac4a5102e72335b4cd292cbbbd6f133c87401cadb5a5e6243d888fd863a
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/applications-menu
+Description: Lightweight and stylish app launcher
+ Slingshot is an application launcher for Pantheon,
+ written in Vala and utilizing GTK+ and Cairo.
+ .
+ It features an optional category view and fast
+ application search that uses Synapse as a back-end.
+
+Package: slingshot-launcher-dbgsym
+Source: slingshot-launcher
+Version: 2.10.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 1096
+Depends: slingshot-launcher (= 2.10.2)
+Breaks: slingshot-launcher-dbg (<< 2.7.1)
+Replaces: slingshot-launcher-dbg (<< 2.7.1)
+Filename: ./slingshot-launcher/slingshot-launcher-dbgsym_2.10.2_amd64.deb
+Size: 934804
+MD5sum: f02a2ceed1a5110fb2d69937dad1ff6f
+SHA1: 05e403b66c1a03539c2edc6ed531234ac5464d04
+SHA256: c6745e17b777eb16ca6c7120e055c63d42d16b32c0cca0a5548d8faa473c0ef7
+Section: debug
+Priority: optional
+Description: debug symbols for slingshot-launcher
+Build-Ids: 64d076863d65b9fb546ce3148a1a0ad715257992 c65ca2b3560924a323b0b6c8d06fb782d759d5dc
+
+Package: switchboard
+Version: 6.0.2
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 975
+Pre-Depends: dpkg (>= 1.15.6)
+Depends: libswitchboard-2.0-0 (= 6.0.2), dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.16.2), libhandy-1-0 (>= 0.82.0)
+Provides: unity-control-center
+Filename: ./slingshot-launcher/switchboard_6.0.2_amd64.deb
+Size: 72228
+MD5sum: f6c4cffe4559e549d357da436ece457e
+SHA1: 26d2722d24c629a7ff66c19dd77775d6781eaaba
+SHA256: 5e99121f60c3a8e55c63546fd24e6be132dd87fc8e9171ad4fd4bdbb7b143683
+Section: admin
+Priority: optional
+Homepage: https://github.com/elementary/switchboard
+Description: Modular Settings Hub
+ Switchboard is a modular system settings hub designed
+ for Pantheon desktop.
+ .
+ It features animated transitions, supports adding or
+ removing plugs (settings panels) without recompilation,
+ and follows the Human Interface Guidelines of
+ elementary OS.
+
+Package: switchboard-dbgsym
+Source: switchboard
+Version: 6.0.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 181
+Depends: switchboard (= 6.0.2)
+Breaks: switchboard-dbg (<< 2.3.0)
+Replaces: switchboard-dbg (<< 2.3.0)
+Filename: ./slingshot-launcher/switchboard-dbgsym_6.0.2_amd64.deb
+Size: 148888
+MD5sum: 66bb5da6bf5fb368d85afe44ac2e9033
+SHA1: 665b10818a586f1d455f18b362816709c00b649a
+SHA256: 8b7e1f7de35a4ccb7f41aa3f1f5fd6f46b004f1639f4dcdaa47fbfaa8073a3fb
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard
+Build-Ids: b39d9d5f25845220f608a9b9e23454891c3d70db
+
+Package: switchboard-plug-a11y
+Version: 2.3.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 768
+Depends: onboard, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 5.2.3), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-a11y/switchboard-plug-a11y_2.3.0_amd64.deb
+Size: 46492
+MD5sum: d1d0fb542947031d51ecfa7295c57c7b
+SHA1: 6f601096e0b3dab96685863a260c8864ff8da77d
+SHA256: 377bc5fb975140400e2a3af68639b0d45bf2460b78b57eadc01b0161c91c3deb
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-a11y
+Description: Accessibility plug for Switchboard
+ Enable more accessibility feature of the desktop
+
+Package: switchboard-plug-a11y-dbgsym
+Source: switchboard-plug-a11y
+Version: 2.3.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 127
+Depends: switchboard-plug-a11y (= 2.3.0)
+Breaks: switchboard-plug-a11y-dbg (<< 0.1.2)
+Replaces: switchboard-plug-a11y-dbg (<< 0.1.2)
+Filename: ./switchboard-plugs/switchboard-plug-a11y/switchboard-plug-a11y-dbgsym_2.3.0_amd64.deb
+Size: 101052
+MD5sum: f78f9c06cc430a23e3e0c1a5186c7c2c
+SHA1: da6639c7c06ffeb7364e50ced1056f8d9a117a76
+SHA256: 5e5c460826a61f4b9f4746a5be984303555f9f53d01f2e9e505ef47064be3681
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-a11y
+Build-Ids: b0c0ce62a7612df0f58d9fe8dc9447d1bd82a3d5
+
+Package: switchboard-plug-about
+Version: 6.1.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 925
+Depends: libappstream4 (>= 0.10.0), libc6 (>= 2.4), libfwupd2 (>= 1.3.3), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.63.1), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.16.2), libgtop-2.0-11 (>= 2.22.3), libhandy-1-0 (>= 0.85.0), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Recommends: io.elementary.feedback, fwupd, switcheroo-control
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-about/switchboard-plug-about_6.1.0_amd64.deb
+Size: 88696
+MD5sum: c32cebfe13772bb07b32b86b58debfcd
+SHA1: 0583835eb0db158558281e34134bc564de9c2e04
+SHA256: ad423ba6195fd4b226e27ac30aa8b341e8cf2957e8af30baa37b8fac6de79d13
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-about
+Description: About plug for Switchboard
+ This plug displays information about the system.
+
+Package: switchboard-plug-about-dbgsym
+Source: switchboard-plug-about
+Version: 6.1.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 271
+Depends: switchboard-plug-about (= 6.1.0)
+Breaks: switchboard-plug-about-dbg (<< 0.3.2)
+Replaces: switchboard-plug-about-dbg (<< 0.3.2)
+Filename: ./switchboard-plugs/switchboard-plug-about/switchboard-plug-about-dbgsym_6.1.0_amd64.deb
+Size: 228188
+MD5sum: 01b005fa6cc9a9f977d74be9647ac3fb
+SHA1: 8ae8ee4cfb72bf5660a42496f2b779ce00141534
+SHA256: 08055d6a5fe4e7fcf5e8808c78c143db1d6acc3ab2bca43b512f8d56ed595e8f
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-about
+Build-Ids: bd4f2658f4560a264242f6e88ef0f4450271aabf
+
+Package: switchboard-plug-applications
+Version: 6.0.1
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 912
+Depends: libc6 (>= 2.4), libflatpak0 (>= 1.1.3), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.49.3), libgranite6 (>= 0.3.1), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-applications/switchboard-plug-applications_6.0.1_amd64.deb
+Size: 90300
+MD5sum: 514f9fa6a7bf5b5cc2e370d52add703a
+SHA1: b3899548c542ab6a6b46ab13e89cd456d664a2e4
+SHA256: 28a3f6cc5c43617fe9e3a57f422127656a9f19d58be077cab9dc73e91cd2e023
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-applications
+Description: Default and Startup Applications plug for Switchboard
+ Manage default and startup apps
+
+Package: switchboard-plug-applications-dbgsym
+Source: switchboard-plug-applications
+Version: 6.0.1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 338
+Depends: switchboard-plug-applications (= 6.0.1)
+Breaks: switchboard-plug-applications-dbg (<< 0.2.4)
+Replaces: switchboard-plug-applications-dbg (<< 0.2.4)
+Filename: ./switchboard-plugs/switchboard-plug-applications/switchboard-plug-applications-dbgsym_6.0.1_amd64.deb
+Size: 295624
+MD5sum: bc705a550b99785e5d64689e66502be1
+SHA1: 100a5596a20c334440fbfdb5c85115cf53e6f7c6
+SHA256: 2bf511cbf4a7fbe6c6d8e80cdcd92f5af9dbd8c266255f5cff8271aad01ac30b
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-applications
+Build-Ids: cfd7372924556e9111beff613b0db68f5514bb07
+
+Package: switchboard-plug-bluetooth
+Version: 2.3.6
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 906
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-bluetooth/switchboard-plug-bluetooth_2.3.6_amd64.deb
+Size: 80552
+MD5sum: 97a1855091b3d826f7d22d75ea682562
+SHA1: 823ccffa7e3da9db1930491e1ccd867c8f874d2a
+SHA256: 24d8dae247b10279ab15aa36b30a09f0cd69154796886af2ece087a4997ebc2c
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-bluetooth
+Description: Bluetooth plug for Switchboard
+ This plug configures bluetooth devices.
+
+Package: switchboard-plug-bluetooth-dbgsym
+Source: switchboard-plug-bluetooth
+Version: 2.3.6
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 282
+Depends: switchboard-plug-bluetooth (= 2.3.6)
+Breaks: switchboard-plug-bluetooth-dbg (<< 0.3.2)
+Replaces: switchboard-plug-bluetooth-dbg (<< 0.3.2)
+Filename: ./switchboard-plugs/switchboard-plug-bluetooth/switchboard-plug-bluetooth-dbgsym_2.3.6_amd64.deb
+Size: 228788
+MD5sum: 82b9f9df339f585bb505e9d67b02114c
+SHA1: 9a4d28b002562d45ae9158af6ec1b2419d0b30ad
+SHA256: a4e052880ac1db8dd2b0859ab691503e4df26f2ac7742b6b073dbc30924eb72a
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-bluetooth
+Build-Ids: 10c64a056212d71f1470a73f131d223ad7ed886d
+
+Package: switchboard-plug-datetime
+Version: 2.2.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 2697
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.2.0), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Recommends: elementary-default-settings (>= 5.2)
+Enhances: switchboard
+Conflicts: switchboard-plug-gcc-date
+Replaces: switchboard-plug-gcc-date
+Filename: ./switchboard-plugs/switchboard-plug-datetime/switchboard-plug-datetime_2.2.0_amd64.deb
+Size: 277572
+MD5sum: 88a77be9d05745f354071c296f7f9bb4
+SHA1: 4025995dfdf1448002a9b7d6eef59a0d0a7c5ba5
+SHA256: db53697f02d096ac3fe85cf74ca968c6a7e54588ca49605e24ea6be269d49e0b
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-datetime
+Description: Date & Time plug for Switchboard
+ This plug configures system time and date.
+
+Package: switchboard-plug-datetime-dbgsym
+Source: switchboard-plug-datetime
+Version: 2.2.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 147
+Depends: switchboard-plug-datetime (= 2.2.0)
+Breaks: switchboard-plug-datetime-dbg (<< 0.1.2)
+Replaces: switchboard-plug-datetime-dbg (<< 0.1.2)
+Filename: ./switchboard-plugs/switchboard-plug-datetime/switchboard-plug-datetime-dbgsym_2.2.0_amd64.deb
+Size: 116656
+MD5sum: 5a93c018e3c01e225a3fa9a65c5e93f8
+SHA1: 32486da8472e07d56ac76ad19bb6f5367683e795
+SHA256: ef149af8b96b7e7e0de1cbaca75459832d8a429ae595b8e8d1ef99f0580d00e3
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-datetime
+Build-Ids: c2a100b6644c049cbffee4c8cfbf34e17ee1c2b1
+
+Package: switchboard-plug-display
+Version: 2.3.2
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 944
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.2.0), libgtk-3-0 (>= 3.17.9), libhandy-1-0 (>= 0.80.0), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-display/switchboard-plug-display_2.3.2_amd64.deb
+Size: 102556
+MD5sum: 0599c42a327dfe72465ae57369f86059
+SHA1: 679ee713c30b5c2cfe4fbf06cbb88fc56c1b5b5f
+SHA256: 8a41acedec6b694ae28d28f49a7da3ea6c49b2a5d40bdd639dfadfc1786e2c92
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-display
+Description: Switchboard plug for display settings
+ This plug can be used to change display settings like orientation and
+ resolution.
+
+Package: switchboard-plug-display-dbgsym
+Source: switchboard-plug-display
+Version: 2.3.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 413
+Depends: switchboard-plug-display (= 2.3.2)
+Breaks: switchboard-plug-display-dbg (<< 0.1.3)
+Replaces: switchboard-plug-display-dbg (<< 0.1.3)
+Filename: ./switchboard-plugs/switchboard-plug-display/switchboard-plug-display-dbgsym_2.3.2_amd64.deb
+Size: 356392
+MD5sum: 944000b9485a021d73015339b7885f44
+SHA1: 2d22b9d5eaa2000429cd028fdcd763929190b3c4
+SHA256: 5374719ded6d59fb62ff5c7429f5ebcb1fe7c8c168929ce21558c04ae983a2a0
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-display
+Build-Ids: 9e24df755237c9971f950bd573248d473820b4f7
+
+Package: switchboard-plug-keyboard
+Version: 3.0.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 1352
+Depends: gala, ibus, xkb-data, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.45.7), libgnomekbd8 (>= 3.6.0), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.5), libhandy-1-0 (>= 0.90.0), libibus-1.0-5 (>= 1.5.2), libpangocairo-1.0-0 (>= 1.14.0), libswitchboard-2.0-0 (>= 2.0~bzr468), libxml2 (>= 2.7.4)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-keyboard/switchboard-plug-keyboard_3.0.0_amd64.deb
+Size: 181632
+MD5sum: 0b4a1e5f69504f91fe430e8886e692f7
+SHA1: 7ae1eecf3051e20fae18eac570472d411a53089d
+SHA256: 70158a228e3d5931db8bac6ba6f2f6203a185db26ef52e86c05161e5c0611232
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-keyboard
+Description: Switchboard plug for keyboard settings
+ This plug can be used to change several keyboard settings, for example the
+ delay and speed of the key repetition, or the cursor blinking speed. You can
+ change your keyboard layout, and use multiple layouts at the same time.
+ Keyboard shortcuts are also part of this plug.
+
+Package: switchboard-plug-keyboard-dbgsym
+Source: switchboard-plug-keyboard
+Version: 3.0.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 657
+Depends: switchboard-plug-keyboard (= 3.0.0)
+Breaks: switchboard-plug-keyboard-dbg (<< 0.3.2)
+Replaces: switchboard-plug-keyboard-dbg (<< 0.3.2)
+Filename: ./switchboard-plugs/switchboard-plug-keyboard/switchboard-plug-keyboard-dbgsym_3.0.0_amd64.deb
+Size: 566832
+MD5sum: ebd14c5b179d347b42252d5d5158ac9f
+SHA1: 459afcf388b9163292d84ec68e2288f2a959f2d2
+SHA256: 65ae0f9201c5f34db4724266600331206f593736a3df16c98c01f24147058208
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-keyboard
+Build-Ids: 211e8f76aabb10cefc87d8a6e07e12f5a2e551ec
+
+Package: switchboard-plug-locale
+Version: 2.5.8
+Architecture: amd64
+Maintainer: elementary LLC <builds@elementary.io>
+Installed-Size: 890
+Depends: aptdaemon, dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libgee-0.8-2 (>= 0.10.1), libglib2.0-0 (>= 2.43.92), libgnome-desktop-3-19 (>= 3.17.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.22.29), libpolkit-gobject-1-0 (>= 0.99), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-locale/switchboard-plug-locale_2.5.8_amd64.deb
+Size: 83524
+MD5sum: 0244442115778f0234660f6c1fc1f9a4
+SHA1: b57fc331876324cbb8895aa7a70445063f62b12b
+SHA256: 2dba3bf5fcbd1dae3559fd373cf1e661f2f8e0d40dce89087b42bfb771722dba
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-locale
+Description: Region & Language plug for Switchboard
+ Change your region and language settings
+
+Package: switchboard-plug-locale-dbgsym
+Source: switchboard-plug-locale
+Version: 2.5.8
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary LLC <builds@elementary.io>
+Installed-Size: 333
+Depends: switchboard-plug-locale (= 2.5.8)
+Breaks: switchboard-plug-locale-dbg (<< 0.2.3)
+Replaces: switchboard-plug-locale-dbg (<< 0.2.3)
+Filename: ./switchboard-plugs/switchboard-plug-locale/switchboard-plug-locale-dbgsym_2.5.8_amd64.deb
+Size: 279744
+MD5sum: a2ece09fd789d3b34541db794fa8767d
+SHA1: 61bb465350e6dca6303341942a1c1ab9eb03df33
+SHA256: 6db6d1221e6ed8838cda359fcd570ecc2b21c3793f79bfb0afa5c41c502ec059
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-locale
+Build-Ids: 54133d0669e613ec54e7f454aa256b0bbe2f8c41
+
+Package: switchboard-plug-mouse-touchpad
+Version: 6.1.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 878
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.5), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468), libxml2 (>= 2.7.4)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-touchpad/switchboard-plug-mouse-touchpad_6.1.0_amd64.deb
+Size: 101620
+MD5sum: 4d1dbb8a3cdfe1adda0359bfd1ee8a70
+SHA1: 4a72fea2e659328d42a2ccfb5820eccefb8a6b52
+SHA256: 90d29dd6f4767cebc3466642f300fab6975822c6e7a47103f6c6a56f98c1013a
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-mouse-touchpad
+Description: Mouse/Touchpad plug for Switchboard
+ This plug configures mouse and touchpad.
+
+Package: switchboard-plug-mouse-touchpad-dbgsym
+Source: switchboard-plug-mouse-touchpad
+Version: 6.1.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 152
+Depends: switchboard-plug-mouse-touchpad (= 6.1.0)
+Filename: ./switchboard-plugs/switchboard-plug-touchpad/switchboard-plug-mouse-touchpad-dbgsym_6.1.0_amd64.deb
+Size: 127204
+MD5sum: 0efaa0da8e2916a2c2d70b2a2f45b70c
+SHA1: f6816b2d7737194d3ef32345e89b399507d4bada
+SHA256: 51e35b090aebd6484800d639b9a7c0c2b45bb8c8dc10456885d55d273a9f8028
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-mouse-touchpad
+Build-Ids: be7f8be68b23a495923181c9a2012512c36d1248
+
+Package: switchboard-plug-networking
+Version: 2.4.2
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 1208
+Depends: network-manager-gnome, libc6 (>= 2.28), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.16.2), libnm0 (>= 1.0.0), libnma0 (>= 1.1.90), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Recommends: network-manager-openvpn-gnome
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-networking/switchboard-plug-networking_2.4.2_amd64.deb
+Size: 144516
+MD5sum: effb659cdd5a1328892f0b2adcd84354
+SHA1: 70f774ef9ca02e9a09cd621d4eca060efebfe9c7
+SHA256: 65dd327b425bef82c8b21ecf152921fe7848c10de4ec9e0147a8e3aa2a30a790
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-networking
+Description: Manage network connections
+ Switchboard plug for managing networking.
+
+Package: switchboard-plug-networking-dbgsym
+Source: switchboard-plug-networking
+Version: 2.4.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 514
+Depends: switchboard-plug-networking (= 2.4.2)
+Breaks: switchboard-plug-networking-dbg (<< 0.1.1)
+Replaces: switchboard-plug-networking-dbg (<< 0.1.1)
+Filename: ./switchboard-plugs/switchboard-plug-networking/switchboard-plug-networking-dbgsym_2.4.2_amd64.deb
+Size: 449936
+MD5sum: 22d80a7d6e1397f6465b8d284d2034fa
+SHA1: a578f72b829366333fafff90f0f580fd9736c34f
+SHA256: 9bf781b3497143ddd8c2c3201b5f73c4d6c0cd491e3544dccf2a2125d40da068
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-networking
+Build-Ids: 69abe0b009f1297107eb32e806e33009a2195a5f
+
+Package: switchboard-plug-notifications
+Version: 2.2.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 789
+Depends: io.elementary.notifications, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.5), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-notifications/switchboard-plug-notifications_2.2.0_amd64.deb
+Size: 69904
+MD5sum: 2e7d1e49ca8f4545246c9032b174283f
+SHA1: 2619bb2985d8e3358bfc68032b9d1b15bfc11dcc
+SHA256: 54c23372934bcc81e57db4da4b39abdc5cf9fa56ca2ad389fe1c176866f9e944
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-notifications
+Description: Change notification settings
+ Switchboard plug for controlling Gala's notifications.
+
+Package: switchboard-plug-notifications-dbgsym
+Source: switchboard-plug-notifications
+Version: 2.2.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 133
+Depends: switchboard-plug-notifications (= 2.2.0)
+Breaks: switchboard-plug-notifications-dbg (<< 0.1.3)
+Replaces: switchboard-plug-notifications-dbg (<< 0.1.3)
+Filename: ./switchboard-plugs/switchboard-plug-notifications/switchboard-plug-notifications-dbgsym_2.2.0_amd64.deb
+Size: 106556
+MD5sum: 05cf9939d76a02032302518928d87573
+SHA1: bdc3f4504e669231759e53cfa86e3dcac11c516c
+SHA256: eb4611eb766599614e1df7e4da0ee124d7cecd81a5f59ec43115a3efb6b7856d
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-notifications
+Build-Ids: f35de8e1ef04399c4e358fb08d3728f38d7db79d
+
+Package: switchboard-plug-online-accounts
+Source: switchboard-plug-onlineaccounts
+Version: 6.5.0
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 940
+Depends: libc6 (>= 2.4), libcamel-1.2-62 (>= 3.25.90), libedataserver-1.2-25 (>= 3.29.90), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.63.3), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.5), libhandy-1-0 (>= 0.80.0), libsoup2.4-1 (>= 2.4.0), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-onlineaccounts/switchboard-plug-online-accounts_6.5.0_amd64.deb
+Size: 116572
+MD5sum: 9bdf108f6fc4c2fe655e3d72feaec29c
+SHA1: 848660d714c2eb33861ae1a3102b9f85a0c511a2
+SHA256: 88487a41864779580e6eddd0ff724f2fe01c06a80b6fdb177a30c8baf7ac7557
+Section: admin
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-onlineaccounts
+Description: Online Accounts plug for Switchboard
+ This plug allow you to enable online accounts sync.
+
+Package: switchboard-plug-online-accounts-dbgsym
+Source: switchboard-plug-onlineaccounts
+Version: 6.5.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 279
+Depends: switchboard-plug-online-accounts (= 6.5.0)
+Filename: ./switchboard-plugs/switchboard-plug-onlineaccounts/switchboard-plug-online-accounts-dbgsym_6.5.0_amd64.deb
+Size: 239752
+MD5sum: 35c463b5ae641f8fb2398253d8c648f8
+SHA1: 09e718d3d31dfa7602c4de83edd7e4336f3c1bb5
+SHA256: fb60c7d9b426bdef2bbf4e6a48c4f103ea084f82cb2d88a54c78d23a66d3ee40
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-online-accounts
+Build-Ids: 38456719e97ea5372ce9cb2c87de65ca86a2025e
+
+Package: switchboard-plug-pantheon-shell
+Version: 6.1.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 1025
+Depends: gala, libc6 (>= 2.29), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libgexiv2-2 (>= 0.6.1), libglib2.0-0 (>= 2.43.92), libgnome-desktop-3-19 (>= 3.17.92), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.22), libplank1 (>= 0.11.89), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Recommends: plank
+Enhances: switchboard
+Conflicts: switchboard-plug-wallpaper
+Replaces: switchboard-plug-wallpaper
+Filename: ./switchboard-plugs/switchboard-plug-pantheon-shell/switchboard-plug-pantheon-shell_6.1.0_amd64.deb
+Size: 122016
+MD5sum: 9ceddf73a9eaf943a82481412e188461
+SHA1: 30a8a910d314c18467b9f1372d519856bedde179
+SHA256: 948cd0f8eaebd823e262d03ae27a9bd8b9e085721d79cc6ffe3d15bc9547605e
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-pantheon-shell
+Description: Change desktop settings
+ Switchboard plug for controlling Pantheon Shell.
+
+Package: switchboard-plug-pantheon-shell-dbgsym
+Source: switchboard-plug-pantheon-shell
+Version: 6.1.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 353
+Depends: switchboard-plug-pantheon-shell (= 6.1.0)
+Breaks: switchboard-plug-pantheon-shell-dbg (<< 0.2.6)
+Replaces: switchboard-plug-pantheon-shell-dbg (<< 0.2.6)
+Filename: ./switchboard-plugs/switchboard-plug-pantheon-shell/switchboard-plug-pantheon-shell-dbgsym_6.1.0_amd64.deb
+Size: 292380
+MD5sum: b8a1e1de812a3c5b22fa7398eaff7ac3
+SHA1: 8c17fe1146677c2c50bf8ecd7fa90770de045abc
+SHA256: 4a1d3baac0c39a3c8dcb6170ff3e827b06f708eb6ac37964109d0114877bf4b3
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-pantheon-shell
+Build-Ids: ac18c0108b3e0b099a9761bd1ca6b2f522c35d69 b9ea579eee82fee35e1c5b78507e9f381b24b68c
+
+Package: switchboard-plug-parental-controls
+Version: 6.0.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 1219
+Depends: malcontent, libaccountsservice0 (>= 0.6.8), libc6 (>= 2.14), libflatpak0 (>= 0.5.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.5), libgtk-3-0 (>= 3.16.2), libhandy-1-0 (>= 0.90.0), libmalcontent-0-0 (>= 0.9.0), libpolkit-gobject-1-0 (>= 0.101), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-parental-controls/switchboard-plug-parental-controls_6.0.0_amd64.deb
+Size: 143904
+MD5sum: cd1af4ca3c0d90fc141160fae35e98aa
+SHA1: 3563fac48347b6055ac20e453e492a6e7e0c7c9d
+SHA256: 337cc9dfbb6215c14d164ac6add5a181855c972c3b8fa1e0344b698923b57515
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-parental-controls
+Description: Manage Screen Time & Limits
+ Switchboard plug for managing Screen Time & Limits.
+
+Package: switchboard-plug-parental-controls-dbgsym
+Source: switchboard-plug-parental-controls
+Version: 6.0.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 866
+Depends: switchboard-plug-parental-controls (= 6.0.0)
+Breaks: switchboard-plug-parental-controls-dbg (<< 0.1.3)
+Replaces: switchboard-plug-parental-controls-dbg (<< 0.1.3)
+Filename: ./switchboard-plugs/switchboard-plug-parental-controls/switchboard-plug-parental-controls-dbgsym_6.0.0_amd64.deb
+Size: 718548
+MD5sum: 28f9b1f0d104fa232c5594c958665ca7
+SHA1: b80d6de496b6d21db896143f50836311f3a37c26
+SHA256: b678b798f4bc1c2d346e9312c42226586a4ee428cdddb6b68f2228c8d52a7686
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-parental-controls
+Build-Ids: 6b1bba84a1d8db0921db0269e2abf30421090c13 8cc7460c5084eaa4436e40e766e01e7ba3b8f860 c651b216b1d2a5ec9365a8331c79ac95b41ab03c
+
+Package: switchboard-plug-power
+Version: 2.7.0
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 975
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgtk-3-0 (>= 3.22.29), libpolkit-gobject-1-0 (>= 0.101), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Recommends: power-profiles-daemon
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-power/switchboard-plug-power_2.7.0_amd64.deb
+Size: 96376
+MD5sum: 22d619ecd2278a92b45d96d7a0deae07
+SHA1: e708bbb2178190be9af7a1e41934341f15b09da2
+SHA256: a3563c92e018fe82c5266813d3235495935629f36553cd7fa97fc7ed90f9af53
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-power
+Description: Power plug for Switchboard
+ This plug configures system power consumption.
+
+Package: switchboard-plug-power-dbgsym
+Source: switchboard-plug-power
+Version: 2.7.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 327
+Depends: switchboard-plug-power (= 2.7.0)
+Breaks: switchboard-plug-power-dbg (<< 0.3.2)
+Replaces: switchboard-plug-power-dbg (<< 0.3.2)
+Filename: ./switchboard-plugs/switchboard-plug-power/switchboard-plug-power-dbgsym_2.7.0_amd64.deb
+Size: 253956
+MD5sum: e196b7b8481f00759752f7698ae860a8
+SHA1: af499f752849c0e398cbd95d73138afe86381a41
+SHA256: 611dfeac361c4f23ba3fae12a799e5e094dcc57477da48c8f03f76733406fb7e
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-power
+Build-Ids: e67e422ad6487d3fec10bed1888aa5064bbf0af8 f7d50bd1dc9f7086e86a2dd6acca3e7248860d14
+
+Package: switchboard-plug-printers
+Version: 2.1.10
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 1183
+Depends: libc6 (>= 2.4), libcups2 (>= 1.6.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.16.2), libswitchboard-2.0-0 (>= 2.0~bzr468), cups-pk-helper
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-printers/switchboard-plug-printers_2.1.10_amd64.deb
+Size: 136096
+MD5sum: d6fcbf4319bb0cb21c329e0e4d2cc754
+SHA1: c95183e6226afbd1de4c0f76293026928880e71c
+SHA256: 93ceb5a513baabab4a9c98256c4322138ebcbd7969e0b0e11c15155387fbf4fe
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-printers
+Description: Printers plug for Switchboard
+ This plug configures all available printers.
+
+Package: switchboard-plug-printers-dbgsym
+Source: switchboard-plug-printers
+Version: 2.1.10
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 514
+Depends: switchboard-plug-printers (= 2.1.10)
+Breaks: switchboard-plug-printers-dbg (<< 0.1.2)
+Replaces: switchboard-plug-printers-dbg (<< 0.1.2)
+Filename: ./switchboard-plugs/switchboard-plug-printers/switchboard-plug-printers-dbgsym_2.1.10_amd64.deb
+Size: 446396
+MD5sum: 01691d224d87c76b686eb2ff5826f294
+SHA1: ed9eb8119c695b500648af946de35af30e5fcbb1
+SHA256: 954065638364d2f3337f662f3322bcd99946d7812458e106427cb7b543c390ff
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-printers
+Build-Ids: 7a78dd4ab045c07f5f2e5b52ddf2a730c9217e6f
+
+Package: switchboard-plug-security-privacy
+Version: 2.4.0
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 1107
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.63.1), libgranite6 (>= 0.5), libgtk-3-0 (>= 3.22.29), libpolkit-gobject-1-0 (>= 0.99), libswitchboard-2.0-0 (>= 2.3.0), libzeitgeist-2.0-0 (>= 0.9.9), gala, gnome-settings-daemon-common, io.elementary.settings-daemon, pantheon-agent-geoclue2, ufw, zeitgeist
+Enhances: switchboard
+Filename: ./switchboard-plugs/switchboard-plug-security-privacy/switchboard-plug-security-privacy_2.4.0_amd64.deb
+Size: 129180
+MD5sum: cab5da257d6811564807345dd526a84d
+SHA1: e62b0edb1d90cce1a2dea46bbb992a16ba1cebad
+SHA256: 78aa583bdc2b4acaf5271a96fbd0f8666bf26385450cf820ff676af431d17286
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-security-privacy
+Description: Manage security and privacy
+ Switchboard plug for managing the security and privacy of your system.
+
+Package: switchboard-plug-security-privacy-dbgsym
+Source: switchboard-plug-security-privacy
+Version: 2.4.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 413
+Depends: switchboard-plug-security-privacy (= 2.4.0)
+Breaks: switchboard-plug-security-privacy-dbg (<< 0.1.2)
+Replaces: switchboard-plug-security-privacy-dbg (<< 0.1.2)
+Filename: ./switchboard-plugs/switchboard-plug-security-privacy/switchboard-plug-security-privacy-dbgsym_2.4.0_amd64.deb
+Size: 353848
+MD5sum: 08892e8ee99c3bfbeeab1c4fc0cc3b6a
+SHA1: a80891da87d83169d2654100f1493cc483d3e9e2
+SHA256: 89df6c7e40c0d7fbd2ad962427a06703216debc19f0e0286fa6dac30de36d392
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-security-privacy
+Build-Ids: 7dda75da9ce40e4835349d12d1832ec0d9d59edb
+
+Package: switchboard-plug-sharing
+Version: 2.1.5
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 805
+Depends: gnome-user-share (>= 3.14), rygel, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.45.6), libgranite6 (>= 0.3.1), libgtk-3-0 (>= 3.13.7), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Filename: ./switchboard-plugs/switchboard-plug-sharing/switchboard-plug-sharing_2.1.5_amd64.deb
+Size: 56868
+MD5sum: 208c9e70f17c8555d2e3cd7b96db242a
+SHA1: 83a597bb7896cf76a3bc908a013060bbc20b1e4f
+SHA256: 78a681b43a6c2cdeae00e9be94877ad8d52878c8124ba736a81bc364dea37ab2
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-sharing
+Description: Change media sharing settings
+ Switchboard plug for controlling media sharing.
+
+Package: switchboard-plug-sharing-dbgsym
+Source: switchboard-plug-sharing
+Version: 2.1.5
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 161
+Depends: switchboard-plug-sharing (= 2.1.5)
+Breaks: switchboard-plug-sharing-dbg (<< 0.1)
+Replaces: switchboard-plug-sharing-dbg (<< 0.1)
+Filename: ./switchboard-plugs/switchboard-plug-sharing/switchboard-plug-sharing-dbgsym_2.1.5_amd64.deb
+Size: 129148
+MD5sum: 2331b9bf1e1e3d67ed50edd4b5b3bb10
+SHA1: 65aae67acdef2f0bc4559c02198ecf718f090d16
+SHA256: 0efd0169368ad27391e2a28de59befc87a2fab3fff461f85ec337cd767f97de6
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-sharing
+Build-Ids: 161ea58354768ec958987d678c39bb08f41769ee
+
+Package: switchboard-plug-sound
+Version: 2.3.1
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 946
+Depends: libc6 (>= 2.4), libcanberra-gtk3-0 (>= 0.25), libcanberra0 (>= 0.2), libgee-0.8-2 (>= 0.10.1), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.4.0), libgtk-3-0 (>= 3.16.2), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Conflicts: switchboard-plug-gcc-sound
+Replaces: switchboard-plug-gcc-sound
+Filename: ./switchboard-plugs/switchboard-plug-sound/switchboard-plug-sound_2.3.1_amd64.deb
+Size: 161068
+MD5sum: f6919fafe3886076b79648f24e6d23e1
+SHA1: 52c65ac04c6fae01a00b899e813818780fee8c8d
+SHA256: 331492e40fdeee6adf0d30a05fb06fc9b7773204876eb3c0776e314d722c8a0b
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-sound
+Description: Sound plug for Switchboard
+ This plug allows the user to set the audio and microphone volume and several
+ sound-related settings.
+
+Package: switchboard-plug-sound-dbgsym
+Source: switchboard-plug-sound
+Version: 2.3.1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary OS Team <builds@elementary.io>
+Installed-Size: 242
+Depends: switchboard-plug-sound (= 2.3.1)
+Breaks: switchboard-plug-sound-dbg (<< 0.1)
+Replaces: switchboard-plug-sound-dbg (<< 0.1)
+Filename: ./switchboard-plugs/switchboard-plug-sound/switchboard-plug-sound-dbgsym_2.3.1_amd64.deb
+Size: 205648
+MD5sum: 82a440c701bb1896b0c7d400df89b523
+SHA1: f590456deba02cf3fc29965ebc9d20d4e8f1b752
+SHA256: 8bb68413fa55638e1223a6b2cb166c49d8f0e7db32adc8d665963c7bfc22221d
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-sound
+Build-Ids: b484802b11ef601edb68515c1ae4ba868f8ca5c0
+
+Package: switchboard-plug-useraccounts
+Version: 2.4.2
+Architecture: amd64
+Maintainer: elementary LLC. <builds@elementary.io>
+Installed-Size: 1047
+Depends: libaccountsservice0 (>= 0.6.13), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgnome-desktop-3-19 (>= 3.17.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.22.29), libhandy-1-0 (>= 0.90.0), libpolkit-gobject-1-0 (>= 0.99), libpwquality1 (>= 1.1.0), libswitchboard-2.0-0 (>= 2.0~bzr468)
+Enhances: switchboard
+Conflicts: switchboard-plug-gcc-users
+Replaces: switchboard-plug-gcc-users
+Filename: ./switchboard-plugs/switchboard-plug-useraccounts/switchboard-plug-useraccounts_2.4.2_amd64.deb
+Size: 113244
+MD5sum: 1af33e39b135f498a46b059c82644328
+SHA1: be1c4ef5816ea4a01441bb78aab6076aad2e43e4
+SHA256: 1c1773f78026c8b2c485642766599819467ac4d917557e39a342b82bd744c960
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-useraccounts
+Description: Manage local user accounts
+ Switchboard plug for managing local user accounts
+
+Package: switchboard-plug-useraccounts-dbgsym
+Source: switchboard-plug-useraccounts
+Version: 2.4.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary LLC. <builds@elementary.io>
+Installed-Size: 439
+Depends: switchboard-plug-useraccounts (= 2.4.2)
+Breaks: switchboard-plug-useraccounts-dbg (<< 0.1.6)
+Replaces: switchboard-plug-useraccounts-dbg (<< 0.1.6)
+Filename: ./switchboard-plugs/switchboard-plug-useraccounts/switchboard-plug-useraccounts-dbgsym_2.4.2_amd64.deb
+Size: 367480
+MD5sum: fca98ce3bfb3f8848b07347ea9d0d860
+SHA1: 1c3cd7bb7bac6c68a3969afc2fd990720fe8aef5
+SHA256: 98a3caf90144dbd77610cc63a006e24be9fb0ffa8f6950e05be0b7d6ff0775c4
+Section: debug
+Priority: optional
+Description: debug symbols for switchboard-plug-useraccounts
+Build-Ids: 4a99a50fccfba13fc31f47310814867b1e027273 5d774e1eda48e03cfc76afc4f29fd6361bab7aa2
+
+Package: switchboard-plug-users
+Source: switchboard-plug-useraccounts
+Version: 2.4.2
+Architecture: amd64
+Maintainer: elementary LLC. <builds@elementary.io>
+Installed-Size: 10
+Depends: switchboard-plug-useraccounts
+Filename: ./switchboard-plugs/switchboard-plug-useraccounts/switchboard-plug-users_2.4.2_amd64.deb
+Size: 3672
+MD5sum: c0189cfe803c0bbf249fcbdc7c80c055
+SHA1: b8a509c891ba43f2fc7e8cca9d461dcfe329d6fd
+SHA256: b282a7d38d2ca5bdd2db4b390c11d361454635ed35c2321f4da0a5f7c0241b5e
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/switchboard-plug-useraccounts
+Description: Manage local user accounts (dummy package)
+ Switchboard plug for managing local user accounts. Dummy package, safe to remove.
+
+Package: wingpanel
+Source: io.elementary.wingpanel
+Version: 3.0.2
+Architecture: all
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 11
+Depends: io.elementary.wingpanel
+Filename: ./elementary-wingpanel/wingpanel_3.0.2_all.deb
+Size: 3960
+MD5sum: e2d1b70484df2a042cebb304427c40c7
+SHA1: c2c1e819349f25b3951eb63faddf209c1d6bf473
+SHA256: 325f8ec77b8ef735893495794a08f768a7bfd4e42b771f25f9957c9b41d78578
+Section: oldlibs
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: wingpanel-indicator-a11y
+Version: 1.0.0
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 681
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.4), libwingpanel3
+Enhances: wingpanel
+Filename: ./wingpanel-indicators/wingpanel-indicator-a11y/wingpanel-indicator-a11y_1.0.0_amd64.deb
+Size: 27124
+MD5sum: 5233528403d7045d4bf4b745434e1da4
+SHA1: a4fc62c4ef1458cec08fde73280602e36eea1e66
+SHA256: 9f83d6ff7de073dc9a739b087668c98fb30ab8b5c0fb1d19a69135dbf270c171
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel-indicator-a11y
+Description: WingPanel A11y Indicator
+ WingPanel a11y Indicator
+
+Package: wingpanel-indicator-a11y-dbgsym
+Source: wingpanel-indicator-a11y
+Version: 1.0.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 70
+Depends: wingpanel-indicator-a11y (= 1.0.0)
+Filename: ./wingpanel-indicators/wingpanel-indicator-a11y/wingpanel-indicator-a11y-dbgsym_1.0.0_amd64.deb
+Size: 53036
+MD5sum: 76eea281d6b8ed3bd0b8c3af3f15659b
+SHA1: 805bdaee9fe681938ba21582cf0f60a28fd1e026
+SHA256: f99e2efb69dbda30f2592e86e031d433e722f87096958226c9d922cd82a4cefc
+Section: debug
+Priority: optional
+Description: debug symbols for wingpanel-indicator-a11y
+Build-Ids: 9b89e115d7fb0e587597a0d5b36fcf4f3a6059cf
+
+Package: wingpanel-indicator-bluetooth
+Version: 2.1.8
+Architecture: amd64
+Maintainer: elementary LLC <builds@elementary.io>
+Installed-Size: 781
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.6), libwingpanel3
+Enhances: wingpanel
+Filename: ./wingpanel-indicators/wingpanel-indicator-bluetooth/wingpanel-indicator-bluetooth_2.1.8_amd64.deb
+Size: 54696
+MD5sum: 45a182e873b68d91e49c115599bf6a0a
+SHA1: 4142da3df49a59da4c35a01f61de6c89a0ccc67f
+SHA256: 83dd522ee9501d249d98646848db613fdf5a28bbad46979bdc021f83ee91e417
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel-indicator-bluetooth
+Description: WingPanel Bluetooth Indicator
+ WingPanel Bluetooth Indicator
+
+Package: wingpanel-indicator-bluetooth-dbgsym
+Source: wingpanel-indicator-bluetooth
+Version: 2.1.8
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary LLC <builds@elementary.io>
+Installed-Size: 204
+Depends: wingpanel-indicator-bluetooth (= 2.1.8)
+Breaks: wingpanel-indicator-bluetooth-dbg (<< 2.0.3)
+Replaces: wingpanel-indicator-bluetooth-dbg (<< 2.0.3)
+Filename: ./wingpanel-indicators/wingpanel-indicator-bluetooth/wingpanel-indicator-bluetooth-dbgsym_2.1.8_amd64.deb
+Size: 157676
+MD5sum: 13d10e83010a5a34e6515594c7fff708
+SHA1: 54ebb46673330cffd2dcb3c29a778c01906c130b
+SHA256: e85d253593c22052d37223467797ee55865ec0b82d3b09c64412d498c5a259cb
+Section: debug
+Priority: optional
+Description: debug symbols for wingpanel-indicator-bluetooth
+Build-Ids: 90eb8b7797ae16d5d0228743538a5909be540def
+
+Package: wingpanel-indicator-datetime
+Version: 2.4.0
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 817
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libecal-2.0-1 (>= 3.33.4), libedataserver-1.2-25 (>= 3.17), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.19.12), libhandy-1-0 (>= 0.80.0), libical3 (>= 3.0.0), libwingpanel3
+Recommends: elementary-default-settings (>= 5.2)
+Enhances: wingpanel
+Filename: ./wingpanel-indicators/wingpanel-indicator-datetime/wingpanel-indicator-datetime_2.4.0_amd64.deb
+Size: 68056
+MD5sum: a372faebc66bdaf6b9417c9dab7f27d0
+SHA1: e77208840be493f6ed41ae53ac74adb645040ecc
+SHA256: 8aa457a08d663923c1b90e7cd60688ebb5142eb6a7420618eadfdfe750813625
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel-indicator-datetime
+Description: WingPanel Date & Time Indicator
+ WingPanel Date & Time Indicator
+
+Package: wingpanel-indicator-datetime-dbgsym
+Source: wingpanel-indicator-datetime
+Version: 2.4.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 345
+Depends: wingpanel-indicator-datetime (= 2.4.0)
+Breaks: wingpanel-indicator-datetime-dbg (<< 2.0.2)
+Replaces: wingpanel-indicator-datetime-dbg (<< 2.0.2)
+Filename: ./wingpanel-indicators/wingpanel-indicator-datetime/wingpanel-indicator-datetime-dbgsym_2.4.0_amd64.deb
+Size: 298828
+MD5sum: d38ee8acd15a30ea3b7a419c8798166b
+SHA1: a0cd4c9108912910d1d2ad3b570dcead8225b02c
+SHA256: 1a9e5b2b21367880866969c53c41df4b3247f0f7398695a61124e834042b1ecb
+Section: debug
+Priority: optional
+Description: debug symbols for wingpanel-indicator-datetime
+Build-Ids: ab2a26cd1a91bad3808243c0c7eaee42e5340d5b
+
+Package: wingpanel-indicator-keyboard
+Version: 2.4.0
+Architecture: amd64
+Maintainer: elementary LLC <builds@elementary.io>
+Installed-Size: 699
+Depends: gkbd-capplet, xkb-data, dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.16.2), libibus-1.0-5 (>= 1.5.1), libwingpanel3, libxml2 (>= 2.7.4)
+Enhances: wingpanel
+Filename: ./wingpanel-indicators/wingpanel-indicator-keyboard/wingpanel-indicator-keyboard_2.4.0_amd64.deb
+Size: 33716
+MD5sum: 4a0a9b88bf53a8f1a27ab870e3812436
+SHA1: 173360f7ced8cba6543115749f2fd84919f7aebf
+SHA256: 8391d24a21d4b40f7e5138d83e619b55c96ab5546523431212ff76a8dac3d1ee
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel-indicator-keyboard
+Description: WingPanel Keyboard Indicator
+ WingPanel Keyboard Indicator
+
+Package: wingpanel-indicator-keyboard-dbgsym
+Source: wingpanel-indicator-keyboard
+Version: 2.4.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary LLC <builds@elementary.io>
+Installed-Size: 122
+Depends: wingpanel-indicator-keyboard (= 2.4.0)
+Breaks: wingpanel-indicator-keyboard-dbg (<< 2.0.2)
+Replaces: wingpanel-indicator-keyboard-dbg (<< 2.0.2)
+Filename: ./wingpanel-indicators/wingpanel-indicator-keyboard/wingpanel-indicator-keyboard-dbgsym_2.4.0_amd64.deb
+Size: 97072
+MD5sum: 62afd802b18f0aed3243326c93b264db
+SHA1: dc3d14a8a124b3cb8863f989c2bfdbac2918d00b
+SHA256: c90eefa0472ef204f4d000431614655ae4a4caa8ee99dd67ef42355bf645127e
+Section: debug
+Priority: optional
+Description: debug symbols for wingpanel-indicator-keyboard
+Build-Ids: f20b36469985cd4dc58e779bc245b9ff45a306dc
+
+Package: wingpanel-indicator-network
+Version: 2.3.2
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 836
+Depends: libc6 (>= 2.28), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.6), libnm0 (>= 1.0.0), libnma0 (>= 1.1.90), libwingpanel3
+Enhances: wingpanel
+Filename: ./wingpanel-indicators/wingpanel-indicator-network/wingpanel-indicator-network_2.3.2_amd64.deb
+Size: 70612
+MD5sum: 012e695b6246be31073a2f10dfb1df91
+SHA1: 23e62a8f1386ffe504bb733e9dfa5a9bda0a0e25
+SHA256: 494c8084ec22569b93037688df872bf4b53e319b1242c01a7335df4d961c621f
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel-indicator-network
+Description: WingPanel Network Indicator
+ WingPanel Network Indicator
+
+Package: wingpanel-indicator-network-dbgsym
+Source: wingpanel-indicator-network
+Version: 2.3.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Cody Garver <cody@elementary.io>
+Installed-Size: 290
+Depends: wingpanel-indicator-network (= 2.3.2)
+Breaks: wingpanel-indicator-network-dbg (<< 2.1.1)
+Replaces: wingpanel-indicator-network-dbg (<< 2.1.1)
+Filename: ./wingpanel-indicators/wingpanel-indicator-network/wingpanel-indicator-network-dbgsym_2.3.2_amd64.deb
+Size: 248576
+MD5sum: 32027988bbfdef3b6aad4c73c5ef57ab
+SHA1: 8d00f0af5f454baad2f497aa46f5bc7c0ad73c16
+SHA256: 7d77de32a4f900dadb0f1a32da7d24e7816b1e310994073061fb0399007c89ad
+Section: debug
+Priority: optional
+Description: debug symbols for wingpanel-indicator-network
+Build-Ids: e1dac3b88ebd3066e2b731cd5b400cda47036417
+
+Package: wingpanel-indicator-nightlight
+Version: 2.1.0
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 731
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.16.2), libwingpanel3
+Enhances: wingpanel
+Filename: ./wingpanel-indicators/wingpanel-indicator-nightlight/wingpanel-indicator-nightlight_2.1.0_amd64.deb
+Size: 53372
+MD5sum: 110bf312e957198afcb2886b420d10aa
+SHA1: 3e88513934d8021a17e205f9e3715b2418f7857b
+SHA256: 3824b8f6729074fdd24bbb3151b17ae84c09fd2818d254b157dfad05b843060b
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel-indicator-nightlight
+Description: WingPanel Nightlight Indicator
+ WingPanel nightlight Indicator
+
+Package: wingpanel-indicator-nightlight-dbgsym
+Source: wingpanel-indicator-nightlight
+Version: 2.1.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 81
+Depends: wingpanel-indicator-nightlight (= 2.1.0)
+Breaks: wingpanel-indicator-nightlight-dbg (<< 2.0.2)
+Replaces: wingpanel-indicator-nightlight-dbg (<< 2.0.2)
+Filename: ./wingpanel-indicators/wingpanel-indicator-nightlight/wingpanel-indicator-nightlight-dbgsym_2.1.0_amd64.deb
+Size: 58588
+MD5sum: 4b7d9b0a649baa76bac1589cc4ca80e7
+SHA1: c4481f85edb78f97e8db387d17843fb059a4916c
+SHA256: 3a9b8feecca466ae20beeff3243912042fcdd77b225eadac15cac46982c4474e
+Section: debug
+Priority: optional
+Description: debug symbols for wingpanel-indicator-nightlight
+Build-Ids: 091e52e8477e7eadf8e94b470d0e0f60cba49138
+
+Package: wingpanel-indicator-notifications
+Version: 6.0.4
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 787
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.6), libhandy-1-0 (>= 0.90.0), libwingpanel3
+Enhances: wingpanel
+Filename: ./wingpanel-indicators/wingpanel-indicator-notifications/wingpanel-indicator-notifications_6.0.4_amd64.deb
+Size: 79848
+MD5sum: 92065b479baa499c36c42d831868a2fa
+SHA1: b548fb3ac6efefe3df797a22ed0611956d171237
+SHA256: ef1684aad0d261c1669907a54fb3a5367806477cd5e26b2ac7ddc8d5fc449f09
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel-indicator-notifications
+Description: WingPanel Notifications Indicator
+ WingPanel Notifications Indicator
+
+Package: wingpanel-indicator-notifications-dbgsym
+Source: wingpanel-indicator-notifications
+Version: 6.0.4
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 223
+Depends: wingpanel-indicator-notifications (= 6.0.4)
+Breaks: wingpanel-indicator-notifications-dbg (<< 2.0.3)
+Replaces: wingpanel-indicator-notifications-dbg (<< 2.0.3)
+Filename: ./wingpanel-indicators/wingpanel-indicator-notifications/wingpanel-indicator-notifications-dbgsym_6.0.4_amd64.deb
+Size: 185732
+MD5sum: 9e3873c65b92f8ce8e97b4aa9beb3754
+SHA1: a184484a7fe8583083dfc5be3eb82eb67cf1dee5
+SHA256: 904cee5e2fb0bdc71ed8345c313a771e50ff53392e7af3f060cee7d508b8ed0e
+Section: debug
+Priority: optional
+Description: debug symbols for wingpanel-indicator-notifications
+Build-Ids: 419fa18ddd0e48708a0ff4c7b947a26af3eb61b1
+
+Package: wingpanel-indicator-power
+Version: 6.1.0
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 978
+Depends: dconf-gsettings-backend | gsettings-backend, libbamf3-2 (>= 0.2.112), libc6 (>= 2.14), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.5), libgtop-2.0-11 (>= 2.22.3), libnotify4 (>= 0.7.0), libudev1 (>= 183), libwingpanel3
+Recommends: gnome-power-manager
+Enhances: wingpanel
+Filename: ./wingpanel-indicators/wingpanel-indicator-power/wingpanel-indicator-power_6.1.0_amd64.deb
+Size: 94744
+MD5sum: 709421176572cf29ea95cca0587b59fb
+SHA1: e5e27f682329d852b15230f1916c6f0fc6d73f6a
+SHA256: 056098a89071f40df1181eace534de887851523a833aca9a914cf47d4cc98643
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel-indicator-power
+Description: WingPanel Power Indicator
+ WingPanel Power Indicator
+
+Package: wingpanel-indicator-power-dbgsym
+Source: wingpanel-indicator-power
+Version: 6.1.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 383
+Depends: wingpanel-indicator-power (= 6.1.0)
+Breaks: wingpanel-indicator-power-dbg (<< 2.1.1)
+Replaces: wingpanel-indicator-power-dbg (<< 2.1.1)
+Filename: ./wingpanel-indicators/wingpanel-indicator-power/wingpanel-indicator-power-dbgsym_6.1.0_amd64.deb
+Size: 310112
+MD5sum: c00a0552edbb725373b9ca5a6c1989e5
+SHA1: 03643456baad01cdb24e16cbb5bcd0facd6daf80
+SHA256: a544b2832349466bca0138be9450cc20b742a1a90d4bd81c66979ef1f5dc984a
+Section: debug
+Priority: optional
+Description: debug symbols for wingpanel-indicator-power
+Build-Ids: 22a863a357f275ac6df5afd436726696dadf2c1c
+
+Package: wingpanel-indicator-privacy
+Version: 0.9.0
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 695
+Depends: libbamf3-2 (>= 0.2.112), libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.5), libgtk-3-0 (>= 3.16.2), libgtop-2.0-11 (>= 2.22.3), libwingpanel3
+Enhances: wingpanel
+Filename: ./wingpanel-indicators/wingpanel-indicator-privacy/wingpanel-indicator-privacy_0.9.0_amd64.deb
+Size: 36056
+MD5sum: 525ebfbf54191e968368b980ad500f1f
+SHA1: e4faf22c8d596ee0fead98affdd75cfd96fb4216
+SHA256: 41df316a928f6a67ff94a356d3ce49bd7ab0954ec36e40447395ac97cda6ee1f
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel-indicator-privacy
+Description: WingPanel Privacy Indicator
+ WingPanel Privacy Indicator
+
+Package: wingpanel-indicator-privacy-dbgsym
+Source: wingpanel-indicator-privacy
+Version: 0.9.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 158
+Depends: wingpanel-indicator-privacy (= 0.9.0)
+Filename: ./wingpanel-indicators/wingpanel-indicator-privacy/wingpanel-indicator-privacy-dbgsym_0.9.0_amd64.deb
+Size: 126876
+MD5sum: 63c068c3d3ddfd30ab5089c86c860ddc
+SHA1: a63892c5e7471b064455bd1ae27f6731fdb7eb5e
+SHA256: 0979305ffc90c2fcb8ecc3148bfeaf684b829b9fe91a29be6180c51a73708bc0
+Section: debug
+Priority: optional
+Description: debug symbols for wingpanel-indicator-privacy
+Build-Ids: 71e5c49e305cd7b5d681143c84a6971d1b70ee12
+
+Package: wingpanel-indicator-session
+Version: 2.3.0
+Architecture: amd64
+Maintainer: elementary LLC <builds@elementary.io>
+Installed-Size: 800
+Depends: libaccountsservice0 (>= 0.6.8), libc6 (>= 2.4), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.21.6), libhandy-1-0 (>= 0.80.0), libwingpanel3
+Enhances: wingpanel
+Filename: ./wingpanel-indicators/wingpanel-indicator-session/wingpanel-indicator-session_2.3.0_amd64.deb
+Size: 61552
+MD5sum: 05f82d1aa5c27e215d8fba07c869133a
+SHA1: ffe61d0f3d30ebd994379e7a4efdf548555a519d
+SHA256: c506a43a957017474963904315de1f71bc793c4788b4dd8192a41d933319ca09
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel-indicator-session
+Description: WingPanel Session Indicator
+ WingPanel Session Indicator
+
+Package: wingpanel-indicator-session-dbgsym
+Source: wingpanel-indicator-session
+Version: 2.3.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary LLC <builds@elementary.io>
+Installed-Size: 202
+Depends: wingpanel-indicator-session (= 2.3.0)
+Breaks: wingpanel-indicator-session-dbg (<< 2.0.3)
+Replaces: wingpanel-indicator-session-dbg (<< 2.0.3)
+Filename: ./wingpanel-indicators/wingpanel-indicator-session/wingpanel-indicator-session-dbgsym_2.3.0_amd64.deb
+Size: 159992
+MD5sum: 8877a919ae6ba1007040aff7dd06f39e
+SHA1: a89d53a360980e2b251859c73aa4892cab9a53a6
+SHA256: 7793dd7d0144948ccefafd7395679dfb36e990b52530b753b85941369595c73d
+Section: debug
+Priority: optional
+Description: debug symbols for wingpanel-indicator-session
+Build-Ids: 8fcfd17a592c93d2d9a416873c03a4654193c855
+
+Package: wingpanel-indicator-sound
+Version: 6.0.1
+Architecture: amd64
+Maintainer: elementary LLC <builds@elementary.io>
+Installed-Size: 964
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libcairo2 (>= 1.2.4), libcanberra-gtk3-0 (>= 0.25), libcanberra0 (>= 0.2), libgdk-pixbuf-2.0-0 (>= 2.23.0), libgee-0.8-2 (>= 0.10.1), libglib2.0-0 (>= 2.43.92), libgranite6 (>= 0.2.0), libgtk-3-0 (>= 3.21.6), libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.14.0), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1), libwingpanel3
+Enhances: wingpanel
+Filename: ./wingpanel-indicators/wingpanel-indicator-sound/wingpanel-indicator-sound_6.0.1_amd64.deb
+Size: 113632
+MD5sum: 6c2aed5d6cb33ab90cebe5257c129c61
+SHA1: 7f209f2eab756f9e9294df65cdbf653d87cfc026
+SHA256: c026069b7d9a7bb04664fc0167c12015ead38f110a976cd51adb83685376df37
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/wingpanel-indicator-sound
+Description: WingPanel Sound Indicator
+ WingPanel Sound Indicator
+
+Package: wingpanel-indicator-sound-dbgsym
+Source: wingpanel-indicator-sound
+Version: 6.0.1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary LLC <builds@elementary.io>
+Installed-Size: 510
+Depends: wingpanel-indicator-sound (= 6.0.1)
+Breaks: wingpanel-indicator-sound-dbg (<< 2.0.5)
+Replaces: wingpanel-indicator-sound-dbg (<< 2.0.5)
+Filename: ./wingpanel-indicators/wingpanel-indicator-sound/wingpanel-indicator-sound-dbgsym_6.0.1_amd64.deb
+Size: 425652
+MD5sum: aa53a1367fc3bf501662eac5903394ec
+SHA1: 7ba10da7ed626279e5289a538d90724b43a6e339
+SHA256: 3a007ad3107058b5d2c9e7c7efa7b60b2d8f2f6969ed689b44c1216d30977396
+Section: debug
+Priority: optional
+Description: debug symbols for wingpanel-indicator-sound
+Build-Ids: 3f841f792ab4d5f8916ce72be001a9a4b9ea4d46
+
