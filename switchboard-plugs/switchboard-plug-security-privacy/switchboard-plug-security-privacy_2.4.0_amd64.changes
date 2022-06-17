@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Wed, 18 May 2022 22:54:05 +0000
+Source: switchboard-plug-security-privacy
+Binary: switchboard-plug-security-privacy switchboard-plug-security-privacy-dbgsym
+Architecture: amd64
+Version: 2.4.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ switchboard-plug-security-privacy - Manage security and privacy
+Changes:
+ switchboard-plug-security-privacy (2.4.0) bionic; urgency=medium
+ .
+   * Release 2.4.0 (#135)
+   * TrackPanel: display correct OS name (#136)
+   * Update translation files
+   * Update translation template
+   * LockPanel: Add USB protection settings (#134)
+Checksums-Sha1:
+ a80891da87d83169d2654100f1493cc483d3e9e2 353848 switchboard-plug-security-privacy-dbgsym_2.4.0_amd64.deb
+ 3883213a4f45964d1f75eff0278c7e1ddb00b1b9 14148 switchboard-plug-security-privacy_2.4.0_amd64.buildinfo
+ e62b0edb1d90cce1a2dea46bbb992a16ba1cebad 129180 switchboard-plug-security-privacy_2.4.0_amd64.deb
+Checksums-Sha256:
+ 89df6c7e40c0d7fbd2ad962427a06703216debc19f0e0286fa6dac30de36d392 353848 switchboard-plug-security-privacy-dbgsym_2.4.0_amd64.deb
+ 5e9663d6ee293d0e8b6d8d6efc48deba392b3ca7bd11f0824112d0ad28036b73 14148 switchboard-plug-security-privacy_2.4.0_amd64.buildinfo
+ 78aa583bdc2b4acaf5271a96fbd0f8666bf26385450cf820ff676af431d17286 129180 switchboard-plug-security-privacy_2.4.0_amd64.deb
+Files:
+ 08892e8ee99c3bfbeeab1c4fc0cc3b6a 353848 debug optional switchboard-plug-security-privacy-dbgsym_2.4.0_amd64.deb
+ ef9b4b73cc33a2782744dcb8aea66c3d 14148 x11 optional switchboard-plug-security-privacy_2.4.0_amd64.buildinfo
+ cab5da257d6811564807345dd526a84d 129180 x11 optional switchboard-plug-security-privacy_2.4.0_amd64.deb

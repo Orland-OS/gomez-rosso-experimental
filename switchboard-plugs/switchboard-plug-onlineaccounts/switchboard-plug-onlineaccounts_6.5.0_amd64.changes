@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Mon, 16 May 2022 19:22:31 +0000
+Source: switchboard-plug-onlineaccounts
+Binary: switchboard-plug-online-accounts switchboard-plug-online-accounts-dbgsym
+Architecture: amd64
+Version: 6.5.0
+Distribution: focal
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ switchboard-plug-online-accounts - Online Accounts plug for Switchboard
+Changes:
+ switchboard-plug-onlineaccounts (6.5.0) focal; urgency=medium
+ .
+   * Release 6.5.0 (#242)
+   * Update translation template
+   * CalDAV: Offline support for newly configured accounts (#241)
+Checksums-Sha1:
+ 09e718d3d31dfa7602c4de83edd7e4336f3c1bb5 239752 switchboard-plug-online-accounts-dbgsym_6.5.0_amd64.deb
+ 848660d714c2eb33861ae1a3102b9f85a0c511a2 116572 switchboard-plug-online-accounts_6.5.0_amd64.deb
+ 00a8811ddb9d12c5749b53dee76f21337dfa89b0 17612 switchboard-plug-onlineaccounts_6.5.0_amd64.buildinfo
+Checksums-Sha256:
+ fb60c7d9b426bdef2bbf4e6a48c4f103ea084f82cb2d88a54c78d23a66d3ee40 239752 switchboard-plug-online-accounts-dbgsym_6.5.0_amd64.deb
+ 88487a41864779580e6eddd0ff724f2fe01c06a80b6fdb177a30c8baf7ac7557 116572 switchboard-plug-online-accounts_6.5.0_amd64.deb
+ e416d4dfdcf62f72806d696ba76cf18cd36549b2f0762e8f3c17b932a72a98d5 17612 switchboard-plug-onlineaccounts_6.5.0_amd64.buildinfo
+Files:
+ 35c463b5ae641f8fb2398253d8c648f8 239752 debug optional switchboard-plug-online-accounts-dbgsym_6.5.0_amd64.deb
+ 9bdf108f6fc4c2fe655e3d72feaec29c 116572 admin optional switchboard-plug-online-accounts_6.5.0_amd64.deb
+ f715f63eb7e92a5e93cdc8cdd1c68ffa 17612 admin optional switchboard-plug-onlineaccounts_6.5.0_amd64.buildinfo

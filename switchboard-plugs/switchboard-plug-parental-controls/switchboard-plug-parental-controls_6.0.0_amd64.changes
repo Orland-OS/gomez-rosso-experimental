@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Wed, 14 Jul 2021 21:57:36 +0000
+Source: switchboard-plug-parental-controls
+Binary: switchboard-plug-parental-controls switchboard-plug-parental-controls-dbgsym
+Architecture: amd64
+Version: 6.0.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ switchboard-plug-parental-controls - Manage Screen Time & Limits
+Changes:
+ switchboard-plug-parental-controls (6.0.0) bionic; urgency=medium
+ .
+   * Release 6.0.0 (#151)
+   * Add dependencies to readme (#150)
+   * Update translation files
+   * Update translation template
+   * Duplicates limit description for each period (Weekdays and Weekends)
+     (#133)
+   * Use malcontent to block flatpak applications (#144)
+   * LINGUAS: sort, remove en_US
+   * UserItem: Use Hdy.Avatar (#141)
+   * Sets 00:00 and 23:59 as default times for picker_to and picker_from.
+     (#136)
+Checksums-Sha1:
+ b80d6de496b6d21db896143f50836311f3a37c26 718548 switchboard-plug-parental-controls-dbgsym_6.0.0_amd64.deb
+ 934e0b10920a20298866395bf008e28cb8ede46f 17725 switchboard-plug-parental-controls_6.0.0_amd64.buildinfo
+ 3563fac48347b6055ac20e453e492a6e7e0c7c9d 143904 switchboard-plug-parental-controls_6.0.0_amd64.deb
+Checksums-Sha256:
+ b678b798f4bc1c2d346e9312c42226586a4ee428cdddb6b68f2228c8d52a7686 718548 switchboard-plug-parental-controls-dbgsym_6.0.0_amd64.deb
+ fd184bbbc5eaefee266d77719ff4380d281761c5374192498ec66df69d7e16e6 17725 switchboard-plug-parental-controls_6.0.0_amd64.buildinfo
+ 337cc9dfbb6215c14d164ac6add5a181855c972c3b8fa1e0344b698923b57515 143904 switchboard-plug-parental-controls_6.0.0_amd64.deb
+Files:
+ 28f9b1f0d104fa232c5594c958665ca7 718548 debug optional switchboard-plug-parental-controls-dbgsym_6.0.0_amd64.deb
+ a2928774435f2836f205b011c8d2bb84 17725 x11 optional switchboard-plug-parental-controls_6.0.0_amd64.buildinfo
+ cd1af4ca3c0d90fc141160fae35e98aa 143904 x11 optional switchboard-plug-parental-controls_6.0.0_amd64.deb

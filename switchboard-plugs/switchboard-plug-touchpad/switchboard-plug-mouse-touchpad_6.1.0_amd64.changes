@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Wed, 22 Sep 2021 20:38:52 +0000
+Source: switchboard-plug-mouse-touchpad
+Binary: switchboard-plug-mouse-touchpad switchboard-plug-mouse-touchpad-dbgsym
+Architecture: amd64
+Version: 6.1.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ switchboard-plug-mouse-touchpad - Mouse/Touchpad plug for Switchboard
+Changes:
+ switchboard-plug-mouse-touchpad (6.1.0) bionic; urgency=medium
+ .
+   * Release 6.1.0 (#189)
+   * Update translation files
+   * Update translation template
+   * Touchpad: add tap-and-drag setting (#187)
+   * l10n: Correctly setup the locales (#185)
+Checksums-Sha1:
+ f6816b2d7737194d3ef32345e89b399507d4bada 127204 switchboard-plug-mouse-touchpad-dbgsym_6.1.0_amd64.deb
+ 2aa0da5f2c245d4a9f3d89a72a65ba2aa68f7d65 13740 switchboard-plug-mouse-touchpad_6.1.0_amd64.buildinfo
+ 4a72fea2e659328d42a2ccfb5820eccefb8a6b52 101620 switchboard-plug-mouse-touchpad_6.1.0_amd64.deb
+Checksums-Sha256:
+ 51e35b090aebd6484800d639b9a7c0c2b45bb8c8dc10456885d55d273a9f8028 127204 switchboard-plug-mouse-touchpad-dbgsym_6.1.0_amd64.deb
+ 09cbcf92d90b50016cde98c8c1ffaafef814a31310f8893122539d0015339161 13740 switchboard-plug-mouse-touchpad_6.1.0_amd64.buildinfo
+ 90d29dd6f4767cebc3466642f300fab6975822c6e7a47103f6c6a56f98c1013a 101620 switchboard-plug-mouse-touchpad_6.1.0_amd64.deb
+Files:
+ 0efaa0da8e2916a2c2d70b2a2f45b70c 127204 debug optional switchboard-plug-mouse-touchpad-dbgsym_6.1.0_amd64.deb
+ a72ac3883d900792d514372996c7364d 13740 x11 optional switchboard-plug-mouse-touchpad_6.1.0_amd64.buildinfo
+ 4d1dbb8a3cdfe1adda0359bfd1ee8a70 101620 x11 optional switchboard-plug-mouse-touchpad_6.1.0_amd64.deb

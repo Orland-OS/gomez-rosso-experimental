@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Wed, 18 May 2022 05:02:51 +0000
+Source: switchboard-plug-power
+Binary: switchboard-plug-power switchboard-plug-power-dbgsym
+Architecture: amd64
+Version: 2.7.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ switchboard-plug-power - Power plug for Switchboard
+Changes:
+ switchboard-plug-power (2.7.0) bionic; urgency=medium
+ .
+   * Release 2.7.0 (#216)
+   * Update screenshot
+   * Actions: bump release to Horus
+   * Update translation files
+   * Update translation template
+   * PowerModeButton: rewrite as radiobuttons (#209)
+   * PowerSupply: subclass object (#211)
+   * Move get_permission to MainView (#212)
+   * Enable Power Profile Management (#192)
+Checksums-Sha1:
+ af499f752849c0e398cbd95d73138afe86381a41 253956 switchboard-plug-power-dbgsym_2.7.0_amd64.deb
+ ff886ef44fbb6f70dfdcb6e7112085b40b494192 13908 switchboard-plug-power_2.7.0_amd64.buildinfo
+ e708bbb2178190be9af7a1e41934341f15b09da2 96376 switchboard-plug-power_2.7.0_amd64.deb
+Checksums-Sha256:
+ 611dfeac361c4f23ba3fae12a799e5e094dcc57477da48c8f03f76733406fb7e 253956 switchboard-plug-power-dbgsym_2.7.0_amd64.deb
+ dca677a4680ffc0d0b2fcca4365f726c4b452759b10ce845d6b9331cd0855a66 13908 switchboard-plug-power_2.7.0_amd64.buildinfo
+ a3563c92e018fe82c5266813d3235495935629f36553cd7fa97fc7ed90f9af53 96376 switchboard-plug-power_2.7.0_amd64.deb
+Files:
+ e196b7b8481f00759752f7698ae860a8 253956 debug optional switchboard-plug-power-dbgsym_2.7.0_amd64.deb
+ ef113d80f574b7f37caa1d59ec857548 13908 x11 optional switchboard-plug-power_2.7.0_amd64.buildinfo
+ 22d619ecd2278a92b45d96d7a0deae07 96376 x11 optional switchboard-plug-power_2.7.0_amd64.deb

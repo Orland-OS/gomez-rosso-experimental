@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Wed, 26 Jan 2022 18:02:54 +0000
+Source: switchboard-plug-networking
+Binary: switchboard-plug-networking switchboard-plug-networking-dbgsym
+Architecture: amd64
+Version: 2.4.2
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ switchboard-plug-networking - Manage network connections
+Changes:
+ switchboard-plug-networking (2.4.2) bionic; urgency=medium
+ .
+   * Release 2.4.2 (#333)
+   * Update translation template
+   * fix reconnecting while set switchbutton to unactive (#328)
+   * Update translation files
+   * Utils: Fix misspelled addresses (#325)
+Checksums-Sha1:
+ a578f72b829366333fafff90f0f580fd9736c34f 449936 switchboard-plug-networking-dbgsym_2.4.2_amd64.deb
+ 5637decef4ce0bb7cd3c6bc59cbe51a2c484f101 13903 switchboard-plug-networking_2.4.2_amd64.buildinfo
+ 70f774ef9ca02e9a09cd621d4eca060efebfe9c7 144516 switchboard-plug-networking_2.4.2_amd64.deb
+Checksums-Sha256:
+ 9bf781b3497143ddd8c2c3201b5f73c4d6c0cd491e3544dccf2a2125d40da068 449936 switchboard-plug-networking-dbgsym_2.4.2_amd64.deb
+ b22ecf52c65ec70de56163b1d5ea41289f26028cee7ab12a489f4554b90a545a 13903 switchboard-plug-networking_2.4.2_amd64.buildinfo
+ 65dd327b425bef82c8b21ecf152921fe7848c10de4ec9e0147a8e3aa2a30a790 144516 switchboard-plug-networking_2.4.2_amd64.deb
+Files:
+ 22d80a7d6e1397f6465b8d284d2034fa 449936 debug optional switchboard-plug-networking-dbgsym_2.4.2_amd64.deb
+ 09a6d6e22eb3f87bc88b4291931e6d4e 13903 x11 optional switchboard-plug-networking_2.4.2_amd64.buildinfo
+ effb659cdd5a1328892f0b2adcd84354 144516 x11 optional switchboard-plug-networking_2.4.2_amd64.deb

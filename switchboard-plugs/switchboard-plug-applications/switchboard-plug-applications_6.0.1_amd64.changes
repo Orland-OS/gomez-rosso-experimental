@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Mon, 27 Sep 2021 20:32:11 +0000
+Source: switchboard-plug-applications
+Binary: switchboard-plug-applications switchboard-plug-applications-dbgsym
+Architecture: amd64
+Version: 6.0.1
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ switchboard-plug-applications - Default and Startup Applications plug for Switchboard
+Changes:
+ switchboard-plug-applications (6.0.1) bionic; urgency=medium
+ .
+   * Release 6.0.1 (#170)
+   * Update translation files
+   * Update translation template
+   * Play nicely with other overrides (#168)
+   * Ensure app set as default only for supported types (#166)
+   * l10n: Correctly setup the locales (#163)
+Checksums-Sha1:
+ 100a5596a20c334440fbfdb5c85115cf53e6f7c6 295624 switchboard-plug-applications-dbgsym_6.0.1_amd64.deb
+ 41fa8d59512bad9b18b272ea19a2ced00ed0f379 14926 switchboard-plug-applications_6.0.1_amd64.buildinfo
+ b3899548c542ab6a6b46ab13e89cd456d664a2e4 90300 switchboard-plug-applications_6.0.1_amd64.deb
+Checksums-Sha256:
+ 2bf511cbf4a7fbe6c6d8e80cdcd92f5af9dbd8c266255f5cff8271aad01ac30b 295624 switchboard-plug-applications-dbgsym_6.0.1_amd64.deb
+ b544eee1e78fca0148ee6ab8f74a9c038e0c5bc897487ad3984ebc8c35dcae2e 14926 switchboard-plug-applications_6.0.1_amd64.buildinfo
+ 28a3f6cc5c43617fe9e3a57f422127656a9f19d58be077cab9dc73e91cd2e023 90300 switchboard-plug-applications_6.0.1_amd64.deb
+Files:
+ bc705a550b99785e5d64689e66502be1 295624 debug optional switchboard-plug-applications-dbgsym_6.0.1_amd64.deb
+ ab34b1686dc8e39e1c1bd43de1b7c140 14926 x11 optional switchboard-plug-applications_6.0.1_amd64.buildinfo
+ 514f9fa6a7bf5b5cc2e370d52add703a 90300 x11 optional switchboard-plug-applications_6.0.1_amd64.deb

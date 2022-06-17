@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Tue, 26 Oct 2021 17:47:41 +0000
+Source: switchboard-plug-display
+Binary: switchboard-plug-display switchboard-plug-display-dbgsym
+Architecture: amd64
+Version: 2.3.2
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ switchboard-plug-display - Switchboard plug for display settings
+Changes:
+ switchboard-plug-display (2.3.2) bionic; urgency=medium
+ .
+   * Release 2.3.2 (#329)
+   * DisplayWidget: Code style
+   * DisplayWidget: GObject-style construction
+   * DisplayWindow: Use GObject-style construction
+   * DisplaysOverlay: define display css provider once for class
+   * Set display name alpha in CSS
+   * Update translation files
+   * Update translation template
+   * Appdata: Add notes for 2.3.2 (#322)
+   * DisplayWindow: stick to all workspaces (#321)
+   * Display.css: Improve look with dark style (#266)
+   * Adding rounded corner for display tags (#318)
+   * Reimplement resolution combobox as tree (#302)
+Checksums-Sha1:
+ 2d22b9d5eaa2000429cd028fdcd763929190b3c4 356392 switchboard-plug-display-dbgsym_2.3.2_amd64.deb
+ 68cf76867f5a28cbfaeb52ace7320f364f3b721a 16003 switchboard-plug-display_2.3.2_amd64.buildinfo
+ 679ee713c30b5c2cfe4fbf06cbb88fc56c1b5b5f 102556 switchboard-plug-display_2.3.2_amd64.deb
+Checksums-Sha256:
+ 5374719ded6d59fb62ff5c7429f5ebcb1fe7c8c168929ce21558c04ae983a2a0 356392 switchboard-plug-display-dbgsym_2.3.2_amd64.deb
+ 964c095ea27703e85e7b5f9e45df31471d007ea21e934d422df9fa8a65a8efb6 16003 switchboard-plug-display_2.3.2_amd64.buildinfo
+ 8a41acedec6b694ae28d28f49a7da3ea6c49b2a5d40bdd639dfadfc1786e2c92 102556 switchboard-plug-display_2.3.2_amd64.deb
+Files:
+ 944000b9485a021d73015339b7885f44 356392 debug optional switchboard-plug-display-dbgsym_2.3.2_amd64.deb
+ ba9181108adbd0549c5b7d13a2b88ee1 16003 x11 optional switchboard-plug-display_2.3.2_amd64.buildinfo
+ 0599c42a327dfe72465ae57369f86059 102556 x11 optional switchboard-plug-display_2.3.2_amd64.deb

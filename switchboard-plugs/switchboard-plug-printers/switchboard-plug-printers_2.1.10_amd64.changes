@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Wed, 21 Jul 2021 20:21:07 +0000
+Source: switchboard-plug-printers
+Binary: switchboard-plug-printers switchboard-plug-printers-dbgsym
+Architecture: amd64
+Version: 2.1.10
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ switchboard-plug-printers - Printers plug for Switchboard
+Changes:
+ switchboard-plug-printers (2.1.10) bionic; urgency=medium
+ .
+   * Release 2.1.10 (#149)
+   * CUPSNotifier.vala: explicit cast for callback (#141)
+   * Replace Gtk.Dialog with Granite.Dialog (#142)
+   * LINGUAS: sort, remove en_US
+   * Update translation files
+   * Allow the sender parameter of DBusSignalCallback to be null (#136)
+Checksums-Sha1:
+ ed9eb8119c695b500648af946de35af30e5fcbb1 446396 switchboard-plug-printers-dbgsym_2.1.10_amd64.deb
+ bfffc20aa3096a851775989482a734d291d1b5ee 14112 switchboard-plug-printers_2.1.10_amd64.buildinfo
+ c95183e6226afbd1de4c0f76293026928880e71c 136096 switchboard-plug-printers_2.1.10_amd64.deb
+Checksums-Sha256:
+ 954065638364d2f3337f662f3322bcd99946d7812458e106427cb7b543c390ff 446396 switchboard-plug-printers-dbgsym_2.1.10_amd64.deb
+ b0f6341138cc480034454b3ef6454ef087a2faedd86022841df3d8d0eb96cb83 14112 switchboard-plug-printers_2.1.10_amd64.buildinfo
+ 93ceb5a513baabab4a9c98256c4322138ebcbd7969e0b0e11c15155387fbf4fe 136096 switchboard-plug-printers_2.1.10_amd64.deb
+Files:
+ 01691d224d87c76b686eb2ff5826f294 446396 debug optional switchboard-plug-printers-dbgsym_2.1.10_amd64.deb
+ 6654507bedbcff478eed855b37807f7f 14112 x11 optional switchboard-plug-printers_2.1.10_amd64.buildinfo
+ d6fcbf4319bb0cb21c329e0e4d2cc754 136096 x11 optional switchboard-plug-printers_2.1.10_amd64.deb

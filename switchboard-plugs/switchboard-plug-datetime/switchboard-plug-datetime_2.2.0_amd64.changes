@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Thu, 15 Jul 2021 22:20:56 +0000
+Source: switchboard-plug-datetime
+Binary: switchboard-plug-datetime switchboard-plug-datetime-dbgsym
+Architecture: amd64
+Version: 2.2.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ switchboard-plug-datetime - Date & Time plug for Switchboard
+Changes:
+ switchboard-plug-datetime (2.2.0) bionic; urgency=medium
+ .
+   * Release 2.2.0 (#97)
+   * Update translation files
+   * Update translation template
+   * MainView: Rework Layout (#94)
+   * MainView: Allow showing/hiding the date, weekday, and seconds (#91)
+   * MainView: Clean up timezone code and styling (#89)
+   * Moved Time Zone popup contents to the main view (#61)
+   * LINGUAS: sort, remove en_US
+Checksums-Sha1:
+ 32486da8472e07d56ac76ad19bb6f5367683e795 116656 switchboard-plug-datetime-dbgsym_2.2.0_amd64.deb
+ 371f0945e0b688c54e8006b0992804022cb4854b 13644 switchboard-plug-datetime_2.2.0_amd64.buildinfo
+ 4025995dfdf1448002a9b7d6eef59a0d0a7c5ba5 277572 switchboard-plug-datetime_2.2.0_amd64.deb
+Checksums-Sha256:
+ ef149af8b96b7e7e0de1cbaca75459832d8a429ae595b8e8d1ef99f0580d00e3 116656 switchboard-plug-datetime-dbgsym_2.2.0_amd64.deb
+ d451a6d69fb0621aee4286b935217eeb53d18714340ae1e0934461c966334cf3 13644 switchboard-plug-datetime_2.2.0_amd64.buildinfo
+ db53697f02d096ac3fe85cf74ca968c6a7e54588ca49605e24ea6be269d49e0b 277572 switchboard-plug-datetime_2.2.0_amd64.deb
+Files:
+ 5a93c018e3c01e225a3fa9a65c5e93f8 116656 debug optional switchboard-plug-datetime-dbgsym_2.2.0_amd64.deb
+ f7e15a1c5ecda6b68f3eeaa966fc60a1 13644 x11 optional switchboard-plug-datetime_2.2.0_amd64.buildinfo
+ 88a77be9d05745f354071c296f7f9bb4 277572 x11 optional switchboard-plug-datetime_2.2.0_amd64.deb

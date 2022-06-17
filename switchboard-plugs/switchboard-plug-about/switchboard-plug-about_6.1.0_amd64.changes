@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Wed, 06 Apr 2022 18:15:58 +0000
+Source: switchboard-plug-about
+Binary: switchboard-plug-about switchboard-plug-about-dbgsym
+Architecture: amd64
+Version: 6.1.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ switchboard-plug-about - About plug for Switchboard
+Changes:
+ switchboard-plug-about (6.1.0) bionic; urgency=medium
+ .
+   * Release 6.1.0 (#247)
+   * README: Update oem.conf documentation
+   * Update translation files
+   * Update translation template
+   * AppData: describe recent changes
+   * Add support for offline firmware updates (#244)
+   * FirmwareView: Fix typo with "successful" (#242)
+   * Check if OEM is enabled
+   * React to dark mode
+   * Move logic to update manufacturer logo
+   * Get LogoDark from /etc/oem.conf
+   * Avoid ugly (null) label on some rolling releases distributions
+     (#238)
+Checksums-Sha1:
+ 8ae8ee4cfb72bf5660a42496f2b779ce00141534 228188 switchboard-plug-about-dbgsym_6.1.0_amd64.deb
+ bd60e9a3723ab590aa3d58ba782b998e0b2bea39 17906 switchboard-plug-about_6.1.0_amd64.buildinfo
+ 0583835eb0db158558281e34134bc564de9c2e04 88696 switchboard-plug-about_6.1.0_amd64.deb
+Checksums-Sha256:
+ 08055d6a5fe4e7fcf5e8808c78c143db1d6acc3ab2bca43b512f8d56ed595e8f 228188 switchboard-plug-about-dbgsym_6.1.0_amd64.deb
+ 312da5feaea7f11ece955d31f87afb71f9902b90c2de3f75c5ece3fdd88d5dff 17906 switchboard-plug-about_6.1.0_amd64.buildinfo
+ ad423ba6195fd4b226e27ac30aa8b341e8cf2957e8af30baa37b8fac6de79d13 88696 switchboard-plug-about_6.1.0_amd64.deb
+Files:
+ 01b005fa6cc9a9f977d74be9647ac3fb 228188 debug optional switchboard-plug-about-dbgsym_6.1.0_amd64.deb
+ 544f0946479518aa86baa148bad04627 17906 x11 optional switchboard-plug-about_6.1.0_amd64.buildinfo
+ c32cebfe13772bb07b32b86b58debfcd 88696 x11 optional switchboard-plug-about_6.1.0_amd64.deb

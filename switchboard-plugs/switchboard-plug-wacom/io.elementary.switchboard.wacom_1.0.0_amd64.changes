@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 27 Jul 2021 12:18:46 -0700
+Source: io.elementary.switchboard.wacom
+Binary: io.elementary.switchboard.wacom io.elementary.switchboard.wacom-dbgsym
+Architecture: amd64
+Version: 1.0.0
+Distribution: focal
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: Daniel Foré <daniel@elementary.io>
+Description:
+ io.elementary.switchboard.wacom - Wacom plug for Switchboard
+Changes:
+ io.elementary.switchboard.wacom (1.0.0) focal; urgency=medium
+ .
+   * New upstream release,
+Checksums-Sha1:
+ c9b640d575be83e2bc19c5cc9f317210e1c5eb69 152344 io.elementary.switchboard.wacom-dbgsym_1.0.0_amd64.deb
+ ddb0d83a6d9e91eacb1868086fe68aa3d5b884a4 13973 io.elementary.switchboard.wacom_1.0.0_amd64.buildinfo
+ 488a554ad3aaece6653b0624ff942ba274f217d2 49124 io.elementary.switchboard.wacom_1.0.0_amd64.deb
+Checksums-Sha256:
+ eca7cfe9411496a312d6016f2f60e7d04e8f28621812e1df6fc1a66d66448462 152344 io.elementary.switchboard.wacom-dbgsym_1.0.0_amd64.deb
+ 1b95cc0f1bab95ba11d1961dcf29241e0444d04f2dd5f470d05d471c7d58f6c9 13973 io.elementary.switchboard.wacom_1.0.0_amd64.buildinfo
+ f173c66995a1b6591d401f599d7894deedb6fe0923fd07bcf78370110b16917e 49124 io.elementary.switchboard.wacom_1.0.0_amd64.deb
+Files:
+ a02eb80e8f0ac833b599cf3cd9b6d541 152344 debug optional io.elementary.switchboard.wacom-dbgsym_1.0.0_amd64.deb
+ 9fc8d2865d6e53096c56c20c7de6ef16 13973 x11 optional io.elementary.switchboard.wacom_1.0.0_amd64.buildinfo
+ e78d3e6d3558ff3dd0f3936876da93a3 49124 x11 optional io.elementary.switchboard.wacom_1.0.0_amd64.deb

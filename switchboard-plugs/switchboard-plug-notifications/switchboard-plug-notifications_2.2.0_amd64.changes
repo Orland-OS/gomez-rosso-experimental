@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Wed, 14 Jul 2021 21:11:32 +0000
+Source: switchboard-plug-notifications
+Binary: switchboard-plug-notifications switchboard-plug-notifications-dbgsym
+Architecture: amd64
+Version: 2.2.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ switchboard-plug-notifications - Change notification settings
+Changes:
+ switchboard-plug-notifications (2.2.0) bionic; urgency=medium
+ .
+   * Release 2.2.0 (#82)
+   * LINGUAS: sort, remove en_US
+   * Update translation files
+   * Release Action: Set branch to odin
+   * Sidebar: Reduce padding (#74)
+   * Update code style (#72)
+   * Update visual style and support dark (#71)
+Checksums-Sha1:
+ bdc3f4504e669231759e53cfa86e3dcac11c516c 106556 switchboard-plug-notifications-dbgsym_2.2.0_amd64.deb
+ e6955cd4745b251146a66969c3a7e73882706dab 13686 switchboard-plug-notifications_2.2.0_amd64.buildinfo
+ 2619bb2985d8e3358bfc68032b9d1b15bfc11dcc 69904 switchboard-plug-notifications_2.2.0_amd64.deb
+Checksums-Sha256:
+ eb4611eb766599614e1df7e4da0ee124d7cecd81a5f59ec43115a3efb6b7856d 106556 switchboard-plug-notifications-dbgsym_2.2.0_amd64.deb
+ b6f201cefd99bd21ce42398071509dde2e41b8748dadd39c68915b50c0529dc8 13686 switchboard-plug-notifications_2.2.0_amd64.buildinfo
+ 54c23372934bcc81e57db4da4b39abdc5cf9fa56ca2ad389fe1c176866f9e944 69904 switchboard-plug-notifications_2.2.0_amd64.deb
+Files:
+ 05cf9939d76a02032302518928d87573 106556 debug optional switchboard-plug-notifications-dbgsym_2.2.0_amd64.deb
+ 4c9cbe644b5192b08633df1109e5ccd2 13686 x11 optional switchboard-plug-notifications_2.2.0_amd64.buildinfo
+ 2e7d1e49ca8f4545246c9032b174283f 69904 x11 optional switchboard-plug-notifications_2.2.0_amd64.deb

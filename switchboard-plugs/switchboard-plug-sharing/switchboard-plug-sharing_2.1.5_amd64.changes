@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Tue, 13 Jul 2021 23:31:07 +0000
+Source: switchboard-plug-sharing
+Binary: switchboard-plug-sharing switchboard-plug-sharing-dbgsym
+Architecture: amd64
+Version: 2.1.5
+Distribution: bionic
+Urgency: medium
+Maintainer: Cody Garver <cody@elementary.io>
+Changed-By: Cody Garver <cody@elementary.io>
+Description:
+ switchboard-plug-sharing - Change media sharing settings
+Changes:
+ switchboard-plug-sharing (2.1.5) bionic; urgency=medium
+ .
+   * Release 2.1.5 (#54)
+   * LINGUAS: sort, remove en_US
+   * Update translation files
+   * Update translation template
+   * AppData: Add "Settings" to name (#50)
+   * AppData: Add Icon & Gettext domain (#49)
+Checksums-Sha1:
+ 65aae67acdef2f0bc4559c02198ecf718f090d16 129148 switchboard-plug-sharing-dbgsym_2.1.5_amd64.deb
+ 008c178558d0fa4246d0fc4d99ab1440925c2975 13750 switchboard-plug-sharing_2.1.5_amd64.buildinfo
+ 83a597bb7896cf76a3bc908a013060bbc20b1e4f 56868 switchboard-plug-sharing_2.1.5_amd64.deb
+Checksums-Sha256:
+ 0efd0169368ad27391e2a28de59befc87a2fab3fff461f85ec337cd767f97de6 129148 switchboard-plug-sharing-dbgsym_2.1.5_amd64.deb
+ 3b69c8a1b22695690addb741211a38212262ce277a9b6b9744ab2066d5d3341a 13750 switchboard-plug-sharing_2.1.5_amd64.buildinfo
+ 78a681b43a6c2cdeae00e9be94877ad8d52878c8124ba736a81bc364dea37ab2 56868 switchboard-plug-sharing_2.1.5_amd64.deb
+Files:
+ 2331b9bf1e1e3d67ed50edd4b5b3bb10 129148 debug optional switchboard-plug-sharing-dbgsym_2.1.5_amd64.deb
+ 8576fb6138439256583d515f44d7bbbf 13750 x11 optional switchboard-plug-sharing_2.1.5_amd64.buildinfo
+ 208c9e70f17c8555d2e3cd7b96db242a 56868 x11 optional switchboard-plug-sharing_2.1.5_amd64.deb

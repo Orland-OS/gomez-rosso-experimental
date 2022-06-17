@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Fri, 16 Jul 2021 18:02:26 +0000
+Source: switchboard-plug-a11y
+Binary: switchboard-plug-a11y switchboard-plug-a11y-dbgsym
+Architecture: amd64
+Version: 2.3.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ switchboard-plug-a11y - Accessibility plug for Switchboard
+Changes:
+ switchboard-plug-a11y (2.3.0) bionic; urgency=medium
+ .
+   * Release 2.3.0 (#77)
+   * Update translation files
+   * Update translation template
+   * Inform about other accessibility features (#78)
+   * Add switch to show panel indicator (#76)
+   * LINGUAS: sort, remove en_US
+   * SettingBox: Remove unused and less scope (#74)
+   * Audio: Fix screenreader shortcut keys aren't shown (#73)
+   * Add Icon & Gettext domain (#71)
+Checksums-Sha1:
+ da6639c7c06ffeb7364e50ced1056f8d9a117a76 101052 switchboard-plug-a11y-dbgsym_2.3.0_amd64.deb
+ 20724387e2e1bf658c04f9aa0ad239726e3d43e6 13723 switchboard-plug-a11y_2.3.0_amd64.buildinfo
+ 6f601096e0b3dab96685863a260c8864ff8da77d 46492 switchboard-plug-a11y_2.3.0_amd64.deb
+Checksums-Sha256:
+ 5e5c460826a61f4b9f4746a5be984303555f9f53d01f2e9e505ef47064be3681 101052 switchboard-plug-a11y-dbgsym_2.3.0_amd64.deb
+ 2195ae3634dc7da18195dd8e06facde9f4398240cee2eae8c402ee97036942b3 13723 switchboard-plug-a11y_2.3.0_amd64.buildinfo
+ 377bc5fb975140400e2a3af68639b0d45bf2460b78b57eadc01b0161c91c3deb 46492 switchboard-plug-a11y_2.3.0_amd64.deb
+Files:
+ f78f9c06cc430a23e3e0c1a5186c7c2c 101052 debug optional switchboard-plug-a11y-dbgsym_2.3.0_amd64.deb
+ 03e1c5b1446a2d6dcb8b987ff8e6cb69 13723 x11 optional switchboard-plug-a11y_2.3.0_amd64.buildinfo
+ d1d0fb542947031d51ecfa7295c57c7b 46492 x11 optional switchboard-plug-a11y_2.3.0_amd64.deb

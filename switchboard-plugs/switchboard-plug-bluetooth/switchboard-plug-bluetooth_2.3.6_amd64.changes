@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Wed, 14 Jul 2021 18:03:15 +0000
+Source: switchboard-plug-bluetooth
+Binary: switchboard-plug-bluetooth switchboard-plug-bluetooth-dbgsym
+Architecture: amd64
+Version: 2.3.6
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ switchboard-plug-bluetooth - Bluetooth plug for Switchboard
+Changes:
+ switchboard-plug-bluetooth (2.3.6) bionic; urgency=medium
+ .
+   * Release 2.3.6 (#179)
+   * Update translation files
+   * Update translation template
+Checksums-Sha1:
+ 9a4d28b002562d45ae9158af6ec1b2419d0b30ad 228788 switchboard-plug-bluetooth-dbgsym_2.3.6_amd64.deb
+ 7c297fa41785005df2b3a9d3b4d6cf05d603dda0 13650 switchboard-plug-bluetooth_2.3.6_amd64.buildinfo
+ 823ccffa7e3da9db1930491e1ccd867c8f874d2a 80552 switchboard-plug-bluetooth_2.3.6_amd64.deb
+Checksums-Sha256:
+ a4e052880ac1db8dd2b0859ab691503e4df26f2ac7742b6b073dbc30924eb72a 228788 switchboard-plug-bluetooth-dbgsym_2.3.6_amd64.deb
+ 83bcbb3952cb8c1dec1e8948402b7a61a4d0b41006095453beacf1ce2956249f 13650 switchboard-plug-bluetooth_2.3.6_amd64.buildinfo
+ 24d8dae247b10279ab15aa36b30a09f0cd69154796886af2ece087a4997ebc2c 80552 switchboard-plug-bluetooth_2.3.6_amd64.deb
+Files:
+ 82b9f9df339f585bb505e9d67b02114c 228788 debug optional switchboard-plug-bluetooth-dbgsym_2.3.6_amd64.deb
+ b21d6bad74e33ccae5df3630d72e3e32 13650 x11 optional switchboard-plug-bluetooth_2.3.6_amd64.buildinfo
+ 97a1855091b3d826f7d22d75ea682562 80552 x11 optional switchboard-plug-bluetooth_2.3.6_amd64.deb

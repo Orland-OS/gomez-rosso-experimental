@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Tue, 10 May 2022 16:58:29 +0000
+Source: switchboard-plug-keyboard
+Binary: switchboard-plug-keyboard switchboard-plug-keyboard-dbgsym
+Architecture: amd64
+Version: 3.0.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary OS Team <builds@elementary.io>
+Changed-By: elementary OS Team <builds@elementary.io>
+Description:
+ switchboard-plug-keyboard - Switchboard plug for keyboard settings
+Changes:
+ switchboard-plug-keyboard (3.0.0) bionic; urgency=medium
+ .
+   * Release 3.0.0 (#408)
+   * Update translation files
+   * Update translation template
+   * Read screenshot shortcuts from gala schema (#407)
+   * Workflows: bump to Jammy
+   * Shortcuts/List: move panel-main-menu to Schema.GALA
+Checksums-Sha1:
+ 459afcf388b9163292d84ec68e2288f2a959f2d2 566832 switchboard-plug-keyboard-dbgsym_3.0.0_amd64.deb
+ 6e505832ed36b147c7f166e44dda007cb4dd7f26 16557 switchboard-plug-keyboard_3.0.0_amd64.buildinfo
+ 7ae1eecf3051e20fae18eac570472d411a53089d 181632 switchboard-plug-keyboard_3.0.0_amd64.deb
+Checksums-Sha256:
+ 65ae0f9201c5f34db4724266600331206f593736a3df16c98c01f24147058208 566832 switchboard-plug-keyboard-dbgsym_3.0.0_amd64.deb
+ 8985e098e614d2fb2b0f650d6f61434774baee210c806efa328eb35d8b76b6fb 16557 switchboard-plug-keyboard_3.0.0_amd64.buildinfo
+ 70158a228e3d5931db8bac6ba6f2f6203a185db26ef52e86c05161e5c0611232 181632 switchboard-plug-keyboard_3.0.0_amd64.deb
+Files:
+ ebd14c5b179d347b42252d5d5158ac9f 566832 debug optional switchboard-plug-keyboard-dbgsym_3.0.0_amd64.deb
+ fda717f52c43340be7e12525d5952893 16557 x11 optional switchboard-plug-keyboard_3.0.0_amd64.buildinfo
+ 0b4a1e5f69504f91fe430e8886e692f7 181632 x11 optional switchboard-plug-keyboard_3.0.0_amd64.deb

@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Tue, 23 Nov 2021 21:20:53 +0000
+Source: switchboard-plug-useraccounts
+Binary: switchboard-plug-useraccounts switchboard-plug-useraccounts-dbgsym switchboard-plug-users
+Architecture: amd64
+Version: 2.4.2
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary LLC. <builds@elementary.io>
+Changed-By: elementary LLC. <builds@elementary.io>
+Description:
+ switchboard-plug-useraccounts - Manage local user accounts
+ switchboard-plug-users - Manage local user accounts (dummy package)
+Changes:
+ switchboard-plug-useraccounts (2.4.2) bionic; urgency=medium
+ .
+   * Release 2.4.2 (#182)
+   * Update translation files
+   * Update translation template
+   * Update permissions after account changes (#181)
+   * Replace InfobarError with MessageDialog (#180)
+Checksums-Sha1:
+ 1c3cd7bb7bac6c68a3969afc2fd990720fe8aef5 367480 switchboard-plug-useraccounts-dbgsym_2.4.2_amd64.deb
+ 02cad35c9d8b2f5f9b3085e4dc01e8bfe5761c51 17518 switchboard-plug-useraccounts_2.4.2_amd64.buildinfo
+ be1c4ef5816ea4a01441bb78aab6076aad2e43e4 113244 switchboard-plug-useraccounts_2.4.2_amd64.deb
+ b8a509c891ba43f2fc7e8cca9d461dcfe329d6fd 3672 switchboard-plug-users_2.4.2_amd64.deb
+Checksums-Sha256:
+ 98a3caf90144dbd77610cc63a006e24be9fb0ffa8f6950e05be0b7d6ff0775c4 367480 switchboard-plug-useraccounts-dbgsym_2.4.2_amd64.deb
+ 942e1cdd5830597633199fd32be60329181b34ea10b9d27c2ab78839c98279b0 17518 switchboard-plug-useraccounts_2.4.2_amd64.buildinfo
+ 1c1773f78026c8b2c485642766599819467ac4d917557e39a342b82bd744c960 113244 switchboard-plug-useraccounts_2.4.2_amd64.deb
+ b282a7d38d2ca5bdd2db4b390c11d361454635ed35c2321f4da0a5f7c0241b5e 3672 switchboard-plug-users_2.4.2_amd64.deb
+Files:
+ fca98ce3bfb3f8848b07347ea9d0d860 367480 debug optional switchboard-plug-useraccounts-dbgsym_2.4.2_amd64.deb
+ 8ff3f7e20a992ecf4d7bb0060e6e6c53 17518 x11 optional switchboard-plug-useraccounts_2.4.2_amd64.buildinfo
+ 1af33e39b135f498a46b059c82644328 113244 x11 optional switchboard-plug-useraccounts_2.4.2_amd64.deb
+ c0189cfe803c0bbf249fcbdc7c80c055 3672 x11 optional switchboard-plug-users_2.4.2_amd64.deb
