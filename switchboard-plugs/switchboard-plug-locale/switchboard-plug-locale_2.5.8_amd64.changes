@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Thu, 12 May 2022 16:37:50 +0000
+Source: switchboard-plug-locale
+Binary: switchboard-plug-locale switchboard-plug-locale-dbgsym
+Architecture: amd64
+Version: 2.5.8
+Distribution: focal
+Urgency: medium
+Maintainer: elementary LLC <builds@elementary.io>
+Changed-By: elementary LLC <builds@elementary.io>
+Description:
+ switchboard-plug-locale - Region & Language plug for Switchboard
+Changes:
+ switchboard-plug-locale (2.5.8) focal; urgency=medium
+ .
+   * Release 2.5.8 (#164)
+   * Update translation files
+   * Update translation template
+   * POTFILES: Update the suffix of the policy file (#163)
+   * policy: Do not specify the gettext-domain (#162)
+Checksums-Sha1:
+ 97cf31d7dab86cd5f625f13f3944a66641d65a08 279788 switchboard-plug-locale-dbgsym_2.5.8_amd64.deb
+ 92cd444b1847c4a8ed4b997bf9ea911ffbaab392 14657 switchboard-plug-locale_2.5.8_amd64.buildinfo
+ 2a8095f1b0ca3839b6fe5b0ba46c97a3a7272181 89952 switchboard-plug-locale_2.5.8_amd64.deb
+Checksums-Sha256:
+ 6ed581d93a9f0e8211dc8bc1c5611ccc7995303275f826c93f8d9c4bf78af4dc 279788 switchboard-plug-locale-dbgsym_2.5.8_amd64.deb
+ 9ca5e88dee6b6e6944b8b1c3ad850ce62460accdaf9c6e868e446843ad2bcd86 14657 switchboard-plug-locale_2.5.8_amd64.buildinfo
+ de545b5d38ef78a02d82c547052a35f6c6bf93a6a0f4e4f3d6f2439912ac5802 89952 switchboard-plug-locale_2.5.8_amd64.deb
+Files:
+ 51baf19d6ad48faacb010ba2bb500c37 279788 debug optional switchboard-plug-locale-dbgsym_2.5.8_amd64.deb
+ 3cb3a177f775126f2e6e8a5db6c561de 14657 x11 optional switchboard-plug-locale_2.5.8_amd64.buildinfo
+ 80afee9a34e13e52b8152d04e9918ef7 89952 x11 optional switchboard-plug-locale_2.5.8_amd64.deb
