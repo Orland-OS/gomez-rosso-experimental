@@ -1,0 +1,66 @@
+Format: 1.8
+Date: Fri, 17 Jun 2022 14:08:25 +0000
+Source: pantheon-files
+Binary: libpantheon-files-core-dev libpantheon-files-core0 libpantheon-files-core0-dbgsym pantheon-files pantheon-files-dbgsym
+Architecture: amd64
+Version: 6.1.3
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ libpantheon-files-core-dev - File manager for the Pantheon desktop (shared library development
+ libpantheon-files-core0 - File manager for the Pantheon desktop (shared library)
+ pantheon-files - File manager for the Pantheon desktop
+Changes:
+ pantheon-files (6.1.3) bionic; urgency=medium
+ .
+   * Release 6.1.3 (#2043)
+   * Update translation files
+   * Update translation template
+   * Update appdata for next release (#2042)
+   * Paste into background folder by default (#1829)
+   * Add dialog to ask for overwrite (#1989)
+   * Stop breadcrumbs cancelling directory objects (#2001)
+   * Sidebar.BookmarkRow: Explicitly highlight drop target (#1914)
+   * Fix reloading subdiredctories (#1988)
+   * Ensure view destroyed with associated slot (#2002)
+   * Remove faulty check blocking pre-selection (#2030)
+   * Add next release appdata (#2039)
+   * Ignore rename with same name (#2038)
+   * Remove unused function
+   * Ignore action view mode if no current tab
+   * Check for null slot before mode change
+   * Move key translation to a utility (#2028)
+   * Access button child directly to set align (#2031)
+   * No access event struct (#2027)
+   * Directory.vala: Handle all FileMonitorEvents (#2026)
+   * Remove references to Granite (#2025)
+   * Disable view actions when renaming (#1962)
+   * Ensure cursor follows selection with mouse (#1951)
+   * Action match pointer (#1910)
+   * Drop unnecessary Config.TERMINAL_NAME check (#2019)
+   * Make trash bookmark permanent (no remove option) (#2014)
+   * Correctly add network plugin item (#2007)
+   * Remove references to Granite.Services.Logger (deprecated) (#1998)
+Checksums-Sha1:
+ f3be7c6fd2a3c71a0295c0974abac84db2f378f1 30720 libpantheon-files-core-dev_6.1.3_amd64.deb
+ af4aaafa88690eec5a3f80f1b87c0e2808eff3cf 1021284 libpantheon-files-core0-dbgsym_6.1.3_amd64.deb
+ 29f81f3387a231487a1d69c27c6db9fd70e13755 211996 libpantheon-files-core0_6.1.3_amd64.deb
+ ce4b5adf74ab9ee6c34092e8d978f168b1d36601 2058032 pantheon-files-dbgsym_6.1.3_amd64.deb
+ 444cc6e307ffb7c4b8f478fd1d8383a9342a2638 20482 pantheon-files_6.1.3_amd64.buildinfo
+ b5597899217e1cff92ef328260895556b72b8ac5 652680 pantheon-files_6.1.3_amd64.deb
+Checksums-Sha256:
+ 5b13d1c43413fdf9cfc01a1c44201c1b97dd6428013127093e178cf8df99db7b 30720 libpantheon-files-core-dev_6.1.3_amd64.deb
+ b5a47a2b3774f727467ab957ef2c4519cf841a118997ca7405fd86b18a0fc9b6 1021284 libpantheon-files-core0-dbgsym_6.1.3_amd64.deb
+ 3ee190de60223a1b427a188926a1e5980817bef5d2aaac6192a2fd0a23195309 211996 libpantheon-files-core0_6.1.3_amd64.deb
+ dceb402049e6a53a2e7eac93a14fa68292961121d1f98d7727fc9ad365809624 2058032 pantheon-files-dbgsym_6.1.3_amd64.deb
+ 15bebfd090fdb2f99ace3b5aff9856ba630e1b880535a317a39e64b1d3056c5e 20482 pantheon-files_6.1.3_amd64.buildinfo
+ 3c25ac083575bd0a23a5112231580fcc403b191166beef068f5de25dd8fefd94 652680 pantheon-files_6.1.3_amd64.deb
+Files:
+ 7b42edacba0c4d3873f6500bb4936fc2 30720 libdevel optional libpantheon-files-core-dev_6.1.3_amd64.deb
+ 4b8c8aad7a421000243f02d727391bdf 1021284 debug optional libpantheon-files-core0-dbgsym_6.1.3_amd64.deb
+ 702218576fc4cb9ac0bba89301d7d8ef 211996 libs optional libpantheon-files-core0_6.1.3_amd64.deb
+ ffeedf239ac74c0f43bb74d6a820c07a 2058032 debug optional pantheon-files-dbgsym_6.1.3_amd64.deb
+ af9345850d7bf4e57676506dcff5b1c2 20482 x11 optional pantheon-files_6.1.3_amd64.buildinfo
+ 5c65434022a695d44e0cc5e6094fcb28 652680 x11 optional pantheon-files_6.1.3_amd64.deb

@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Tue, 13 Jul 2021 14:39:17 -0700
+Source: pantheon-xsession-settings
+Binary: pantheon-xsession-settings
+Architecture: all
+Version: 6.0.0
+Distribution: focal
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: Daniel Foré <daniel@elementary.io>
+Description:
+ pantheon-xsession-settings - Pantheon session for login screen
+Changes:
+ pantheon-xsession-settings (6.0.0) focal; urgency=medium
+ .
+   * New upstream release.
+Checksums-Sha1:
+ 3c5ce0623a8fc78b3269fb1549ce4423b6dae2d7 13840 pantheon-xsession-settings_6.0.0_all.deb
+ cc113c57cbd29e7d3a8e11a530b3f58baefd8a7c 13966 pantheon-xsession-settings_6.0.0_amd64.buildinfo
+Checksums-Sha256:
+ 46cb82ba02c7d04eef71ffcfeb76b4e328294f46dba7686cb8444db89e0d1592 13840 pantheon-xsession-settings_6.0.0_all.deb
+ d76a49fe97e2d4842bb00fb80e48bb771b105d4a79540f1b3e93bdf0972a3e92 13966 pantheon-xsession-settings_6.0.0_amd64.buildinfo
+Files:
+ 75da4b353721cec41af13fdce2b902da 13840 x11 optional pantheon-xsession-settings_6.0.0_all.deb
+ 6df94a7021c83b606b6e293db957f342 13966 x11 optional pantheon-xsession-settings_6.0.0_amd64.buildinfo

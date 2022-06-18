@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Sat, 30 Oct 2021 14:05:51 -0700
+Source: elementary-default-settings
+Binary: elementary-default-settings elementary-printer-test-page
+Architecture: all
+Version: 6.0.2
+Distribution: focal
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: Danielle Foré <danielle@elementary.io>
+Description:
+ elementary-default-settings - Default settings for elementary OS
+ elementary-printer-test-page - printer test page for elementary
+Changes:
+ elementary-default-settings (6.0.2) focal; urgency=medium
+ .
+   * Change Videos launcher path to var
+   * Update settings.ini values for font and stylesheet
+Checksums-Sha1:
+ ed12a3214f06ab8bda304c1d6ba144391172b6ed 9128 elementary-default-settings_6.0.2_all.deb
+ 21b5c7364a92d499e7ff8d679b5cce81fea44ec7 6846 elementary-default-settings_6.0.2_amd64.buildinfo
+ e8970ddc5ea9e1b3cfff41a0ebf9cb867250bc93 103532 elementary-printer-test-page_6.0.2_all.deb
+Checksums-Sha256:
+ 9db584f5d8cea36d4cf4fce204c7a637d9957cf7ffe44a6239e5560f37146baf 9128 elementary-default-settings_6.0.2_all.deb
+ da2d62d5c6e6ff73599df37ab5600f3ccf6dfa86f23f0b85e9007aa558097bf2 6846 elementary-default-settings_6.0.2_amd64.buildinfo
+ 7d556599c8715b68367dffde3f1d5a5d4b7560d16d2d57c3532d99757b379949 103532 elementary-printer-test-page_6.0.2_all.deb
+Files:
+ 9666e47b71f262f767844c34d52c0abd 9128 gnome optional elementary-default-settings_6.0.2_all.deb
+ e426f5c69731e0e3a12478c5c615d606 6846 gnome optional elementary-default-settings_6.0.2_amd64.buildinfo
+ 82574ee6de2f8f7019d1f6fe7e30f594 103532 gnome optional elementary-printer-test-page_6.0.2_all.deb

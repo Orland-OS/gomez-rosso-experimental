@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Tue, 10 May 2022 16:53:57 +0000
+Source: io.elementary.greeter
+Binary: io.elementary.greeter io.elementary.greeter-dbgsym pantheon-greeter
+Architecture: amd64
+Version: 6.1.0
+Distribution: bionic
+Urgency: medium
+Maintainer: elementary, Inc. <builds@elementary.io>
+Changed-By: elementary, Inc. <builds@elementary.io>
+Description:
+ io.elementary.greeter - Pantheon Login Screen
+ pantheon-greeter - transitional dummy package
+Changes:
+ io.elementary.greeter (6.1.0) bionic; urgency=medium
+ .
+   * Release 6.1.0 (#608)
+Checksums-Sha1:
+ 4370bbaf34ed71c7facfbad4dff4aaa4a75181b8 498140 io.elementary.greeter-dbgsym_6.1.0_amd64.deb
+ 473a4c39a3b50253ef8d325801dd6064ccd76c9f 18544 io.elementary.greeter_6.1.0_amd64.buildinfo
+ c0f7045e7b6b871ad31cd3cc12bd8603222c352c 135208 io.elementary.greeter_6.1.0_amd64.deb
+ 4e8bba8e3ac44c6d1c251ff8a9b399d0c2228222 3980 pantheon-greeter_6.1.0_amd64.deb
+Checksums-Sha256:
+ 626cc3e14eecee1da476e11a7f1e28342b799dbb41dcef1a68673b7b5a1101cb 498140 io.elementary.greeter-dbgsym_6.1.0_amd64.deb
+ 9278a303a853fd8a6b9522e340a9c92f28413d8cf662216b34b49d7461427df0 18544 io.elementary.greeter_6.1.0_amd64.buildinfo
+ d53491a7fda104bf5efe87df794ffaaec13481a698cc37072d94d07e9cb033c5 135208 io.elementary.greeter_6.1.0_amd64.deb
+ 43b9074caec90502346f7bb001e2f6a4caa27364241727d068f87950bd621db2 3980 pantheon-greeter_6.1.0_amd64.deb
+Files:
+ ce371d18a73dc1dd2049ff472ac8df74 498140 debug optional io.elementary.greeter-dbgsym_6.1.0_amd64.deb
+ 5a4a1750da34a080be1ce125bad44e17 18544 x11 optional io.elementary.greeter_6.1.0_amd64.buildinfo
+ e6d2e3561a6e0696178b56ddaa1d3294 135208 x11 optional io.elementary.greeter_6.1.0_amd64.deb
+ af9aacb8bf5e786d96c57ef5216c1d17 3980 oldlibs optional pantheon-greeter_6.1.0_amd64.deb

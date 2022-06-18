@@ -114,6 +114,25 @@ Priority: optional
 Description: debug symbols for contractor
 Build-Ids: ce230c5b35f9e54a49e23f0ea2562a0cfe8861b0
 
+Package: elementary-default-settings
+Version: 6.0.2
+Architecture: all
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 79
+Depends: libglib2.0-bin, qt5-gtk-platformtheme, adwaita-qt, elementary-icon-theme, dconf-gsettings-backend | gsettings-backend
+Enhances: plank
+Replaces: libgtk-3-0
+Filename: ./elementary-defaut-settings/elementary-default-settings_6.0.2_all.deb
+Size: 9128
+MD5sum: 9666e47b71f262f767844c34d52c0abd
+SHA1: ed12a3214f06ab8bda304c1d6ba144391172b6ed
+SHA256: 9db584f5d8cea36d4cf4fce204c7a637d9957cf7ffe44a6239e5560f37146baf
+Section: gnome
+Priority: optional
+Description: Default settings for elementary OS
+ This package contains various system defaults for elementary OS.
+ Installing this package won't affect existing users on your system.
+
 Package: elementary-icon-theme
 Version: 7.0.0
 Architecture: all
@@ -133,6 +152,24 @@ Description: simple and appealing Tango-styled icon theme
  .
  These icons are the inspiration behind Ubuntu's default Humanity icon
  theme.
+
+Package: elementary-printer-test-page
+Source: elementary-default-settings
+Version: 6.0.2
+Architecture: all
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 131
+Conflicts: print-test-page-elementary
+Replaces: cups-filters, print-test-page-elementary
+Filename: ./elementary-defaut-settings/elementary-printer-test-page_6.0.2_all.deb
+Size: 103532
+MD5sum: 82574ee6de2f8f7019d1f6fe7e30f594
+SHA1: e8970ddc5ea9e1b3cfff41a0ebf9cb867250bc93
+SHA256: 7d556599c8715b68367dffde3f1d5a5d4b7560d16d2d57c3532d99757b379949
+Section: gnome
+Priority: optional
+Description: printer test page for elementary
+ Printer test page for elementary OS.
 
 Package: gala
 Version: 6.3.1
@@ -239,6 +276,45 @@ Section: debug
 Priority: optional
 Description: debug symbols for granite-demo
 Build-Ids: ab659e8fc5c10daa5937842787c5f38fe80ff7bc
+
+Package: io.elementary.greeter
+Version: 6.1.0
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 1074
+Depends: numlockx, lightdm, libaccountsservice0 (>= 0.6.8), libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libgles2, libglib2.0-0 (>= 2.43.92), libgranite6 (>= 5.5.0), libgtk-3-0 (>= 3.21.4), libhandy-1-0 (>= 1.0.3), liblightdm-gobject-1-0 (>= 1.12.2), libmutter-7-0 (>= 3.37.91)
+Recommends: elementary-default-settings (>= 5.2)
+Replaces: pantheon-greeter
+Provides: lightdm-greeter
+Filename: ./elementary-greeter/io.elementary.greeter_6.1.0_amd64.deb
+Size: 135208
+MD5sum: e6d2e3561a6e0696178b56ddaa1d3294
+SHA1: c0f7045e7b6b871ad31cd3cc12bd8603222c352c
+SHA256: d53491a7fda104bf5efe87df794ffaaec13481a698cc37072d94d07e9cb033c5
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/greeter
+Description: Pantheon Login Screen
+ Clutter-powered LightDM greeter resembling Unity greeter written for Pantheon.
+ It features smooth animations and a fancy transition from boot screen.
+
+Package: io.elementary.greeter-dbgsym
+Source: io.elementary.greeter
+Version: 6.1.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 608
+Depends: io.elementary.greeter (= 6.1.0)
+Filename: ./elementary-greeter/io.elementary.greeter-dbgsym_6.1.0_amd64.deb
+Size: 498140
+MD5sum: ce371d18a73dc1dd2049ff472ac8df74
+SHA1: 4370bbaf34ed71c7facfbad4dff4aaa4a75181b8
+SHA256: 626cc3e14eecee1da476e11a7f1e28342b799dbb41dcef1a68673b7b5a1101cb
+Section: debug
+Priority: optional
+Description: debug symbols for io.elementary.greeter
+Build-Ids: 85887d960636832cbf301e34fa3e6ab9edfc5dec d7553937936cc444f6ce61c91a3318c239e34b31
 
 Package: io.elementary.notifications
 Version: 6.0.2
@@ -429,6 +505,47 @@ Section: debug
 Priority: optional
 Description: debug symbols for io.elementary.switchboard.wallet
 Build-Ids: 8036d9e2602312cc180348c9af33c767ffcf3017
+
+Package: io.elementary.terminal
+Version: 6.0.2
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 1177
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.39.4), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.5), libhandy-1-0 (>= 0.90.0), libpango-1.0-0 (>= 1.14.0), libvte-2.91-0 (>= 0.49.92)
+Breaks: pantheon-terminal
+Replaces: pantheon-terminal
+Provides: x-terminal-emulator
+Filename: ./pantheon-terminal/io.elementary.terminal_6.0.2_amd64.deb
+Size: 137044
+MD5sum: d15cebc882260bdbf1b561616aec32ac
+SHA1: 5b4b498e3f0193279b0aa114ae02b9cfc56b2c2a
+SHA256: 92a62cc67d888c2c5b5b5e9e8e105aee5adbd9deeb6e2a8f54de09a55eaed409
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/terminal
+Description: Modern terminal from elementary
+ elementary Terminal is a beautiful and simple terminal emulator.
+ It's designed to be set up with sane defaults and little to no configuration.
+
+Package: io.elementary.terminal-dbgsym
+Source: io.elementary.terminal
+Version: 6.0.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 330
+Depends: io.elementary.terminal (= 6.0.2)
+Breaks: pantheon-terminal-dbg (<< 0.4.3)
+Replaces: pantheon-terminal-dbg (<< 0.4.3)
+Filename: ./pantheon-terminal/io.elementary.terminal-dbgsym_6.0.2_amd64.deb
+Size: 283052
+MD5sum: 843fdd4935ae91a0b16de169a8e67564
+SHA1: 953541e42338585bb338df283e959c5178b4353c
+SHA256: 7855943abf67f7d6794ec6209808a00362fb80f6220eac643af0573dcf5136ba
+Section: debug
+Priority: optional
+Description: debug symbols for io.elementary.terminal
+Build-Ids: 2a5aa2aec029abc1c00c98f12d015926b749c4b1
 
 Package: io.elementary.wingpanel
 Version: 3.0.2
@@ -631,6 +748,92 @@ Priority: optional
 Multi-Arch: same
 Description: debug symbols for libgranite6
 Build-Ids: ed44ce204074ea7f8afa122c137fd081d852ba85
+
+Package: libpantheon-files-core-dev
+Source: pantheon-files
+Version: 6.1.3
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 188
+Depends: libpantheon-files-core0 (= 6.1.3)
+Conflicts: libpantheon-files-widgets-dev (<< 6.1.1)
+Replaces: libpantheon-files-widgets-dev (<< 6.1.1)
+Filename: ./files/libpantheon-files-core-dev_6.1.3_amd64.deb
+Size: 30720
+MD5sum: 7b42edacba0c4d3873f6500bb4936fc2
+SHA1: f3be7c6fd2a3c71a0295c0974abac84db2f378f1
+SHA256: 5b13d1c43413fdf9cfc01a1c44201c1b97dd6428013127093e178cf8df99db7b
+Section: libdevel
+Priority: optional
+Homepage: https://github.com/elementary/files
+Description: File manager for the Pantheon desktop (shared library development files)
+ Pantheon Files is a modern file manager originally
+ designed for the Pantheon desktop environment.
+ .
+ It features:
+  - Column view to effortlessly traverse complex folder hierarchies,
+    in addition to Icon and Tree views
+  - Contextual actions on files and folders provided by Contractor
+  - Transparent support for remote servers and network shares
+  - Compliance with elementary HIG, e.g. lets you restore closed tabs
+  - Session persistence - take up where you left!
+ .
+ This package contains the development files for writing plugins or
+ for embedding parts of Pantheon Files into other applications.
+
+Package: libpantheon-files-core0
+Source: pantheon-files
+Version: 6.1.3
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 708
+Depends: libc6 (>= 2.14), libcairo2 (>= 1.4.10), libcanberra0 (>= 0.30), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.55.1), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.22.29), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0)
+Suggests: pantheon-files
+Conflicts: libpantheon-files-widgets0 (<< 6.1.1)
+Replaces: libpantheon-files-widgets0 (<< 6.1.1)
+Filename: ./files/libpantheon-files-core0_6.1.3_amd64.deb
+Size: 211996
+MD5sum: 702218576fc4cb9ac0bba89301d7d8ef
+SHA1: 29f81f3387a231487a1d69c27c6db9fd70e13755
+SHA256: 3ee190de60223a1b427a188926a1e5980817bef5d2aaac6192a2fd0a23195309
+Section: libs
+Priority: optional
+Homepage: https://github.com/elementary/files
+Description: File manager for the Pantheon desktop (shared library)
+ Pantheon Files is a modern file manager originally
+ designed for the Pantheon desktop environment.
+ .
+ It features:
+  - Column view to effortlessly traverse complex folder hierarchies,
+    in addition to Icon and Tree views
+  - Contextual actions on files and folders provided by Contractor
+  - Transparent support for remote servers and network shares
+  - Compliance with elementary HIG, e.g. lets you restore closed tabs
+  - Session persistence - take up where you left!
+ .
+ .
+ This package contains the shared library used by plugins or
+ for embedding parts of Pantheon Files into other applications.
+
+Package: libpantheon-files-core0-dbgsym
+Source: pantheon-files
+Version: 6.1.3
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 1158
+Depends: libpantheon-files-core0 (= 6.1.3)
+Breaks: pantheon-files-dbg (<< 4.5.0+r4197+pkg98)
+Replaces: pantheon-files-dbg (<< 4.5.0+r4197+pkg98)
+Filename: ./files/libpantheon-files-core0-dbgsym_6.1.3_amd64.deb
+Size: 1021284
+MD5sum: 4b8c8aad7a421000243f02d727391bdf
+SHA1: af4aaafa88690eec5a3f80f1b87c0e2808eff3cf
+SHA256: b5a47a2b3774f727467ab957ef2c4519cf841a118997ca7405fd86b18a0fc9b6
+Section: debug
+Priority: optional
+Description: debug symbols for libpantheon-files-core0
+Build-Ids: c7db4c9eb290facf2379cb8630091e29012238d5
 
 Package: libswitchboard-2.0-0
 Source: switchboard
@@ -866,6 +1069,89 @@ Priority: optional
 Description: debug symbols for pantheon-agent-polkit
 Build-Ids: 8b7d7f159a72a776a4367b74e8775bfaeca2bad3
 
+Package: pantheon-files
+Version: 6.1.3
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 3609
+Depends: gvfs, libpantheon-files-core0 (= 6.1.3), tumbler, dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libcairo2 (>= 1.2.4), libcloudproviders0 (>= 0.3.0), libgdk-pixbuf-2.0-0 (>= 2.23.0), libgee-0.8-2 (>= 0.8.3), libgit2-glib-1.0-0 (>= 0.0.6), libglib2.0-0 (>= 2.49.5), libgranite6 (>= 6.2.0), libgtk-3-0 (>= 3.21.5), libhandy-1-0 (>= 0.90.0), libpango-1.0-0 (>= 1.44.6), libplank1 (>= 0.11.89), libsqlite3-0 (>= 3.5.9), libzeitgeist-2.0-0 (>= 0.9.9)
+Recommends: contractor, exfat-fuse, gvfs-backends, tumbler-plugins-extra
+Filename: ./files/pantheon-files_6.1.3_amd64.deb
+Size: 652680
+MD5sum: 5c65434022a695d44e0cc5e6094fcb28
+SHA1: b5597899217e1cff92ef328260895556b72b8ac5
+SHA256: 3c25ac083575bd0a23a5112231580fcc403b191166beef068f5de25dd8fefd94
+Section: x11
+Priority: optional
+Homepage: https://github.com/elementary/files
+Description: File manager for the Pantheon desktop
+ Pantheon Files is a modern file manager originally
+ designed for the Pantheon desktop environment.
+ .
+ It features:
+  - Column view to effortlessly traverse complex folder hierarchies,
+    in addition to Icon and Tree views
+  - Contextual actions on files and folders provided by Contractor
+  - Transparent support for remote servers and network shares
+  - Compliance with elementary HIG, e.g. lets you restore closed tabs
+  - Session persistence - take up where you left!
+
+Package: pantheon-files-dbgsym
+Source: pantheon-files
+Version: 6.1.3
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 2357
+Depends: pantheon-files (= 6.1.3)
+Breaks: pantheon-files-dbg (<< 4.5.0+r4197+pkg98)
+Replaces: pantheon-files-dbg (<< 4.5.0+r4197+pkg98)
+Filename: ./files/pantheon-files-dbgsym_6.1.3_amd64.deb
+Size: 2058032
+MD5sum: ffeedf239ac74c0f43bb74d6a820c07a
+SHA1: ce4b5adf74ab9ee6c34092e8d978f168b1d36601
+SHA256: dceb402049e6a53a2e7eac93a14fa68292961121d1f98d7727fc9ad365809624
+Section: debug
+Priority: optional
+Description: debug symbols for pantheon-files
+Build-Ids: 44ceadfa95b05c2a17c63234c0fcb46221de7df7 5825c0039a9e8de7c4d8a3dca974c946487522a2 5852eb6206024c329554ba194c53734c43405027 63595924dffc42a396c2619ae688e3a2dc814b9e 6c1755e1e6ec04e8abc3619234945c4caccc503d a081d283a64f67dc73b5687ab4c25ba99b41d8f2 a8225b2f8e0d77c88319de4d724233381c758654 af607553568ee6d29bbcdd6f33a62fecf6aee4f5 ec10b857f71395f0ddc6acf9326e48009314fca4
+
+Package: pantheon-greeter
+Source: io.elementary.greeter
+Version: 6.1.0
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 11
+Depends: io.elementary.greeter
+Filename: ./elementary-greeter/pantheon-greeter_6.1.0_amd64.deb
+Size: 3980
+MD5sum: af9aacb8bf5e786d96c57ef5216c1d17
+SHA1: 4e8bba8e3ac44c6d1c251ff8a9b399d0c2228222
+SHA256: 43b9074caec90502346f7bb001e2f6a4caa27364241727d068f87950bd621db2
+Section: oldlibs
+Priority: optional
+Homepage: https://github.com/elementary/greeter
+Description: transitional dummy package
+ This is a transitional dummy package. It can safely be removed.
+
+Package: pantheon-terminal
+Source: io.elementary.terminal
+Version: 6.0.2
+Architecture: amd64
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 13
+Depends: io.elementary.terminal
+Filename: ./pantheon-terminal/pantheon-terminal_6.0.2_amd64.deb
+Size: 5612
+MD5sum: d27ca0f19d5756675eecbb43d05e3e67
+SHA1: 28d6844b5458b7b86317c3247ce85c3f9aa1698d
+SHA256: 51ddc0b43f1f7c980f58ad0b5ec2293c4fb47f1d696111e01368bb5c260f7854
+Section: oldlibs
+Priority: optional
+Homepage: https://github.com/elementary/terminal
+Description: transitional dummy package
+    This is a transitional dummy package. It can safely be removed.
+
 Package: pantheon-tweaks
 Version: 1.0.4
 Architecture: amd64
@@ -904,6 +1190,24 @@ Section: debug
 Priority: optional
 Description: debug symbols for pantheon-tweaks
 Build-Ids: 24ead293c3956064611fb1e42d5fe6cb64f6c6f3
+
+Package: pantheon-xsession-settings
+Version: 6.0.0
+Architecture: all
+Maintainer: elementary, Inc. <builds@elementary.io>
+Installed-Size: 84
+Depends: gnome-session-bin, gala (>= 0.3.2~), pantheon-shell
+Filename: ./pantheon-xsession-settings/pantheon-xsession-settings_6.0.0_all.deb
+Size: 13840
+MD5sum: 75da4b353721cec41af13fdce2b902da
+SHA1: 3c5ce0623a8fc78b3269fb1549ce4423b6dae2d7
+SHA256: 46cb82ba02c7d04eef71ffcfeb76b4e328294f46dba7686cb8444db89e0d1592
+Section: x11
+Priority: optional
+Description: Pantheon session for login screen
+ This package installs a fully usable X login session and provides some
+ session-specific configuration files and defaults. Installing this package will
+ add a session called Pantheon to your login screen.
 
 Package: python3-aptdaemon
 Source: aptdaemon
